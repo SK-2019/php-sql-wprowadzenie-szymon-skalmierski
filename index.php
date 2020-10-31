@@ -5,7 +5,7 @@
 
 <?php
     
-    echo("<div style='font-size:30px; margin-bottom:20px'><b>Szymon Skalmierski nr26</b></div>");
+    echo("<div style='font-size:40px; margin-bottom:20px'><b>Szymon Skalmierski nr26</b></div>");
     echo("<hr />");
     function tabelka($zapytanie, $nazwa, $kolumna, $row1){
     include("connect.php");
