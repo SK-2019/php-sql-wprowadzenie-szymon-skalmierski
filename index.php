@@ -1,8 +1,14 @@
+<head>
+	<title>Szymon Skalmierski 2Ti</title>
+    <link rel="icon" href="https://image.flaticon.com/icons/png/512/25/25231.png">
+</head>
+
 <?php
+    
     echo("<div style='font-size:30px; margin-bottom:20px'><b>Szymon Skalmierski nr26</b></div>");
     echo("<hr />");
     function tabelka($zapytanie, $nazwa, $kolumna, $row1){
-    $conn=new mysqli("localhost","root","","nauka");
+    include("connect.php");
     $result=$conn->query($zapytanie);
     echo("<div style='font-size:20px; margin-bottom:5px'>$nazwa</div>");
     echo("<table border=1 style='font-size:20px; margin-bottom:20px'>");
