@@ -50,7 +50,7 @@
     
     tabelka1("select avg(zarobki) as myavg, dzial from pracownicy group by dzial", "Średnie zarobki pracowników w poszczególnych działach:", "Średnia", "myavg");
 
-    tabelka1("select count(zarobki) as mycount, dzial from pracownicy where imie like '%a' group by dzial", "Liczba mężczyzn w poszczególnych działach:", "Liczba", "mycount");
+    tabelka1("select count(imie) as mycount, dzial from pracownicy where imie not like '%a' group by dzial", "Liczba mężczyzn w poszczególnych działach:", "Liczba", "mycount");
 
     tabelka1("select max(zarobki) as mymax, dzial from pracownicy where dzial=2 group by dzial", "Maksymalne zarobki z działu 2:", "Maks", "mymax");
 
