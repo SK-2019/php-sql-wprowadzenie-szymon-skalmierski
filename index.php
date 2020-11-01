@@ -60,5 +60,4 @@
  
     tabelka1("select avg(zarobki) as myavg, dzial from pracownicy group by dzial having myavg<35", "Średnie zarobki pracowników w poszczególnych działach mniejsze od 35:", "Średnia", "myavg");
 
-    
 ?>
