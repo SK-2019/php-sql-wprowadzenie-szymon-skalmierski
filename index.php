@@ -46,7 +46,7 @@
 
     tabelka4("select * from pracownicy", "Wszyscy pracownicy:");
 
-    tabelka4("select * from pracownicy where imie like '%a'", "Wszyscy pracownicy:");
+    tabelka4("select * from pracownicy where imie like '%a'", "Kobiety:");
     
     tabelka1("select avg(zarobki) as myavg, dzial from pracownicy group by dzial", "Średnie zarobki pracowników w poszczególnych działach:", "Średnia", "myavg");
 
