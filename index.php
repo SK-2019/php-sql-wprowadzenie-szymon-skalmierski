@@ -5,7 +5,7 @@
 
 <?php
     
-    echo("<div style='font-size:40px; margin-bottom:20px; font-family:helvetica; text-align:center'><b>Szymon Skalmierski nr26</b></div>");
+    echo("<div style='font-size:40px; margin-bottom:10px; margin-top:20px; font-family:helvetica; text-align:center'><b>Szymon Skalmierski nr26</b></div>");
     echo("<hr />");
 
 
