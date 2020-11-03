@@ -3,10 +3,14 @@
 	<link rel="icon" href="https://image.flaticon.com/icons/png/512/25/25231.png">
 	<link rel="stylesheet" href="style.css">
 </head>
+<body>
+
+<h1>Szymon Skalmierski nr26</h1>
+
+</body>
 
 <?php
-    
-    echo("<div style='font-size:40px; margin-bottom:10px; margin-top:20px; font-family:helvetica; text-align:center'><b>Szymon Skalmierski nr26</b></div>");
+   
     echo("<hr />");
 
 
