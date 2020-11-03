@@ -19,7 +19,7 @@
         $result=$conn->query($zapytanie);
         echo("<div>$nazwa</div>");
         echo("<table>");
-            echo("<th class="kolumna1">$kolumna</th>");
+            echo("<th>$kolumna</th>");
             echo("<th>Dział</th>");
                 while($row=$result->fetch_assoc()){
                     echo("<tr>");
@@ -37,7 +37,7 @@
         echo("<div>$nazwa</div>");
         echo("<table>");
             echo("<th>ID</th>");
-            echo("<th class="imie">Imie</th>");
+            echo("<th>Imie</th>");
             echo("<th>Dział</th>");
             echo("<th>Zarobki</th>");
                 while($row=$result->fetch_assoc()){
