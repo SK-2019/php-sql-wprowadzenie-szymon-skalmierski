@@ -5,8 +5,15 @@ h1 {
   font-family:helvetica; 
   text-align:center;
 }
-table, th, td {
-  border: 1px solid black;
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 5px;
 }
 tr:nth-child(even) {
   background-color: #dddddd;
