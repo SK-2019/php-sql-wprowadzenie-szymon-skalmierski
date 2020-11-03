@@ -20,10 +20,12 @@ td {
 
 tr:nth-child(even){
   background-color: #ffffb3;
+  border: 1px solid #000000;
 }
 
 tr:hover {
   background-color: #cccccc;
+  border: 1px solid #000000
 }
 
 th {
