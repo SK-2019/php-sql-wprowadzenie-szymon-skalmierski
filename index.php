@@ -17,8 +17,8 @@
     function tabelka1($zapytanie, $nazwa, $kolumna, $row1){
         require("connect.php");
         $result=$conn->query($zapytanie);
-        echo("<div style='font-size:20px; margin-bottom:5px'>$nazwa</div>");
-        echo("<table border=1 style='font-size:20px; margin-bottom:20px'>");
+        echo("<div>$nazwa</div>");
+        echo("<table>");
             echo("<th>$kolumna</th>");
             echo("<th>Dział</th>");
                 while($row=$result->fetch_assoc()){
@@ -34,8 +34,8 @@
     function tabelka4($zapytanie, $nazwa){
         require("connect.php");
         $result=$conn->query($zapytanie);
-        echo("<div style='font-size:20px; margin-bottom:5px'>$nazwa</div>");
-        echo("<table border=1 style='font-size:20px; margin-bottom:20px'>");
+        echo("<div>$nazwa</div>");
+        echo("<table>");
             echo("<th>ID</th>");
             echo("<th>Imie</th>");
             echo("<th>Dział</th>");
