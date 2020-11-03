@@ -26,14 +26,14 @@ tr:nth-child(even){
 }
 
 tr:hover {
-  background-color: #cccccc;
+  background-color: #ffffe6;
   border: 1px solid #000000
 }
 
 th {
   padding-top: 12px;
   padding-bottom: 12px;
-  text-align: left;
-  background-color: #8c8c8c;
+  text-align: middle;
+  background-color: #ffff1a;
   color: black;
 }
