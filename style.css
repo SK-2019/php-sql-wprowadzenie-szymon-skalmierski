@@ -13,12 +13,23 @@ table {
   border-collapse: collapse;
   width: 20%;
 }
-td, th {
-  background-color: #b3b3b3;
-  border: 1px solid #000000;
-  text-align: left;
-  padding: 5px;
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
 }
-tr:nth-child(even) {
-  background-color: #ffff99;
+
+tr:nth-child(even){
+  background-color: red;
+}
+
+tr:hover {
+  background-color: pink;
+}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: blue;
 }
