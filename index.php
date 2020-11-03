@@ -18,7 +18,7 @@
         require("connect.php");
         $result=$conn->query($zapytanie);
         echo("<div>$nazwa</div>");
-        echo("<table>");
+        echo("<table class="table2">");
             echo("<th>$kolumna</th>");
             echo("<th>Dział</th>");
                 while($row=$result->fetch_assoc()){
