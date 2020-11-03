@@ -25,11 +25,11 @@ table {
 }
 td {
   padding: 10px;
+  padding-left: 20px;
 }
 tr {
   background-color: #ffff80;
   text-align:left;
-  padding-left: 5px;
 }
 tr:nth-child(even) {
   background-color: #ffffb3;
