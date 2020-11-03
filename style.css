@@ -11,11 +11,11 @@ table {
   width: 20%;
 }
 td, th {
-  background-color: #ffffb3;
+  background-color: #ffff99;
   border: 1px solid #dddddd;
   text-align: left;
   padding: 5px;
 }
 tr:nth-child(even) {
-  background-color: #ffff66;
+  background-color: #ffffcc;
 }
