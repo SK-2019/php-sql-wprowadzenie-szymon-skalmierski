@@ -5,3 +5,6 @@ h1 {
   font-family:helvetica; 
   text-align:center;
 }
+table, th, td {
+  border: 1px solid black;
+}
