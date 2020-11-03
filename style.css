@@ -11,8 +11,7 @@ table {
   width: 20%;
 }
 td, th {
-  background-color: #ffff99;
-  border: 1px solid #dddddd;
+  border: 1px solid #ffff99;
   text-align: left;
   padding: 5px;
 }
