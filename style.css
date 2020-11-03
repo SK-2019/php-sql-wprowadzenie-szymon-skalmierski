@@ -30,7 +30,6 @@ td {
 tr {
   background-color: #ffff80;
   text-align:left;
-  padding-left: 20px;
 }
 tr:nth-child(even) {
   background-color: #ffffb3;
@@ -41,7 +40,7 @@ tr:hover {
 }
 th {
   padding: 12px;
-  padding-left: 12px;
+  margin-left: 10px;
   background-color: #ffff1a;
   color: black;
 }
