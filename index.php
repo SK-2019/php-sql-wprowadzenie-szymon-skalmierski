@@ -11,13 +11,13 @@
 
 <?php
    
-    echo("<hr />");
+    echo("<hr>");
 
 
     function tabelka1($zapytanie, $nazwa, $kolumna, $row1){
         require("connect.php");
         $result=$conn->query($zapytanie);
-        echo("<div><strong>$nazwa</strong></div>");
+        echo("<div>$nazwa</div>");
         echo("<table>");
             echo("<th>$kolumna</th>");
             echo("<th>Dział</th>");
@@ -34,7 +34,7 @@
     function tabelka4($zapytanie, $nazwa){
         require("connect.php");
         $result=$conn->query($zapytanie);
-        echo("<div><strong>$nazwa</strong></div>");
+        echo("<div>$nazwa</div>");
         echo("<table>");
             echo("<th>ID</th>");
             echo("<th>Imie</th>");
