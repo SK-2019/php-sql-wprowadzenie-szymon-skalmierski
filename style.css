@@ -17,10 +17,12 @@ td {
   border: 1px solid #000000;
   padding: 8px;
 }
-
+tr{
+  border: 1px solid #000000;
+  background-color: #ffff80;
+}
 tr:nth-child(even){
   background-color: #ffffb3;
-  border: 1px solid #000000;
 }
 
 tr:hover {
