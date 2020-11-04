@@ -64,6 +64,6 @@
 
     tabelka1("select sum(zarobki) as mysum, nazwa_dzial from pracownicy, organizacja where dzial=id_org and (dzial=1 or dzial=2) group by dzial", "Suma zarobków z działu 1 i 2:", "Suma", "mysum");
  
-    tabelka1("select avg(zarobki) as myavg, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by dzial having myavg<35", "Średnie zarobki pracowników w poszczególnych działach mniejsze od 35:", "Średnia", "myavg");
+    tabelka1("select avg(zarobki) as myavg, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by nazwa_dzial having myavg<35", "Średnie zarobki pracowników w poszczególnych działach mniejsze od 35:", "Średnia", "myavg");
 
 ?>
