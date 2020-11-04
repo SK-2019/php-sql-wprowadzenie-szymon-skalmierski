@@ -4,9 +4,10 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<h2><a class="link" href="https://github.com/SK-2019/php-sql-wprowadzenie-szymon-skalmierski"><b>GITHUB</b></a><h1> Szymon Skalmierski nr26 </h1></h2>
-
+	<div class="elo">
+		<a class="link" href="https://github.com/SK-2019/php-sql-wprowadzenie-szymon-skalmierski"><b>GITHUB</b></a>
+		<h1> Szymon Skalmierski nr26 </h1>
+	</div>
 </body>
 
 <?php
