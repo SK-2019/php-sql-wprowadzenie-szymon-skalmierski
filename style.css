@@ -16,15 +16,15 @@ h1 {
   text-align:center;
 }
 .link{
-  display: inline-block;
-  background-color: #f44336;
-  color: #000000;
-  padding: 14px 25px;
+  background-color: white;
+  color: black;
+  border: 2px solid #4CAF50;
+  padding: 10px 20px;
   text-align: center;
   text-decoration: none;
+  display: inline-block;
   font-size: 20px;
   margin-left: 50px;
-  opacity: 0.9;
   font-family:helvetica; 
 }
 table {
