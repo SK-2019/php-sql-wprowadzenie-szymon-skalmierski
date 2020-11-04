@@ -6,7 +6,7 @@
 <body>
 
 <h1>Szymon Skalmierski nr26</h1>
-<a class="link" href="https://github.com/SK-2019/php-sql-wprowadzenie-szymon-skalmierski">GITHUB</a>
+<a class="link" href="https://github.com/SK-2019/php-sql-wprowadzenie-szymon-skalmierski"><b>GITHUB</b></a>
 
 </body>
 
