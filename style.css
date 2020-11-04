@@ -25,7 +25,11 @@ h1 {
   display: inline-block;
   font-size: 20px;
   margin-left: 50px;
-  font-family:helvetica; 
+  font-family:helvetica;
+}
+.link:hover {
+    background-color: #4CAF50;
+    color: white;
 }
 table {
   border: 1px solid #000000;
