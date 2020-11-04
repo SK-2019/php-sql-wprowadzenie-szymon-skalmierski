@@ -15,11 +15,16 @@ h1 {
   font-family:helvetica; 
   text-align:center;
 }
-.link {
-  font-color:black;
-  font-size:30px;
-  margin:5px;
-  font-family:helvetica; 
+.link{
+  display: inline-block;
+  background-color: #f44336;
+  color: #FFFFFF;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin-left: 20px;
+  opacity: 0.9;
 }
 table {
   border: 1px solid #000000;
