@@ -24,7 +24,7 @@
             echo("<th>Dział</th>");
                 while($row=$result->fetch_assoc()){
                     echo("<tr>");
-                        echo("<td>".$row[$row1]."</td><td>".$row['dzial']."</td>");
+                        echo("<td>".$row[$row1]."</td><td>".$row['nazwa_dzial']."</td>");
                     echo("</tr>");
                 }
         echo("</table>");
@@ -43,7 +43,7 @@
             echo("<th>Zarobki</th>");
                 while($row=$result->fetch_assoc()){
                     echo("<tr>");
-                        echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td>");
+                        echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["nazwa_dzial"]."</td><td>".$row["zarobki"]."</td>");
                     echo("</tr>");
                 }
         echo("</table>");
