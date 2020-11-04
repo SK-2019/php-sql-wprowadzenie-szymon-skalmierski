@@ -16,9 +16,8 @@ h1 {
   text-align:center;
 }
 .link {
-  font-size:30px; 
-  margin-bottom:5px; 
-  margin-top:10px; 
+  font-size:30px;
+  margin:5px;
   font-family:helvetica; 
 }
 table {
