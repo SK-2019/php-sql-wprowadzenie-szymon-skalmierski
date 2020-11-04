@@ -60,7 +60,4 @@
 
     tabelka1("select min(zarobki) as mymin, nazwa_dzial from pracownicy, organizacja where dzial=id_org nad imie not like '%a' group by dzial", "Minimalne zarobki mężczyzn:", "Min", "mymin");
 
-    tabelka1("select sum(zarobki) as mysum, nazwa_dzial from pracownicy, organizacja where dzial=id_org and (dzial=1 or dzial=2) group by dzial", "Suma zarobków z działu 1 i 2:", "Suma", "mysum");
-
-
 ?>
