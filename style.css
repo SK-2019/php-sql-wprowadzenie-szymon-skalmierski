@@ -17,8 +17,8 @@ h1 {
 }
 .link {
   font-size:30px; 
-  display: block; 
-  text-align: center
+  display:block; 
+  text-align:center;
   margin-bottom:10px; 
   margin-top:10px; 
   font-family:helvetica; 
