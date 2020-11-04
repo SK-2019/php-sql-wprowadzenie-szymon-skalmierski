@@ -54,7 +54,7 @@
 
     tabelka4("select id, imie, id_org, zarobki from pracownicy, organizacja where dzial=id_org and imie like '%a'", "Kobiety:");
     
-    tabelka1("select avg(zarobki) as yavg, dzial from pracownicy, organizacja group by dzial", "Średnie zarobki pracowników w poszczególnych działach:", "Średnia", "yavg");
+    tabelka1("select avg(zarobki) as yavg, dzial from pracownicy, organizacja where dzial=id_org group by dzial", "Średnie zarobki pracowników w poszczególnych działach:", "Średnia", "yavg");
 
     tabelka1("select count(imie) as mycount, dzial from pracownicy, organizacja where dzial=id_org and imie not like '%a' group by dzial order by dzial", "Liczba mężczyzn w poszczególnych działach:", "Liczba", "mycount");
 
