@@ -22,9 +22,10 @@ h1 {
   padding: 14px 25px;
   text-align: center;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 20px;
   margin-left: 50px;
   opacity: 0.9;
+  font-family:helvetica; 
 }
 table {
   border: 1px solid #000000;
