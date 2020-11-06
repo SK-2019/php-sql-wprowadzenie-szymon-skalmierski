@@ -9,8 +9,8 @@
 </body>
 
 	<div class="nav">
-		<a class="link" href="funkcjeagr.php"><b>Funkcje Agregujące</b></a>
-		<a class="link" href="pracownicy.php"><b>Pracownicy</b></a>
+		<a href="funkcjeagr.php"><b>Funkcje Agregujące</b></a>
+		<a href="pracownicy.php"><b>Pracownicy</b></a>
 	</div>
 <?php
    
