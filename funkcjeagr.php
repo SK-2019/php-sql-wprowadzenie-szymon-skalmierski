@@ -14,5 +14,22 @@
 	</div>
 
 <?php
-  echo("tu jestem: Pracownicy"); 
+    echo("<hr>");
+
+
+    function tabelka1($zapytanie, $nazwa, $kolumna, $row1){
+        require("connect.php");
+        $result=$conn->query($zapytanie);
+        echo("<div>$nazwa</div>");
+        echo("<table class='table2'>");
+            echo("<th>$kolumna</th>");
+            echo("<th>Dział</th>");
+                while($row=$result->fetch_assoc()){
+                    echo("<tr>");
+                        echo("<td>".$row[$row1]."</td><td>".$row['nazwa_dzial']."</td>");
+                    echo("</tr>");
+                }
+        echo("</table>");
+        echo("<hr>");
+     }
 ?>
