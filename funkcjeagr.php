@@ -14,6 +14,5 @@
 	</div>
 
 <?php
-  echo("tu jestem: Pracownicy");
-  
+  echo("tu jestem: Pracownicy"); 
 ?>
