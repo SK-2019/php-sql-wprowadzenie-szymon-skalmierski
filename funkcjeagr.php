@@ -57,7 +57,7 @@
 	    echo("<th>Płeć</th>");
                 while($row=$result->fetch_assoc()){
                     echo("<tr>");
-                        echo("<td>".$row[$row1]."</td><td>".$row['plec1']."</td>");
+                        echo("<td>".$row[$row1]."</td><td>".$row['plec']."</td>");
                     echo("</tr>");
                 }
         echo("</table>");
@@ -88,7 +88,7 @@
 
     tabelka1("select avg(zarobki) as myavg, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by dzial", "Średnie zarobków w poszczególnych działach:", "Średnia", "myavg");
 
-    tabelka3("select sum(zarobki) as mysum from pracownicy group by (imie like '%a')", "Suma zarobków kobiet i mężczyzn:", "Suma", "mysum");
+    tabelka3("select sum(zarobki) as mysum, if(imie like '%a', 'Kobiety', 'Mężczyźni') as plec from pracownicy group by (imie like '%a')", "Suma zarobków kobiet i mężczyzn:", "Suma", "mysum");
 
     tabelka3("select avg(zarobki) as myavg, if(imie like '%a', 'Kobiety', 'Mężczyźni') as plec from pracownicy group by (imie like '%a')", "Średnia zarobków kobiet i mężczyzn:", "Średnia", "myavg");
 
