@@ -53,6 +53,6 @@
     
     tabelka4("select id_pracownicy, imie, nazwa_dzial, zarobki from pracownicy, organizacja where dzial=id_org and (dzial=1 or dzial=3) and imie like '%a' order by zarobki", "Kobiety z działu 1 i 3 posortowane rosnąco po zarobkach:");
 
-    tabelka4("select id_pracownicy, imie, nazwa_dzial, zarobki from pracownicy, organizacja where dzial=id_org and imie not like '%a' order by imie, zarobki", "Mężczyźni posortowani rosnąco: po nazwie działu a następnie po wysokości zarobków:");
+    tabelka4("select id_pracownicy, imie, nazwa_dzial, zarobki from pracownicy, organizacja where dzial=id_org and imie not like '%a' order by imie asc, zarobki asc", "Mężczyźni posortowani rosnąco: po nazwie działu a następnie po wysokości zarobków:");
 
 ?>
