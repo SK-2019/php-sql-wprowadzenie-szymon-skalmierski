@@ -32,7 +32,42 @@
         echo("</table>");
         echo("<hr>");
      }
-   
+
+    tabelka1("select sum(zarobki) as mysum, nazwa_dzial from pracownicy, organizacja where dzial=id_org", "Suma zarobków wszystkich pracowników:", "Suma", "mysum");
+
+    tabelka1("select sum(zarobki) as mysum, nazwa_dzial from pracownicy, organizacja where dzial=id_org and imie like '%a'", "Suma zarobków wszystkich kobiet:", "Suma", "mysum");
+
+    tabelka1("select sum(zarobki) as mysum, nazwa_dzial from pracownicy, organizacja where dzial=id_org and (imie not like '%a') and (dzial=2 or dzial=3) group by dzial", "Suma zarobków mężczyzn pracujących w dziale 2 i 3:", "Suma", "mysum");
+
+    tabelka1("select avg(zarobki) as myavg, nazwa_dzial from pracownicy, organizacja where dzial=id_org and imie not like '%a'", "Średnia zarobków wszystkich mężczyzn:", "Średnia", "myavg");
+
+    tabelka1("select avg(zarobki) as myavg, nazwa_dzial from pracownicy, organizacja where dzial=id_org and dzial=4 group by dzial", "Średnia zarobków pracowników z działu 4:", "Średnia", "myavg");
+
+    tabelka1("select avg(zarobki) as myavg, nazwa_dzial from pracownicy, organizacja where dzial=id_org and (imie not like '%a') and (dzial=1 or dzial=2) group by dzial", "Średnia zarobków mężczyzn z działu 1 i 2:", "Średnia", "myavg");
+
+    tabelka1("select count(imie) as mycount, nazwa_dzial from pracownicy, organizacja where dzial=id_org", "Ilu jest wszystkich pracowników:", "Liczba", "mycount");
+
+    tabelka1("select count(imie) as mycount, nazwa_dzial from pracownicy, organizacja where dzial=id_org and imie like '%a' and (dzial=1 or dzial=2)", "Ile kobiet pracuje łącznie w działach 1 i 3:", "Liczba", "mycount");
+
+
+    tabelka1("select sum(zarobki) as mysum, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by dzial", "Suma zarobków w poszczególnych działach:", "Suma", "mysum");
+
+    tabelka1("select count(zarobki) as mycount, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by dzial", "Ilość pracowników w poszczególnych działach:", "Liczba", "mycount");
+
+    tabelka1("select avg(zarobki) as myavg, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by dzial", "Średnie zarobków w poszczególnych działach:", "Średnia", "myavg");
+
+    tabelka1("select sum(zarobki) as mysum, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by imie like '%a' as Kobiety", "Suma zarobków kobiet i mężczyzn:", "Suma", "mysum");
+
+    tabelka1("select avg(zarobki) as myavg, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by imie like '%a' as Kobiety", "Średnia zarobków kobiet i mężczyzn:", "Średnia", "myavg");
+
+    tabelka1("select sum(zarobki) as mysum, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by dzial having mysum<28", "Suma zarobków w poszczególnych działach mniejsza od 28:", "Suma", "mysum");
+    
+    tabelka1("select avg(zarobki) as myavg, nazwa_dzial from pracownicy, organizacja where dzial=id_org and (imie not like '%a') group by dzial having myavg>30", "Średnie zarobków mężczyzn w poszczególnych działach większe od 30:", "Średnia", "myavg");
+
+
+    echo("<hr>");
+    echo("<hr>");
+
     tabelka1("select avg(zarobki) as yavg, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by dzial", "Średnie zarobki pracowników:", "Średnia", "yavg");
 
     tabelka1("select count(imie) as mycount, nazwa_dzial from pracownicy, organizacja where dzial=id_org and imie not like '%a' group by dzial order by dzial", "Liczba mężczyzn:", "Liczba", "mycount");
@@ -43,7 +78,4 @@
     
     tabelka1("select sum(zarobki) as mysum, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by dzial", "Suma zarobków:", "Suma", "mysum");
 
-    tabelka1("select sum(zarobki) as mysum, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by dzial having mysum<28", "Suma zarobków w poszczególnych działach mniejsza od 28:", "Suma", "mysum");
-    
-    tabelka1("select avg(zarobki) as myavg, nazwa_dzial from pracownicy, organizacja where dzial=id_org and (imie not like '%a') group by dzial having myavg>30", "Średnie zarobków mężczyzn w poszczególnych działach większe od 30:", "Średnia", "myavg");
 ?>
