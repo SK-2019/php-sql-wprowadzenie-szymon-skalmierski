@@ -14,5 +14,24 @@
 	</div>
 
 <?php
-  echo("<div>pracownicy:pracownicy</div>");
+      echo("<hr>");
+    function tabelka4($zapytanie, $nazwa){
+        require("connect.php");
+        $result=$conn->query($zapytanie);
+        echo("<div>$nazwa</div>");
+        echo("<table>");
+            echo("<th>ID</th>");
+            echo("<th>Imie</th>");
+            echo("<th>Dział</th>");
+            echo("<th>Zarobki</th>");
+                while($row=$result->fetch_assoc()){
+                    echo("<tr>");
+                        echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["nazwa_dzial"]."</td><td>".$row["zarobki"]."</td>");
+                    echo("</tr>");
+                }
+        echo("</table>");
+        echo("<hr>");
+        }
+
+    tabelka4("select id_pracownicy, imie, nazwa_dzial, zarobki from pracownicy, organizacja where dzial=id_org", "Wszyscy pracownicy:");
 ?>
