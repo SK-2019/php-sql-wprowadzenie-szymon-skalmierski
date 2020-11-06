@@ -8,7 +8,7 @@
 	<a class="link" href="https://github.com/SK-2019/php-sql-wprowadzenie-szymon-skalmierski"><b>GITHUB</b></a>	
 </body>
 
-	<div>
+	<div class="nav">
 		<a  class="nav1" href="funkcjeagr.php"><b>Funkcje Agregujące</b></a>
 		<a  class="nav2" href="pracownicy.php"><b>Pracownicy</b></a>
 	</div>
