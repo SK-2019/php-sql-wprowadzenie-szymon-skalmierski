@@ -45,5 +45,4 @@
 
     tabelka4("select id_pracownicy, imie, nazwa_dzial, zarobki from pracownicy, organizacja where dzial=id_org and imie not like '%a'", "Mężczyźni:");
     
-
 ?>
