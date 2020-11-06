@@ -32,6 +32,23 @@ h1 {
     background-color: #4CAF50;
     color: white;
 }
+.nav{
+  font-family:helvetica;
+  background-color: white;
+  color: black;
+  border: 2px solid #af4c4c;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin-left: 30px;
+  font-family:helvetica;
+}
+.nav:hover {
+    background-color: #af4c4c;
+    color: white; 
+}
 table {
   border: 1px solid #000000;
   font-size:20px; 
