@@ -41,7 +41,7 @@ h1 {
   text-decoration: none;
   display: inline-block;
   font-size: 20px;
-  margin-left: 20px;
+  margin-left: 10px;
   font-family:helvetica;
 }
 .nav1:hover {
@@ -51,7 +51,7 @@ h1 {
 table {
   border: 1px solid #000000;
   font-size:20px; 
-  margin-left:20px;
+  margin-left:10px;
   margin-bottom:20px;
   font-family: arial;
   border-collapse: collapse;
