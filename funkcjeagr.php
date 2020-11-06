@@ -52,9 +52,9 @@
         require("connect.php");
         $result=$conn->query($zapytanie);
         echo("<div>$nazwa</div>");
-	echo("<div>Płeć</div>");
         echo("<table class='table2'>");
             echo("<th>$kolumna</th>");
+	    echo("<th>Płeć</th>");
                 while($row=$result->fetch_assoc()){
                     echo("<tr>");
                         echo("<td>".$row[$row1]."</td><td>".$row['dzial']."</td>");
