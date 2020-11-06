@@ -55,7 +55,7 @@
 
     tabelka1("select sum(zarobki) as mysum, nazwa_dzial from pracownicy, organizacja where dzial=id_org and (imie not like '%a') and (dzial=2 or dzial=3) group by dzial", "Suma zarobków mężczyzn pracujących w dziale 2 i 3:", "Suma", "mysum");
 
-    tabelka2("select avg(zarobki) as myavgfrom pracownicy where imie not like '%a'", "Średnia zarobków wszystkich mężczyzn:", "Średnia", "myavg");
+    tabelka2("select avg(zarobki) as myavg from pracownicy where imie not like '%a'", "Średnia zarobków wszystkich mężczyzn:", "Średnia", "myavg");
 
     tabelka1("select avg(zarobki) as myavg, nazwa_dzial from pracownicy, organizacja where dzial=id_org and dzial=4 group by dzial", "Średnia zarobków pracowników z działu 4:", "Średnia", "myavg");
 
