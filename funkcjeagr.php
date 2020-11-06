@@ -39,11 +39,13 @@
         echo("<div>$nazwa</div>");
         echo("<table class='table2'>");
             echo("<th>$kolumna</th>");
+	    	for($i=1;$i<=5;$i++){
                 while($row=$result->fetch_assoc()){
                     echo("<tr>");
                         echo("<td>".$row[$row1]."</td>");
                     echo("</tr>");
                 }
+		}
         echo("</table>");
         echo("<hr>");
      }
