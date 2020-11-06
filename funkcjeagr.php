@@ -61,7 +61,7 @@
 
     tabelka1("select avg(zarobki) as myavg, nazwa_dzial from pracownicy, organizacja where dzial=id_org and (imie not like '%a') and (dzial=1 or dzial=2) group by dzial", "Średnia zarobków mężczyzn z działu 1 i 2:", "Średnia", "myavg");
 
-    tabelka2("select count(imie) as mycount from pracownicy where dzial=id_org", "Ilu jest wszystkich pracowników:", "Liczba", "mycount");
+    tabelka2("select count(imie) as mycount from pracownicy", "Ilu jest wszystkich pracowników:", "Liczba", "mycount");
 
     tabelka2("select count(imie) as mycount from pracownicy where dzial=id_org and imie like '%a' and (dzial=1 or dzial=2)", "Ile kobiet pracuje łącznie w działach 1 i 3:", "Liczba", "mycount");
 
