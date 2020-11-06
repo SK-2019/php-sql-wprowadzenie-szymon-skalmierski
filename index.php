@@ -39,6 +39,8 @@
 
     tabelka4("select id_pracownicy, imie, nazwa_dzial, zarobki from pracownicy, organizacja where dzial=id_org and zarobki<30", "Pracownicy z zarobkami mniejszymi niż 30:");
 
+    tabelka4("select id_pracownicy, imie, nazwa_dzial, zarobki from pracownicy, organizacja where dzial=id_org and (dzial=1 or dzial=4)", "Pracownicy z działu 1 i 4:");
+
     tabelka4("select id_pracownicy, imie, nazwa_dzial, zarobki from pracownicy, organizacja where dzial=id_org and imie like '%a'", "Kobiety:");
 
     tabelka4("select id_pracownicy, imie, nazwa_dzial, zarobki from pracownicy, organizacja where dzial=id_org and imie not like '%a'", "Mężczyźni:");
