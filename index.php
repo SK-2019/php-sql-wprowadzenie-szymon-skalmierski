@@ -13,27 +13,7 @@
 		<a  class="nav2" href="pracownicy.php"><b>Pracownicy</b></a>
 	</div>
 <?php
-   
-    echo("<hr>");
-
-
-    function tabelka1($zapytanie, $nazwa, $kolumna, $row1){
-        require("connect.php");
-        $result=$conn->query($zapytanie);
-        echo("<div>$nazwa</div>");
-        echo("<table class='table2'>");
-            echo("<th>$kolumna</th>");
-            echo("<th>Dział</th>");
-                while($row=$result->fetch_assoc()){
-                    echo("<tr>");
-                        echo("<td>".$row[$row1]."</td><td>".$row['nazwa_dzial']."</td>");
-                    echo("</tr>");
-                }
-        echo("</table>");
-        echo("<hr>");
-        }
-
-
+  
     function tabelka4($zapytanie, $nazwa){
         require("connect.php");
         $result=$conn->query($zapytanie);
