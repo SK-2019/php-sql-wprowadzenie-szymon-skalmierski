@@ -57,7 +57,7 @@
 	    echo("<th>Płeć</th>");
                 while($row=$result->fetch_assoc()){
                     echo("<tr>");
-                        echo("<td>".$row[$row1]."</td><td>".$row['plec']."</td>");
+                        echo("<td>".$row[$row1]."</td><td>".$row['imie']."</td>");
                     echo("</tr>");
                 }
         echo("</table>");
