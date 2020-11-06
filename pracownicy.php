@@ -9,6 +9,7 @@
 </body>
 
 	<div class="nav">
+		<a  class="nav1" href="index.php"><b>Strona Główna</b></a>
 		<a  class="nav1" href="funkcjeagr.php"><b>Funkcje Agregujące</b></a>
 		<a  class="nav2" href="pracownicy.php"><b>Pracownicy</b></a>
 	</div>
