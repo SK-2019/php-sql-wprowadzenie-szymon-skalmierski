@@ -1,7 +1,7 @@
 <head>
 	<title>Szymon Skalmierski 2Ti</title>
 	<link rel="icon" href="https://image.flaticon.com/icons/png/512/25/25231.png">
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<h1> Szymon Skalmierski nr26 </h1>
