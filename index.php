@@ -33,6 +33,12 @@
         echo("<hr>");
         }
 
+    tabelka4("select id_pracownicy, imie, nazwa_dzial, zarobki from pracownicy, organizacja where dzial=id_org and dzial=2", "Pracownicy z działu 2:");
+
+    tabelka4("select id_pracownicy, imie, nazwa_dzial, zarobki from pracownicy, organizacja where dzial=id_org and (dzial=2 or dzial=3)", "Pracownicy z działu 2 i 3:");
+
+    tabelka4("select id_pracownicy, imie, nazwa_dzial, zarobki from pracownicy, organizacja where dzial=id_org and zarobki<30", "Pracownicy z zarobkami mniejszymi niż 30:");
+
     tabelka4("select id_pracownicy, imie, nazwa_dzial, zarobki from pracownicy, organizacja where dzial=id_org and imie like '%a'", "Kobiety:");
 
     tabelka4("select id_pracownicy, imie, nazwa_dzial, zarobki from pracownicy, organizacja where dzial=id_org and imie not like '%a'", "Mężczyźni:");
