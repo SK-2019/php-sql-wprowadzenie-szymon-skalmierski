@@ -32,22 +32,38 @@
         echo("</table>");
         echo("<hr>");
      }
+    
+    function tabelka2($zapytanie, $nazwa, $kolumna, $row1){
+        require("connect.php");
+        $result=$conn->query($zapytanie);
+        echo("<div>$nazwa</div>");
+        echo("<table class='table2'>");
+            echo("<th>$kolumna</th>");
+                while($row=$result->fetch_assoc()){
+                    echo("<tr>");
+                        echo("<td>".$row[$row1]."</td>");
+                    echo("</tr>");
+                }
+        echo("</table>");
+        echo("<hr>");
+     }
 
-    tabelka1("select sum(zarobki) as mysum, nazwa_dzial from pracownicy, organizacja where dzial=id_org", "Suma zarobków wszystkich pracowników:", "Suma", "mysum");
 
-    tabelka1("select sum(zarobki) as mysum, nazwa_dzial from pracownicy, organizacja where dzial=id_org and imie like '%a'", "Suma zarobków wszystkich kobiet:", "Suma", "mysum");
+    tabelka2("select sum(zarobki) as mysum, nazwa_dzial from pracownicy, organizacja where dzial=id_org", "Suma zarobków wszystkich pracowników:", "Suma", "mysum");
+
+    tabelka2("select sum(zarobki) as mysum, nazwa_dzial from pracownicy, organizacja where dzial=id_org and imie like '%a'", "Suma zarobków wszystkich kobiet:", "Suma", "mysum");
 
     tabelka1("select sum(zarobki) as mysum, nazwa_dzial from pracownicy, organizacja where dzial=id_org and (imie not like '%a') and (dzial=2 or dzial=3) group by dzial", "Suma zarobków mężczyzn pracujących w dziale 2 i 3:", "Suma", "mysum");
 
-    tabelka1("select avg(zarobki) as myavg, nazwa_dzial from pracownicy, organizacja where dzial=id_org and imie not like '%a'", "Średnia zarobków wszystkich mężczyzn:", "Średnia", "myavg");
+    tabelka2("select avg(zarobki) as myavg, nazwa_dzial from pracownicy, organizacja where dzial=id_org and imie not like '%a'", "Średnia zarobków wszystkich mężczyzn:", "Średnia", "myavg");
 
     tabelka1("select avg(zarobki) as myavg, nazwa_dzial from pracownicy, organizacja where dzial=id_org and dzial=4 group by dzial", "Średnia zarobków pracowników z działu 4:", "Średnia", "myavg");
 
     tabelka1("select avg(zarobki) as myavg, nazwa_dzial from pracownicy, organizacja where dzial=id_org and (imie not like '%a') and (dzial=1 or dzial=2) group by dzial", "Średnia zarobków mężczyzn z działu 1 i 2:", "Średnia", "myavg");
 
-    tabelka1("select count(imie) as mycount, nazwa_dzial from pracownicy, organizacja where dzial=id_org", "Ilu jest wszystkich pracowników:", "Liczba", "mycount");
+    tabelka2("select count(imie) as mycount, nazwa_dzial from pracownicy, organizacja where dzial=id_org", "Ilu jest wszystkich pracowników:", "Liczba", "mycount");
 
-    tabelka1("select count(imie) as mycount, nazwa_dzial from pracownicy, organizacja where dzial=id_org and imie like '%a' and (dzial=1 or dzial=2)", "Ile kobiet pracuje łącznie w działach 1 i 3:", "Liczba", "mycount");
+    tabelka2("select count(imie) as mycount, nazwa_dzial from pracownicy, organizacja where dzial=id_org and imie like '%a' and (dzial=1 or dzial=2)", "Ile kobiet pracuje łącznie w działach 1 i 3:", "Liczba", "mycount");
 
 
     tabelka1("select sum(zarobki) as mysum, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by dzial", "Suma zarobków w poszczególnych działach:", "Suma", "mysum");
