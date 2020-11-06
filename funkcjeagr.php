@@ -48,6 +48,21 @@
         echo("<hr>");
      }
 
+    function tabelka3($zapytanie, $nazwa, $kolumna, $row1){
+        require("connect.php");
+        $result=$conn->query($zapytanie);
+        echo("<div>$nazwa</div>");
+        echo("<table class='table2'>");
+            echo("<th>$kolumna</th>");
+                while($row=$result->fetch_assoc()){
+                    echo("<tr>");
+                        echo("<td>".$row[$row1]."</td><td>".$row['dzial']."</td>");
+                    echo("</tr>");
+                }
+        echo("</table>");
+        echo("<hr>");
+     }
+
 
     tabelka2("select sum(zarobki) as mysum from pracownicy", "Suma zarobków wszystkich pracowników:", "Suma", "mysum");
 
@@ -74,9 +89,9 @@
 
     tabelka1("select sum(zarobki) as mysum from pracownicy group by (imie like '%a')", "Suma zarobków kobiet i mężczyzn:", "Suma", "mysum");
 
-    tabelka1("select avg(zarobki) as myavg, imie IF(imie like '%a', imie='Kobiety', imie='Mężczyźni'); from pracownicy group by (imie like '%a')", "Średnia zarobków kobiet i mężczyzn:", "Średnia", "myavg");
+    tabelka3("select avg(zarobki) as myavg, dzial IF(imie like '%a', dzial='Kobiety', dzial='Mężczyźni'); from pracownicy group by (imie like '%a')", "Średnia zarobków kobiet i mężczyzn:", "Średnia", "myavg");
 
-    tabelka1("select sum(zarobki) as mysum, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by dzial having mysum<28", "Suma zarobków w poszczególnych działach mniejsza od 28:", "Suma", "mysum");
+    tabelka3("select sum(zarobki) as mysum, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by dzial having mysum<28", "Suma zarobków w poszczególnych działach mniejsza od 28:", "Suma", "mysum");
     
     tabelka1("select avg(zarobki) as myavg, nazwa_dzial from pracownicy, organizacja where dzial=id_org and (imie not like '%a') group by dzial having myavg>30", "Średnie zarobków mężczyzn w poszczególnych działach większe od 30:", "Średnia", "myavg");
 
