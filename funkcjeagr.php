@@ -72,9 +72,9 @@
 
     tabelka1("select avg(zarobki) as myavg, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by dzial", "Średnie zarobków w poszczególnych działach:", "Średnia", "myavg");
 
-    tabelka1("select sum(zarobki) as mysum, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by imie like '%a' as Kobiety", "Suma zarobków kobiet i mężczyzn:", "Suma", "mysum");
+    tabelka1("select sum(zarobki) as mysum from pracownicy group by (imie like '%a')", "Suma zarobków kobiet i mężczyzn:", "Suma", "mysum");
 
-    tabelka1("select avg(zarobki) as myavg, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by imie like '%a' as Kobiety", "Średnia zarobków kobiet i mężczyzn:", "Średnia", "myavg");
+    tabelka1("select avg(zarobki) as myavg, imie IF(imie like '%a', imie='Kobiety', imie='Mężczyźni'); from pracownicy group by (imie like '%a')", "Średnia zarobków kobiet i mężczyzn:", "Średnia", "myavg");
 
     tabelka1("select sum(zarobki) as mysum, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by dzial having mysum<28", "Suma zarobków w poszczególnych działach mniejsza od 28:", "Suma", "mysum");
     
