@@ -20,18 +20,17 @@
   function tabelka1($zapytanie, $nazwa){
         require("connect.php");
         $result=$conn->query($zapytanie);
-        echo("<div>ID</div>");
-	echo("<div>Imie</div>");
-	echo("<div>Dział</div>");
-	echo("<div>Zarobki</div>");
-	echo("<div>Wiek</div>");
+        echo("<div>$zapytanie</div>");
         echo("<table class='table2'>");
-            echo("<th>$kolumna</th>");
+            echo("<th>ID</th>");
+	    echo("<th>Imie</th>");
+	    echo("<th>Dział</th>");
+	    echo("<th>Zarobki</th>");
+	    echo("<th>Wiek</th>");
                 while($row=$result->fetch_assoc()){
                     echo("<tr>");
                         echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['nazwa_dzial']."</td><td>".$row['zarobki']."</td><td>".$row['wiek']."</td>");
                     echo("</tr>");
-                }
 		}
         echo("</table>");
         echo("<hr>");
