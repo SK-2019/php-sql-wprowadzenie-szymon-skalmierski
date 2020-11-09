@@ -20,7 +20,7 @@
   function tabelka1($zapytanie, $nazwa){
         require("connect.php");
         $result=$conn->query($zapytanie);
-        echo("<div>$zapytanie</div>");
+        echo("<div>$nazwa</div>");
         echo("<table class='table2'>");
             echo("<th>ID</th>");
 	    echo("<th>Imie</th>");
