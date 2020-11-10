@@ -16,6 +16,20 @@
 	</div>
 	<hr>
 <?php
+    function tabelka2($zapytanie, $nazwa, $kolumna, $row1){
+        require("connect.php");
+        $result=$conn->query($zapytanie);
+        echo("<div>$nazwa</div>");
+        echo("<table class='table2'>");
+            echo("<th>$kolumna</th>");
+                while($row=$result->fetch_assoc()){
+                    echo("<tr>");
+                        echo("<td>".$row[$row1]."</td>");
+                    echo("</tr>");
+		}
+        echo("</table>");
+        echo("<hr>");
+    }
 
   function tabelka1($zapytanie, $nazwa){
         require("connect.php");
@@ -35,5 +49,7 @@
         echo("</table>");
         echo("<hr>");
      }
-	tabelka1("select id_pracownicy, imie, nazwa_dzial, zarobki, year(curdate())-year(data_urodzenia) as wiek from pracownicy,organizacja where id_org=dzial", "Pracownicy + wiek:");
+	tabelka1("select id_pracownicy, imie, nazwa_dzial, zarobki, year(curdate())-year(data_urodzenia) as wiek from pracownicy, organizacja where id_org=dzial", "Pracownicy + wiek:");
+
+	tabelka2("select sum(year(curdate()) - year(data_urodzenia)) as suma from pracownicy, organizacja where id_org=dzial", "Pracownicy + wiek:", "Suma", "suma");
 ?>
