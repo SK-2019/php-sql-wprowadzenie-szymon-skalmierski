@@ -5,7 +5,7 @@
 </head>
 <body>
 	<h1> Szymon Skalmierski nr26 </h1>
-	
+	<hr>
 </body>
 
 	<div class="nav">
