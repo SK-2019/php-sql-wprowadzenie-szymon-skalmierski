@@ -5,7 +5,6 @@
 </head>
 <body>
 	<h1> Szymon Skalmierski nr26 </h1>
-	<hr>
 </body>
 
 	<div class="nav">
@@ -15,7 +14,7 @@
 		<a  class="nav1" href="pracownicy.php"><b>Pracownicy</b></a>
 		<a  class="nav1" href="data.php"><b>Data</b></a>
 	</div>
-
+	<hr>
 <?php
 
   function tabelka1($zapytanie, $nazwa){
