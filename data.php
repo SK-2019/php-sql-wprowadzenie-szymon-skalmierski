@@ -51,5 +51,5 @@
      }
 	tabelka1("select id_pracownicy, imie, nazwa_dzial, zarobki, year(curdate())-year(data_urodzenia) as wiek from pracownicy, organizacja where id_org=dzial", "Pracownicy + wiek:");
 
-	tabelka2("select sum(year(curdate()) - year(data_urodzenia)) as suma from pracownicy, organizacja where id_org=dzial", "Pracownicy + wiek:", "Suma", "suma");
+	tabelka2("select sum(year(curdate()) - year(data_urodzenia)) as suma from pracownicy, organizacja where id_org=dzial", "Suma lat wszystkich pracowników:", "Suma", "suma");
 ?>
