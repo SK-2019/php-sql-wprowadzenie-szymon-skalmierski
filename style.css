@@ -25,7 +25,7 @@ h1 {
   text-decoration: none;
   display: inline-block;
   font-size: 20px;
-  margin-left: 30px;
+  margin-right: 10px;
 }
 .link:hover {
     background-color: #4CAF50;
