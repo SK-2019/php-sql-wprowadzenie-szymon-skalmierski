@@ -1,6 +1,12 @@
 body {
   background-color: #cccccc
 }
+.zapytanie{
+  font-family:helvetica;
+  font-size:15px;  
+  margin-bottom:5px;
+  margin-top:8px;
+}
 div {
   font-family:helvetica; 
   font-size:25px; 
