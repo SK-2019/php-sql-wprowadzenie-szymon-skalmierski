@@ -58,4 +58,5 @@
 	tabelka2("select sum(year(curdate()) - year(data_urodzenia)) as suma from pracownicy where imie like '%a'", "Suma lat kobiet:", "Suma", "suma");
 
 	tabelka2("select sum(year(curdate()) - year(data_urodzenia)) as suma from pracownicy where imie not like '%a'", "Suma lat mężczyzn:", "Suma", "suma");
+
 ?>
