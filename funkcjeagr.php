@@ -21,7 +21,7 @@
     function tabelka1($zapytanie, $nazwa, $kolumna, $row1){
         require("connect.php");
         $result=$conn->query($zapytanie);
-        echo("<div>$nazwa</div>");
+        echo("<div>$nazwa ($zapytanie)</div>");
         echo("<table class='table2'>");
             echo("<th>$kolumna</th>");
             echo("<th>Dział</th>");
@@ -37,7 +37,7 @@
     function tabelka2($zapytanie, $nazwa, $kolumna, $row1){
         require("connect.php");
         $result=$conn->query($zapytanie);
-        echo("<div>$nazwa</div>");
+        echo("<div>$nazwa ($zapytanie)</div>");
         echo("<table class='table2'>");
             echo("<th>$kolumna</th>");
                 while($row=$result->fetch_assoc()){
@@ -52,7 +52,7 @@
     function tabelka3($zapytanie, $nazwa, $kolumna, $row1){
         require("connect.php");
         $result=$conn->query($zapytanie);
-        echo("<div>$nazwa</div>");
+        echo("<div>$nazwa ($zapytanie)</div>");
         echo("<table class='table2'>");
             echo("<th>$kolumna</th>");
 	    echo("<th>Płeć</th>");
