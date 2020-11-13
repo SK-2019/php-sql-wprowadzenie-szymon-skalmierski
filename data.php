@@ -35,7 +35,8 @@
   function tabelka1($zapytanie, $nazwa){
         require("connect.php");
         $result=$conn->query($zapytanie);
-        echo("<div>$nazwa ($zapytanie)</div>");
+        echo("<div>$nazwa</div>");
+	    echo("<div class='zapytanie'>($zapytanie)</div>");
         echo("<table class='table2'>");
             echo("<th>ID</th>");
 	    echo("<th>Imie</th>");
