@@ -37,7 +37,7 @@
         $result=$conn->query($zapytanie);
         echo("<div>$nazwa</div>");
 	    echo("<div class='zapytanie'>($zapytanie)</div>");
-        echo("<table class='tabledate'>");
+        echo("<table class='table1'>");
             echo("<th>ID</th>");
 	    echo("<th>Imie</th>");
 	    echo("<th>Dział</th>");
