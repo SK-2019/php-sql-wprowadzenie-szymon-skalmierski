@@ -99,7 +99,7 @@ tr:nth-child(even) {
 tr:hover {
   background-color: #ffffcc;
 }
-th {
+.thmore {
   padding-top: 12px;
   padding-bottom: 8px;
   padding-right: 18px;
