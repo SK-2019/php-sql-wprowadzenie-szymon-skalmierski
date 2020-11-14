@@ -15,7 +15,7 @@
         }, 1000);
     </script>
 
-	<h1> Szymon Skalmierski nr26 </h1>
+	<h1>Szymon Skalmierski nr26</h1>
 </body>
 
 	<div class="nav">
