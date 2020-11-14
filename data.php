@@ -59,6 +59,6 @@
 
 	tabelka2("select sum(year(curdate()) - year(data_urodzenia)) as suma from pracownicy where imie not like '%a'", "Suma lat mężczyzn:", "Suma", "suma");
 
-	tabelka2("select id_pracownicy, imie, nazwa_dzial, zarobki, date_format(data_urodzenia,'%W-%m-%Y') as wiek from pracownicy, organizacja where id_org=dzial", "Wyświetlanie nazwy dni w dacie urodzenia:", "Data urodzenia");
+	tabelka1("select id_pracownicy, imie, nazwa_dzial, zarobki, date_format(data_urodzenia,'%W-%m-%Y') as wiek from pracownicy, organizacja where id_org=dzial", "Wyświetlanie nazwy dni w dacie urodzenia:", "Data urodzenia");
 
 ?>
