@@ -32,7 +32,7 @@
         echo("<hr>");
     }
 
-  function tabelka1($zapytanie, $nazwa){
+  function tabelka1($zapytanie, $nazwa, $kolumna){
         require("connect.php");
         $result=$conn->query($zapytanie);
         echo("<div>$nazwa</div>");
@@ -42,7 +42,7 @@
 	    echo("<th>Imie</th>");
 	    echo("<th>Dział</th>");
 	    echo("<th>Zarobki</th>");
-	    echo("<th>Wiek</th>");
+	    echo("<th>$kolumna</th>");
                 while($row=$result->fetch_assoc()){
                     echo("<tr>");
                         echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['nazwa_dzial']."</td><td>".$row['zarobki']."</td><td>".$row['wiek']."</td>");
@@ -51,12 +51,14 @@
         echo("</table>");
         echo("<hr>");
      }
-	tabelka1("select id_pracownicy, imie, nazwa_dzial, zarobki, year(curdate())-year(data_urodzenia) as wiek from pracownicy, organizacja where id_org=dzial", "Pracownicy + wiek:");
+	tabelka1("select id_pracownicy, imie, nazwa_dzial, zarobki, year(curdate())-year(data_urodzenia) as wiek from pracownicy, organizacja where id_org=dzial", "Pracownicy + wiek:", "Wiek");
 
 	tabelka2("select sum(year(curdate()) - year(data_urodzenia)) as suma from pracownicy", "Suma lat wszystkich pracowników:", "Suma", "suma");
 
 	tabelka2("select sum(year(curdate()) - year(data_urodzenia)) as suma from pracownicy where imie like '%a'", "Suma lat kobiet:", "Suma", "suma");
 
 	tabelka2("select sum(year(curdate()) - year(data_urodzenia)) as suma from pracownicy where imie not like '%a'", "Suma lat mężczyzn:", "Suma", "suma");
+
+	tabelka2("select id_pracownicy, imie, nazwa_dzial, zarobki, date_format(data_urodzenia,'%W-%m-%Y') as wiek from pracownicy, organizacja where id_org=dzial", "Wyświetlanie nazwy dni w dacie urodzenia:", "Data urodzenia");
 
 ?>
