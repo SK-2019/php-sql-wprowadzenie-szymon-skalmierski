@@ -54,9 +54,9 @@
 
         require("connect.php");
         $result=$conn->query($sql);
-	$sql = 'select id_pracownicy, imie, nazwa_dzial, zarobki, year(curdate())-year(data_urodzenia) as wiek from pracownicy, organizacja where id_org=dzial'
+	$sql='select id_pracownicy, imie, nazwa_dzial, zarobki, year(curdate())-year(data_urodzenia) as wiek from pracownicy, organizacja where id_org=dzial'
         echo("<div>Pracownicy + wiek:</div>");
-	    echo("<div class='zapytanie'>$sql</div>");
+	    echo("<div class='zapytanie'>.$sql</div>");
         echo("<table class='table1'>");
             echo("<th>ID</th>");
 	    echo("<th>Imie</th>");
