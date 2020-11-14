@@ -4,6 +4,17 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="czas"></div>
+    <script>
+        function getTime(){
+        return (new Date()).toLocaleTimeString();
+        }
+        document.getElementById('czas').innerHTML = getTime();
+        setInterval(function(){
+        document.getElementById('czas').innerHTML = getTime();
+        }, 1000);
+    </script>
+
 	<h1> Szymon Skalmierski nr26 </h1>
 </body>
 
