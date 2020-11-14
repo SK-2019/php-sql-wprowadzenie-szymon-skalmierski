@@ -52,6 +52,15 @@
         echo("<hr>");
      }
 
+	tabelka2("select sum(year(curdate()) - year(data_urodzenia)) as suma from pracownicy", "Suma lat wszystkich pracowników:", "Suma", "suma");
+
+	tabelka2("select sum(year(curdate()) - year(data_urodzenia)) as suma from pracownicy where imie like '%a'", "Suma lat kobiet:", "Suma", "suma");
+
+	tabelka2("select sum(year(curdate()) - year(data_urodzenia)) as suma from pracownicy where imie not like '%a'", "Suma lat mężczyzn:", "Suma", "suma");
+
+	tabelka1("select id_pracownicy, imie, nazwa_dzial, zarobki, date_format(data_urodzenia,'%W-%m-%Y') as wiek from pracownicy, organizacja where id_org=dzial", "Wyświetlanie nazwy dni w dacie urodzenia:", "Data urodzenia");
+?>
+<?php
         require("connect.php");
         $result=$conn->query($sql);
 	$sql="select id_pracownicy, imie, nazwa_dzial, zarobki, year(curdate())-year(data_urodzenia) as wiek from pracownicy, organizacja where id_org=dzial"
@@ -70,13 +79,5 @@
 		}
         echo("</table>");
         echo("<hr>");
-
-	tabelka2("select sum(year(curdate()) - year(data_urodzenia)) as suma from pracownicy", "Suma lat wszystkich pracowników:", "Suma", "suma");
-
-	tabelka2("select sum(year(curdate()) - year(data_urodzenia)) as suma from pracownicy where imie like '%a'", "Suma lat kobiet:", "Suma", "suma");
-
-	tabelka2("select sum(year(curdate()) - year(data_urodzenia)) as suma from pracownicy where imie not like '%a'", "Suma lat mężczyzn:", "Suma", "suma");
-
-	tabelka1("select id_pracownicy, imie, nazwa_dzial, zarobki, date_format(data_urodzenia,'%W-%m-%Y') as wiek from pracownicy, organizacja where id_org=dzial", "Wyświetlanie nazwy dni w dacie urodzenia:", "Data urodzenia");
 
 ?>
