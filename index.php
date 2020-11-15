@@ -4,6 +4,7 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <div id="czas"></div>
     <script>
         function getTime(){
@@ -16,6 +17,7 @@
     </script>
 
 	<h1> Szymon Skalmierski nr26 </h1>
+    
 </body>
 
 	<div class="nav">
