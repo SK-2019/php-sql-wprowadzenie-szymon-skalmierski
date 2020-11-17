@@ -16,10 +16,10 @@
     </script>
 
 	<h1>Szymon Skalmierski nr26</h1>
-    <form>
-		<input type="text" name="firstname"></br>
-		<input type="submit" value="Submit">
-	</form>
+    <form action="strona.php" method="POST">
+     <input type="text" name="imie"></br>
+     <input type="submit" value="wyślij do strona.php">
+    </form>
 </body>
 
 	<div class="nav">
