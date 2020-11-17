@@ -3,10 +3,10 @@
 echo("jesteś na strona.php");
 echo("</br>");
 
-echo("<h2>Imie: ".$_POST['imie']."</h2>");
+echo("<p>Imie: ".$_POST['imie']);
 echo("<br>");
-echo("<h2>Nazwisko: ".$_POST['nazwisko']."</h2>");
+echo("<p>Nazwisko: ".$_POST['nazwisko']);
 echo("<br>");
-echo("<h2>Klasa: ".$_POST['klasa']."</h2>");
+echo("<p>Klasa: ".$_POST['klasa']);
 
 ?>
