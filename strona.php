@@ -3,10 +3,8 @@
 echo("jesteś na strona.php");
 echo("</br>");
 
-echo($_POST["imie"]);
-echo("</br>");
-echo($_POST["nazwisko"]);
-echo("</br>");
-echo($_POST["klasa"]);
+echo('<h2>'$_POST["imie"]'</h2>');
+echo('<h2>'$_POST["nazwisko"]'</h2>');
+echo('<h2>'$_POST["klasa"]'</h2>');
 
 ?>
