@@ -17,6 +17,10 @@
     </script>
 
 	<h1>Szymon Skalmierski nr26</h1>
+    <form>
+		<input type="text" name="firstname">
+		<input type="submit" value="Submit">
+	</form>
     
 </body>
 
