@@ -1,20 +1,22 @@
 <html>
 <head>
     <meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
 <body>
-
-<form action="strona.php" method="POST">
-    Imie: <input type="text" name="imie"></br>
-    Nazwisko: <input type="text" name="nazwisko"></br>
-    Klasa: <select id="klasa" name="klasa"></br>
-            <option value="1ti">1Ti</option>
-            <option value="2ti">2Ti</option>
-            <option value="3ti">3Ti</option>
-            <option value="4ti">4Ti</option>
-           </select></br>
-    <input type="submit" value="Wyślij">
-</form>
-
+	<form class="formularz1" action="strona.php" method="POST">
+	<ul>
+	<li>
+		<input type="text" name="imie" class="field-style field-split align-left" placeholder="Imię" />
+		<input type="text" name="nazwisko" class="field-style field-split align-right" placeholder="Nazwisko" />
+	</li>
+	<li>
+	<input type="text" name="klasa" class="field-style field-full align-none" placeholder="Klasa" />
+	</li>
+	<li>
+	<input type="submit" value="Wyślij" />
+	</li>
+	</ul>
+	</form>
 </body>
 </head>
 </html>
