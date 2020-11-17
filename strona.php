@@ -8,5 +8,6 @@ echo("<br>");
 echo("<p>Nazwisko: ".$_POST['nazwisko']);
 echo("<br>");
 echo("<p>Klasa: ".$_POST['klasa']);
+echo("<br>");
 
 ?>
