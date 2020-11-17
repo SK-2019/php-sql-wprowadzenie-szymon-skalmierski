@@ -17,12 +17,6 @@
     </script>
 
 	<h1>Szymon Skalmierski nr26</h1>
-    <form action="strona.php" method="POST">
-     <input type="text" name="imie"></br>
-     <input type="text" name="nazwisko"></br>
-     <input type="text" name="klasa"></br>
-     <input type="submit" value="Wyślij">
-    </form>
     
 </body>
 
