@@ -66,7 +66,7 @@ body.bodystrona {
 .formularz1 ul li{
 	display: block;
 	margin-bottom: 10px;
-	min-height: 40px;
+	min-height: 43px;
 }
 .formularz1 ul li  .field-style{
 	box-sizing: border-box; 
@@ -80,7 +80,7 @@ body.bodystrona {
 }
 .formularz1 ul li .field-split{
   width: 48%;
-  height: 3.5%;
+  height: 4.5%;
 }
 .formularz1 ul li .field-full{
 	width: 100%;
