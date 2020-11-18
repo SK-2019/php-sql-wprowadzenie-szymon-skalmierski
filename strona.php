@@ -9,15 +9,20 @@
 <?php
 
     echo("<div id='okno1'>");
-        echo("<h2 class='h2strona'>Dodano do bazy danych:");
+        echo("<h2 class='h2strona'>Dodano do bazy:");
         echo("<h3 class='h3strona'>Imię: ".$_POST['imie']."</h3>");
-        echo("<h3 class='h3strona'>Nazwisko: ".$_POST['nazwisko']."</h3>");
-        echo("<h3 class='h3strona'>Klasa: ".$_POST['klasa']."</h3>");
+        echo("<h3 class='h3strona'>Nazwisko: ".$_POST['dzial']."</h3>");
+        echo("<h3 class='h3strona'>Nazwisko: ".$_POST['zarobki']."</h3>");
+        echo("<h3 class='h3strona'>Nazwisko: ".$_POST['data_ur']."</h3>");
     echo("<div>");
 
 	require_once("connect.php");
-	$sql = "INSERT INTO pracownicy(`id_pracownicy`, `imie`, `dzial`, `zarobki`, `data_urodzenia`) VALUES(NULL,'".$_POST['imie']."', NULL, NULL, NULL)";
-	$conn->query($sql);
+	$sql = "INSERT INTO pracownicy(`id_pracownicy`, `imie`, `dzial`, `zarobki`, `data_urodzenia`) VALUES(NULL,'".$_POST['imie']."', '".$_POST['dzial']."', '".$_POST['zarobki']."', '".$_POST['data_ur']."')";
+	if ($conn->query($sql) === TRUE) {
+        echo "New record created successfully";
+      } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+      }
 ?>
 
 </body>
