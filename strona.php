@@ -10,9 +10,9 @@
 
     echo("<div id='okno1'>");
         echo("<h2 class='h2strona'>Dodano do bazy danych:");
-        echo("<h3 class='h3strona'>Imię: ".$_POST['imie']);
-        echo("<h3 class='h3strona'>Nazwisko: ".$_POST['nazwisko']);
-        echo("<h3 class='h3strona'>Klasa: ".$_POST['klasa']);
+        echo("<h3 class='h3strona'>Imię: ".$_POST['imie']."</h3>");
+        echo("<h3 class='h3strona'>Nazwisko: ".$_POST['nazwisko']."</h3>");
+        echo("<h3 class='h3strona'>Klasa: ".$_POST['klasa']."</h3>");
     echo("<div>");
 
 	require_once("connect.php");
