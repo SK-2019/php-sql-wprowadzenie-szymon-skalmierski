@@ -13,15 +13,15 @@ body.bodystrona {
 .precord {
   font-size: 20px;
   line-height: 13px;
-  font-family: Helvetica, sans-serif;
+  font-family: Helvetica;
   font-weight: bold;
-  text-align: center;
-  margin-top: -5px;
+  margin-top: -2px;
+  margin-left: 10px;
 } 
 .h3strona {
  font-size: 30px;
- margin-top: -5px;
- line-height: 13px;
+ margin-top: -2px;
+ line-height: 15px;
  font-family: Helvetica;
  font-weight: bold;
  text-align: left;
@@ -78,7 +78,8 @@ body.bodystrona {
 	border:1px solid #B0CFE0;
 }
 .formularz1 ul li .field-split{
-	width: 48%;
+  width: 48%;
+  height: 50%;
 }
 .formularz1 ul li .field-full{
 	width: 100%;
