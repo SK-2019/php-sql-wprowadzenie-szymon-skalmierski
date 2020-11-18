@@ -44,7 +44,7 @@
 	if ($conn->query($sql) === TRUE) {
         echo("<p class='precord'>  New record created successfully!</p>");
       } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+        echo("<p class='precord'>'Error: ' . $sql . '<br>' . $conn->error</p>");
       }
 ?>
 
