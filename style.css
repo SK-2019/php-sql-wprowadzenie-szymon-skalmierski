@@ -56,7 +56,7 @@ body.bodystrona {
 .formularz1 ul li{
 	display: block;
 	margin-bottom: 10px;
-	min-height: 35px;
+	min-height: 40px;
 }
 .formularz1 ul li  .field-style{
 	box-sizing: border-box; 
@@ -79,10 +79,6 @@ body.bodystrona {
 }
 .formularz1 ul li input.align-right{
 	float:right;
-}
-.formularz1 ul li textarea{
-	width: 100%;
-  height: 100px;
 } 
 .formularz1 ul li input[type="submit"] {
 	box-shadow: inset 0px 1px 0px 0px #3985B1;
