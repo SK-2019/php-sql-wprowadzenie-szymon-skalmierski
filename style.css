@@ -10,9 +10,18 @@ body.bodystrona {
  font-weight: bold;
  text-align: center;
 } 
+.precord {
+  font-size: 20px;
+  line-height: 13px;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin-top: -5px;
+} 
 .h3strona {
  font-size: 30px;
- line-height: 15px;
+ margin-top: -5px;
+ line-height: 13px;
  font-family: Helvetica;
  font-weight: bold;
  text-align: left;
