@@ -14,7 +14,10 @@
         echo("<h3 class='h3strona'>Nazwisko: ".$_POST['nazwisko']);
         echo("<h3 class='h3strona'>Klasa: ".$_POST['klasa']);
     echo("<div>");
-
+    
+	require("connect.php");
+	$sql = "INSERT INTO spaLcr81av(`id_pracownicy`, `imie`) VALUES (NULL,'".$_POST['imie']."')";
+	$conn->query($sql);
 ?>
 
 </body>
