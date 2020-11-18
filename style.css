@@ -69,7 +69,7 @@ body.bodystrona {
 	border:1px solid #B0CFE0;
 }
 .formularz1 ul li .field-split{
-	width: 49%;
+	width: 48%;
 }
 .formularz1 ul li .field-full{
 	width: 100%;
@@ -82,7 +82,7 @@ body.bodystrona {
 }
 .formularz1 ul li textarea{
 	width: 100%;
-	height: 100px;
+  height: 100px;
 } 
 .formularz1 ul li input[type="submit"] {
 	box-shadow: inset 0px 1px 0px 0px #3985B1;
