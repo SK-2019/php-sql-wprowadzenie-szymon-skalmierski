@@ -24,7 +24,7 @@
 	echo('</form>');
 
 	require("connect.php");
-	$sql = "INSERT INTO `pracownicy`(`id_pracownicy`, `imie`) VALUES (NULL,'".$_POST['imie']."')";
+	$sql = "INSERT INTO spaLcr81av(`id_pracownicy`, `imie`) VALUES (NULL,'".$_POST['imie']."')";
 	$conn->query($sql);
 ?>
 </body>
