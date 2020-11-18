@@ -15,8 +15,8 @@
         echo("<h3 class='h3strona'>Klasa: ".$_POST['klasa']);
     echo("<div>");
 
-	require("connect.php");
-	$sql = "INSERT INTO pracownicy(`id_pracownicy`, `imie`) VALUES (NULL,'".$_POST['imie']."')";
+	require_once("connect.php");
+	$sql = "INSERT INTO pracownicy(`id_pracownicy`, `imie`, `dzial`, `zarobki`, `data_urodzenia`) VALUES(NULL,'".$_POST['imie']."', NULL, NULL, NULL)";
 	$conn->query($sql);
 ?>
 
