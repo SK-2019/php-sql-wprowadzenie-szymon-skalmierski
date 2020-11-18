@@ -85,12 +85,13 @@ body.bodystrona {
 .formularz1 ul li .field-full{
 	width: 100%;
 }
-.formularz1 ul li input.align-left{
+.formularz1 ul li input.align-left,
+.formularz1 ul li select.align-left{
 	float:left;
 }
-.formularz1 ul li input.align-right{
+.formularz1 ul li input.align-right,
+.formularz1 ul li select.align-right{
 	float:right;
-
 } 
 .formularz1 ul li input[type="submit"] {
 	box-shadow: inset 0px 1px 0px 0px #3985B1;
