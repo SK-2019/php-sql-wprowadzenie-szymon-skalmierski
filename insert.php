@@ -41,9 +41,9 @@
 
 	require_once("connect.php");
 	$sql = "INSERT INTO pracownicy(`id_pracownicy`, `imie`, `dzial`, `zarobki`, `data_urodzenia`) VALUES(NULL,'".$_POST['imie']."', '".$_POST['dzial']."', '".$_POST['zarobki']."', '".$_POST['data_ur']."')";
-	if ($conn->query($sql) === TRUE) {
+	if ($conn->query($sql) === TRUE){
         echo("<p class='precord'>  New record created successfully!</p>");
-      } else {
+      } else{
         echo("<p class='precord'>'Error: ' . $sql . '<br>' . $conn->error</p>");
       }   
 ?>
