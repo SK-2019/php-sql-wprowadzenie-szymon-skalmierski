@@ -4,10 +4,10 @@
 	<link rel="icon" href="https://image.flaticon.com/icons/png/512/25/25231.png">
 	<link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
-    
 <body class='bodystrona'>
 
     <div id="czas"></div>
+    
         <script>
             function getTime(){
             return (new Date()).toLocaleTimeString();
@@ -32,20 +32,14 @@
         <hr>
 
 <?php
-
     echo("<div id='okno1'>");
-        echo("<h2 class='h2strona'>Usunięto z bazy:");
-        echo("<h3 class='h3strona'>ID: ".$_POST['id']."</h3>");
+        echo("<h2 class='h2strona'>Wynik:");
+        echo("<h3 class='h3strona'>Imię: ".$_POST['imie']."</h3>");
+        echo("<h3 class='h3strona'>Dział: ".$_POST['dzial']."</h3>");
+        echo("<h3 class='h3strona'>Zarobki: ".$_POST['zarobki']."</h3>");
+        echo("<h3 class='h3strona'>Data urodzenia: ".$_POST['data_ur']."</h3>");
     echo("<div>");
-
-	require_once("connect.php");
-	$sql = "DELETE FROM pracownicy WHERE id_pracownicy='".$_POST['id']."'";
-	if ($conn->query($sql) === TRUE) {
-        echo("<p class='precord'>  Record deleted successfully!</p>");
-      } else {
-        echo("<p class='precord'>'Error: ' . $sql . '<br>' . $conn->error</p>");
-      }
-      
+ 
 ?>
 
 </body>
