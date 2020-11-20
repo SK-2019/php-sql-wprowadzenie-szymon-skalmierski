@@ -51,5 +51,5 @@
         echo("<hr>");
         }
 
-    tabelka4("select id_pracownicy, imie, nazwa_dzial, zarobki from pracownicy, organizacja where dzial=id_org", "Wszyscy pracownicy:");
+    tabelka4("select id_pracownicy, imie, nazwa_dzial, zarobki from pracownicy, organizacja where dzial=id_org order by id_pracownicy", "Wszyscy pracownicy:");
 ?>
