@@ -7,6 +7,7 @@
 <body class='bodystrona'>
 
     <div id="czas"></div>
+    
         <script>
             function getTime(){
             return (new Date()).toLocaleTimeString();
