@@ -43,16 +43,13 @@ body.bodystrona {
 }
 
   /* FORMULARZ.HTML */
-input[type='date']:before {
-  content: attr(placeholder)
-}
 .naglowek{
   text-align: center;
   font-size: 30px;
   font-family: helvetica;
   margin-top: -8px;
 }
-.formularz1{
+.formularz1, .formularz2{
 	max-width: 450px;
 	background: #FAFAFA;
 	padding: 30px;
@@ -61,23 +58,23 @@ input[type='date']:before {
 	border-radius: 10px;
 	border: 6px solid #305A72;
 }
-.formularz1 ul{
+.formularz1 ul, .formularz2 ul{
 	padding:0;
 	margin:0;
 	list-style:none;
 }
-.formularz1 ul li{
+.formularz1 ul li, .formularz2 ul li{
 	display: block;
 	margin-bottom: 10px;
 	min-height: 40px;
 }
-.formularz1 ul li  .field-style{
+.formularz1 ul li  .field-style, .formularz2 ul li  .field-style{
 	box-sizing: border-box; 
 	padding: 8px;
 	outline: none;
 	border: 1px solid #B0CFE0;
 }
-.formularz1 ul li  .field-style:focus{
+.formularz1 ul li  .field-style:focus, .formularz2 ul li  .field-style:focus{
 	box-shadow: 0 0 5px #B0CFE0;
 	border:1px solid #B0CFE0;
 }
@@ -85,7 +82,7 @@ input[type='date']:before {
   width: 48%;
   height: 3.5%;
 }
-.formularz1 ul li .field-full{
+.formularz1 ul li .field-full, .formularz1 ul li .field-full{
 	width: 100%;
 }
 .formularz1 ul li input.align-left,
@@ -96,7 +93,7 @@ input[type='date']:before {
 .formularz1 ul li select.align-right{
 	float:right;
 } 
-.formularz1 ul li input[type="submit"] {
+.formularz1 ul li input[type="submit"], .formularz1 ul li input[type="submit"] {
 	box-shadow: inset 0px 1px 0px 0px #3985B1;
 	background-color: #216288;
 	border: 1px solid #17445E;
@@ -107,7 +104,7 @@ input[type='date']:before {
 	text-decoration: none;
 	font: 12px Arial, Helvetica, sans-serif;
 } 
-.formularz1 ul li input[type="submit"]:hover {
+.formularz1 ul li input[type="submit"]:hover, .formularz2 ul li input[type="submit"]:hover {
 	background: linear-gradient(to bottom, #2D77A2 5%, #337DA8 100%);
 	background-color: #28739E;
 }
