@@ -43,6 +43,9 @@ body.bodystrona {
 }
 
   /* FORMULARZ.HTML */
+input[type='date']:after {
+  content: attr(placeholder)
+}
 .naglowek{
   text-align: center;
   font-size: 30px;
