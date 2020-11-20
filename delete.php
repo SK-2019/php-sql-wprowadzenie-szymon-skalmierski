@@ -32,7 +32,7 @@
 <?php
 
     echo("<div id='okno1'>");
-        echo("<h2 class='h2strona'>Dodano do bazy:");
+        echo("<h2 class='h2strona'>Usunięto z bazy:");
         echo("<h3 class='h3strona'>ID: ".$_POST['id']."</h3>");
     echo("<div>");
 
