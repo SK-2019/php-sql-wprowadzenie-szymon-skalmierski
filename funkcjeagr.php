@@ -84,7 +84,6 @@
         echo("<hr>");
      }
 
-
     tabelka2("select sum(zarobki) as mysum from pracownicy", "Suma zarobków wszystkich pracowników:", "Suma", "mysum");
 
     tabelka2("select sum(zarobki) as mysum from pracownicy where imie like '%a'", "Suma zarobków wszystkich kobiet:", "Suma", "mysum");
@@ -100,7 +99,6 @@
     tabelka2("select count(imie) as mycount from pracownicy", "Ilu jest wszystkich pracowników:", "Liczba", "mycount");
 
     tabelka2("select count(imie) as mycount from pracownicy where imie like '%a' and (dzial=1 or dzial=3)", "Ile kobiet pracuje łącznie w działach 1 i 3:", "Liczba", "mycount");
-
 
     tabelka1("select sum(zarobki) as mysum, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by dzial", "Suma zarobków w poszczególnych działach:", "Suma", "mysum");
 
