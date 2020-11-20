@@ -42,6 +42,7 @@ body.bodystrona {
  box-shadow: 2px 2px 2px #000;
 }
 
+
   /* FORMULARZ.HTML */
 .naglowek{
   text-align: center;
@@ -108,6 +109,7 @@ body.bodystrona {
 	background: linear-gradient(to bottom, #2D77A2 5%, #337DA8 100%);
 	background-color: #28739E;
 }
+
 
   /* INDEX.PHP / PRACOWNICY.PHP / FUNKCJEAGR.PHP / DATA.PHP */
 body {
