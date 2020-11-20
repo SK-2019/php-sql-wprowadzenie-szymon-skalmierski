@@ -1,9 +1,11 @@
 <head>
 	<title>Szymon Skalmierski 2Ti</title>
 	<link rel="icon" href="https://image.flaticon.com/icons/png/512/25/25231.png">
-	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
 </head>
 <body>
+
     <div id="czas"></div>
     <script>
         function getTime(){
@@ -15,8 +17,8 @@
         }, 1000);
     </script>
 
-	<h1>Szymon Skalmierski nr26</h1>
-
+    <h1>Szymon Skalmierski nr26</h1>
+    
 </body>
 
 	<div class="nav">

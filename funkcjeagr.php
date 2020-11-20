@@ -1,9 +1,11 @@
 <head>
 	<title>Szymon Skalmierski 2Ti</title>
 	<link rel="icon" href="https://image.flaticon.com/icons/png/512/25/25231.png">
-	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
 </head>
 <body>
+
     <div id="czas"></div>
     <script>
         function getTime(){
@@ -29,6 +31,7 @@
 	</div>
 
 <?php
+
     echo("<hr>");
 
     function tabelka1($zapytanie, $nazwa, $kolumna, $row1){
@@ -109,11 +112,6 @@
     
     tabelka3("select sum(zarobki) as mysum, if(imie like '%a', 'Kobiety', 'Mężczyźni') as plec1 from pracownicy group by plec1", "Suma zarobków kobiet i mężczyzn:", "Suma", "mysum");
 
-    //tabelka1("select sum(zarobki) as mysum, if((imie like '%a', 'Kobiety'), 'Mężczyźni') as plec from pracownicy group by dzial having mysum<28", "Suma zarobków w poszczególnych działach mniejsza od 28:", "Suma", "mysum");
-    
-   // tabelka1("select avg(zarobki) as myavg, nazwa_dzial from pracownicy, organizacja where dzial=id_org and (imie not like '%a') group by dzial having myavg>30", "Średnie zarobków mężczyzn w poszczególnych działach większe od 30:", "Średnia", "myavg");
-
-
     echo("<hr>");
     echo("<hr>");
 
@@ -126,5 +124,4 @@
     tabelka1("select min(zarobki) as mymin, nazwa_dzial from pracownicy, organizacja where dzial=id_org and imie not like '%a' group by dzial", "Minimalne zarobki mężczyzn:", "Min", "mymin");
     
     tabelka1("select sum(zarobki) as mysum, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by dzial", "Suma zarobków:", "Suma", "mysum");
-
 ?>

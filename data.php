@@ -1,9 +1,11 @@
 <head>
 	<title>Szymon Skalmierski 2Ti</title>
 	<link rel="icon" href="https://image.flaticon.com/icons/png/512/25/25231.png">
-	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
 </head>
 <body>
+
     <div id="czas"></div>
     <script>
         function getTime(){
@@ -27,8 +29,10 @@
         <a  class="nav1" href="data.php"><b>Data</b></a>
         <a  class="nav2" href="formularz.html"><b>Formularz</b></a>
 	</div>
-	<hr>
+    <hr>
+    
 <?php
+
     function tabelka2($zapytanie, $nazwa, $kolumna, $row1){
         require("connect.php");
         $result=$conn->query($zapytanie);
@@ -72,8 +76,11 @@
 	tabelka2("select sum(year(curdate()) - year(data_urodzenia)) as suma from pracownicy where imie not like '%a'", "Suma lat mężczyzn:", "Suma", "suma");
 
 	tabelka1("select id_pracownicy, imie, nazwa_dzial, zarobki, date_format(data_urodzenia,'%W-%m-%Y') as wiek from pracownicy, organizacja where id_org=dzial", "Wyświetlanie nazwy dni w dacie urodzenia:", "Data urodzenia");
+
 ?>
+
 <?php
+
         require("connect.php");
 	$sql="select id_pracownicy, imie, nazwa_dzial, zarobki, year(curdate())-year(data_urodzenia) as wiek from pracownicy, organizacja where id_org=dzial";
         $result=$conn->query($sql);

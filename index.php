@@ -1,7 +1,8 @@
 <head>
 	<title>Szymon Skalmierski 2Ti</title>
 	<link rel="icon" href="https://image.flaticon.com/icons/png/512/25/25231.png">
-	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
 </head>
 <body>
 
@@ -27,7 +28,8 @@
 		<a  class="nav1" href="funkcjeagr.php"><b>Funkcje Agregujące</b></a>
         <a  class="nav1" href="data.php"><b>Data</b></a>
         <a  class="nav2" href="formularz.html"><b>Formularz</b></a>
-	</div>
+    </div>
+    
 <?php
     echo("<hr>");
     function tabelka4($zapytanie, $nazwa){
@@ -70,5 +72,4 @@
     tabelka4("select id_pracownicy, imie, nazwa_dzial, zarobki from pracownicy, organizacja where dzial=id_org and (dzial=1 or dzial=3) and imie like '%a' order by zarobki", "Kobiety z działu 1 i 3 posortowane rosnąco po zarobkach:");
 
     tabelka4("select id_pracownicy, imie, nazwa_dzial, zarobki from pracownicy, organizacja where dzial=id_org and imie not like '%a' order by nazwa_dzial asc, zarobki asc", "Mężczyźni posortowani rosnąco: po nazwie działu a następnie po wysokości zarobków:");
-
 ?>

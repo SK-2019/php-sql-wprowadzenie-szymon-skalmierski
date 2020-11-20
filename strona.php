@@ -46,6 +46,7 @@
       } else {
         echo("<p class='precord'>'Error: ' . $sql . '<br>' . $conn->error</p>");
       }
+      
 ?>
 
 </body>
