@@ -30,7 +30,6 @@
         <hr>
 
 <?php
-
     echo("<div id='okno1'>");
         echo("<h2 class='h2strona'>Dodano do bazy:");
         echo("<h3 class='h3strona'>Imię: ".$_POST['imie']."</h3>");
@@ -45,8 +44,7 @@
         echo("<p class='precord'>  New record created successfully!</p>");
       } else {
         echo("<p class='precord'>'Error: ' . $sql . '<br>' . $conn->error</p>");
-      }
-      
+      }   
 ?>
 
 </body>
