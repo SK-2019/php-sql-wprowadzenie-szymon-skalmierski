@@ -43,7 +43,7 @@ body.bodystrona {
 }
 
   /* FORMULARZ.HTML */
-input[type='date']:after {
+input[type='date']:before {
   content: attr(placeholder)
 }
 .naglowek{
