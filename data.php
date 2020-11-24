@@ -1,8 +1,8 @@
 <head>
 	<title>Szymon Skalmierski 2Ti</title>
 	<link rel="icon" href="https://image.flaticon.com/icons/png/512/25/25231.png">
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
 </head>
 <body>
 
