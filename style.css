@@ -240,9 +240,9 @@ table {
 	margin-bottom: -10px;
 	margin-top: 10px;
 	width:72%;
-	box-shadow: inset 0px 1px 0px 0px #c78c1e;
-	background-color: #b98017;
-	border: 1px solid #aa730d;
+	box-shadow: inset 0px 1px 0px 0px #d8971e;
+	background-color: #db930c;
+	border: 1px solid #b97c0a;
 	cursor: pointer;
 	color: #FFFFFF;
 	text-align: center;
@@ -250,8 +250,8 @@ table {
 	font: 12px Arial, Helvetica, sans-serif;
 }
 #delemp1:hover {
-	background: linear-gradient(to bottom, #c78c1e 5%, #c58815 100%);
-	background-color: #ca983c;
+	background: linear-gradient(to bottom, #eba524 5%, #f3ab24 100%);
+	background-color: #e9a424;
 } 
 td {
   padding: 10px; 
