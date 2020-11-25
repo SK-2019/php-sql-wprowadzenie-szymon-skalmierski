@@ -234,23 +234,27 @@ table {
   width: 40%;
   box-shadow: 0px 0px 14px 2px rgba(0,0,0,0.75);
 }
-#delemp1{
-	margin-left: 3px;
-	margin-bottom: -10px;
-	margin-top: 10px;
-	width:72%;
-	box-shadow: 0px 0px 7px 0px #ffef00;
-	background-color: #f1cd00;
-	border: 1px solid #fdc610;
-	cursor: pointer;
-	color: #242424;
-	text-align: center;
-	padding: 8px 13px;
-	font: 13px Helvetica;
+#delemp1 {
+  margin-left: 10px;
+  margin-bottom: -20px;
+  margin-top: 0px;
+  position: relative;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  display: inline-block;
+  background: #ee5522;
+  border-radius: 5px;
+  border: 0px solid #444;
+  padding: 10px 13px 10px 13px;
+  color: #ffff;
+  font-size: 18px;
+  font-family: Helvetica;
+  font-weight: 900;
+  font-style: normal;
 }
 #delemp1:hover {
-	background: linear-gradient(to bottom, #fefe33 5%, #ffef00 100%);
-	background-color: #f9e04b;
+	background: linear-gradient(to bottom, rgb(236, 96, 50) 5%, rgb(241, 101, 54) 100%);
 } 
 td {
   padding: 10px; 
