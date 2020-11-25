@@ -243,10 +243,10 @@ table {
 	background-color: #fde910;
 	border: 1px solid #fde510;
 	cursor: pointer;
-	color: #ffffff;
+	color: #242424;
 	text-align: center;
 	padding: 8px 13px;
-	font: 12px Arial, Helvetica, sans-serif;
+	font: 13px Helvetica;
 }
 #delemp1:hover {
 	background: linear-gradient(to bottom, #fefe33 5%, #ffef00 100%);
