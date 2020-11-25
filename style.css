@@ -240,8 +240,8 @@ table {
 	margin-top: 10px;
 	width:72%;
 	box-shadow: inset 0px 1px 0px 0px #cfc646;
-	background-color: #9c9a28;
-	border: 1px solid #7a791e;
+	background-color: #b98017;
+	border: 1px solid #aa730d;
 	cursor: pointer;
 	color: #FFFFFF;
 	text-align: center;
@@ -249,8 +249,8 @@ table {
 	font: 12px Arial, Helvetica, sans-serif;
 }
 #delemp1:hover {
-	background: linear-gradient(to bottom, #a0a22d 5%, #a2bb32 100%);
-	background-color: #c4c132;
+	background: linear-gradient(to bottom, #c78c1e 5%, #c58815 100%);
+	background-color: #ca983c;
 } 
 td {
   padding: 10px; 
