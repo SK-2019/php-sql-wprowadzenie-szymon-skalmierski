@@ -239,7 +239,7 @@ table {
 	margin-bottom: -10px;
 	margin-top: 10px;
 	width:72%;
-	box-shadow: inset 0px 1px 0px 0px #ffef00;
+	box-shadow: 0px 0px 7px 0px #ffef00;
 	background-color: #f1cd00;
 	border: 1px solid #fdc610;
 	cursor: pointer;
