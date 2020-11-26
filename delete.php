@@ -36,7 +36,6 @@
     echo("<div id='okno1'>");
         echo("<h2 class='h2strona'>Usunięto z bazy:");
         echo("<h3 class='h3strona'>ID: ".$_POST['id']."</h3>");
-    echo("<div>");
 
 	require_once("connect.php");
 	$sql = "DELETE FROM pracownicy WHERE id_pracownicy='".$_POST['id']."'";
@@ -45,7 +44,11 @@
       } else {
         echo("<p class='precord'>'Error: ' . $sql . '<br>' . $conn->error</p>");
       }
-      
+    echo("</div>");  
+	
+	header('Refresh: 5; url=https://git-website-com.herokuapp.com/pracownicy.php');
+	echo("<div class='redeem1'>Zostaniesz przekierowany na stronę pracowników w ciągu 5 sekund!</div>");  
+  
 ?>
 
 </body>
