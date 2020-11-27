@@ -31,6 +31,7 @@
         </div>
         <hr>
 
+
 <?php
     echo("<div id='okno1'>");
     echo("<h2 class='h2strona'>Dodano do bazy:");
