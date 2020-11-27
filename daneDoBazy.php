@@ -68,9 +68,9 @@
 	<br>
 <?php
 	require("connect.php");
+	$sql = "select * from pracownicy, organizacja where dzial=id_org order by id_pracownicy";
         $result=$conn->query($sql);
 		echo("<div>Wszyscy pracownicy:</div>");
-		$sql = "select * from pracownicy, organizacja where dzial=id_org order by id_pracownicy";
         echo("<div class='zapytanie'>($sql)</div>");
         echo("<table class='tabledel'>");
             echo("<th>ID</th>");
