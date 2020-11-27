@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
 <body class='bodystrona'>
 
-    <div id="czas"></div>
+        <div id="czas"></div>
     
         <script>
             function getTime(){
