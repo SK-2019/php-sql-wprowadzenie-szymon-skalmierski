@@ -27,7 +27,7 @@
             <a  class="nav1" href="funkcjeagr.php"><b>Funkcje Agregujące</b></a>
             <a  class="nav1" href="data.php"><b>Data</b></a>
             <a  class="nav2" href="formularz.html"><b>Formularz</b></a>
-		    <a  class="nav2" href="daneDoBazy.html"><b>DaneDoBazy</b></a>
+		    <a  class="nav2" href="daneDoBazy.php"><b>DaneDoBazy</b></a>
         </div>
         <hr>
 
@@ -45,8 +45,9 @@
         echo("<p class='precord'>'Error: ' . $sql . '<br>' . $conn->error</p>");
       }
     echo("</div>");  
-	
-	header('Refresh: 5; url=https://git-website-com.herokuapp.com/pracownicy.php');
+    
+    header("location:https://git-website-com.herokuapp.com/daneDoBazy.html");
+	// header('Refresh: 5; url=https://git-website-com.herokuapp.com/pracownicy.php');
 	echo("<div class='redeem1'>Zostaniesz przekierowany na stronę pracowników w ciągu 5 sekund!</div>");  
   
 ?>
