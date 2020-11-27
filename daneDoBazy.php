@@ -83,8 +83,7 @@
                     echo("<tr>");
                     echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['nazwa_dzial']."</td><td>".$row['zarobki']."</td><td>".$row['data_urodzenia']."</td>");
                     echo("<td><form action='delete.php' method=POST>");
-                    echo("<input type='hidden' name='id' value='".$row['id_pracownicy']."'><input id='delemp1' type='submit' value='X'>");
-                    echo("</form></td>");
+                    echo("<input type='hidden' name='id' value='".$row['id_pracownicy']."'><input id='delemp1' type='submit' value='X'></form></td>");
                     echo("</tr>");
                 }
         echo("</table>");
