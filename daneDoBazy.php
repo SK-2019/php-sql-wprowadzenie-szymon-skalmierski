@@ -58,7 +58,7 @@
         <h2 class="naglowek">Formularz:</h2>
 	<ul>
 	<li>
-		<input type="text" name="id" class="field-style field-full" placeholder="ID" />
+		<input type="text" name="id" class="field-style field-full" placeholder="ID" required />
 	</li>
 	<li>
 	<input type="submit" value="Usuń" />
