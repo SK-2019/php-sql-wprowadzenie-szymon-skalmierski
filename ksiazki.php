@@ -45,13 +45,13 @@
             echo("<th>Tytuł</th>");
                 while($row=$result->fetch_assoc()){
                     echo("<tr>");
-                    echo("<td>".$row['biblAutor.id']."</td><td>".$row['biblAutor.autor']."</td><td>".$row['biblAutor_biblTytul.id']."</td><td>".$row['biblAutor_biblTytul.biblAutor_id']."</td><td>".$row['biblAutor_biblTytul.biblTytul_id']."</td><td>".$row['biblTytul.id']."</td><td>".$row['biblTytul.tytul']."</td>");
+                    echo("<td>".$row['AutorID']."</td><td>".$row['Autor']."</td><td>".$row['Tytul']."</td>");
                     echo("</tr>");
                 }
         echo("</table>");
         echo("<hr>");
     }
 
-    tabelka5("select * from biblTytul, biblAutor, biblAutor_biblTytul where (biblAutor_id=biblAutor.id) and (biblTytul_id=biblTytul.id)", "Książki i ich autorzy:");
+    tabelka5("select bAutor.id as AutorID, bAutor.autor as Autor, bTytul.tytul as Tytul from bTytul, bAutor, bAutor_bTytul where (bAutorID=bAutor.id) and (bTytulID=bTytul.id)", "Książki i ich autorzy:");
 
 ?>
