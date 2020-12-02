@@ -38,7 +38,7 @@
         $result=$conn->query($sql);
         echo("<div>$nazwa</div>");
         echo("<div class='zapytanie'>($sql)</div>");
-        echo("<table class='table2'>");
+        echo("<table class='table1'>");
             echo("<th>ID</th>");
             echo("<th>Autor</th>");
             echo("<th>Tytuł</th>");
