@@ -26,6 +26,7 @@
             <a  class="nav1" href="pracownicy.php"><b>Pracownicy</b></a>
             <a  class="nav1" href="funkcjeagr.php"><b>Funkcje Agregujące</b></a>
             <a  class="nav1" href="data.php"><b>Data</b></a>
+            <a  class="nav1" href="ksiazki.php"><b>Książki</b></a>
             <a  class="nav2" href="formularz.html"><b>Formularz</b></a>
 		    <a  class="nav2" href="daneDoBazy.php"><b>DaneDoBazy</b></a>
         </div>
