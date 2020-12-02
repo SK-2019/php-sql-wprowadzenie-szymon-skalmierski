@@ -41,7 +41,6 @@
         echo("<table class='table2'>");
             echo("<th>ID</th>");
             echo("<th>Autor</th>");
-            echo("<th>ID</th>");
             echo("<th>Tytuł</th>");
                 while($row=$result->fetch_assoc()){
                     echo("<tr>");
