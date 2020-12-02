@@ -40,11 +40,8 @@
         echo("<div class='zapytanie'>($sql)</div>");
         echo("<table class='tabledel'>");
             echo("<th>ID</th>");
-            echo("<th>Imie</th>");
-            echo("<th>Dział</th>");
-            echo("<th>Zarobki</th>");
-            echo("<th>Data Urodzenia</th>");
-            echo("<th>DELETE</th>");
+            echo("<th>Autor</th>");
+            echo("<th>Tytuł</th>");
                 while($row=$result->fetch_assoc()){
                     echo("<tr>");
                     echo("<td>".$row['biblAutor.id']."</td><td>".$row['biblAutor.autor']."</td><td>".$row['biblTytul.tytul']."</td>");
