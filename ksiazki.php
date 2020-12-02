@@ -38,19 +38,20 @@
         $result=$conn->query($sql);
         echo("<div>$nazwa</div>");
         echo("<div class='zapytanie'>($sql)</div>");
-        echo("<table class='tabledel'>");
+        echo("<table class='table2'>");
             echo("<th>ID</th>");
             echo("<th>Autor</th>");
+            echo("<th>ID</th>");
             echo("<th>Tytuł</th>");
                 while($row=$result->fetch_assoc()){
                     echo("<tr>");
-                    echo("<td>".$row['biblAutor.id']."</td><td>".$row['biblAutor.autor']."</td><td>".$row['biblTytul.tytul']."</td>");
+                    echo("<td>".$row['biblAutor.id']."</td><td>".$row['biblAutor.autor']."</td><td>".$row['biblTytul.id']."</td><td>".$row['biblTytul.tytul']."</td>");
                     echo("</tr>");
                 }
         echo("</table>");
         echo("<hr>");
     }
 
-    tabelka("select * from biblTytul,biblAutor,biblAutor_biblTytul where biblAutor_id=biblAutor.id and biblTytul_id=biblTytul.id", "Książki i ich autorzy:");
+    tabelka("select * from biblTytul, biblAutor, biblAutor_biblTytul where biblAutor_id=biblAutor.id and biblTytul_id=biblTytul.id", "Książki i ich autorzy:");
 
 ?>
