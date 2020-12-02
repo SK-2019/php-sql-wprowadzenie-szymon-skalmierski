@@ -33,7 +33,7 @@
     
 <?php
     echo("<hr>");
-    function tabelka($sql, $nazwa){
+    function tabelka5($sql, $nazwa){
         require("connect.php");
         $result=$conn->query($sql);
         echo("<div>$nazwa</div>");
@@ -52,6 +52,6 @@
         echo("<hr>");
     }
 
-    tabelka("select * from biblTytul, biblAutor, biblAutor_biblTytul where biblAutor_id=biblAutor.id and biblTytul_id=biblTytul.id", "Książki i ich autorzy:");
+    tabelka5("select * from biblTytul, biblAutor, biblAutor_biblTytul where (biblAutor_id=biblAutor.id) and (biblTytul_id=biblTytul.id)", "Książki i ich autorzy:");
 
 ?>
