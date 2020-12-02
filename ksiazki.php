@@ -54,6 +54,6 @@
         echo("<hr>");
     }
 
-    tabelka("select * from biblTytul where biblAutor_id=bibleTytul_id", "Książki:");
+    tabelka("select * from biblTytul,biblAutor,biblAutor_biblTytul where biblAutor_id=bibleTytul_id", "Książki:");
 
 ?>
