@@ -45,7 +45,7 @@
             echo("<th>Tytuł</th>");
                 while($row=$result->fetch_assoc()){
                     echo("<tr>");
-                    echo("<td>".$row['biblAutor.id']."</td><td>".$row['biblAutor.autor']."</td><td>".$row['biblTytul.id']."</td><td>".$row['biblTytul.tytul']."</td>");
+                    echo("<td>".$row['biblAutor.id']."</td><td>".$row['biblAutor.autor']."</td><td>".$row['biblAutor_biblTytul.id']."</td><td>".$row['biblAutor_biblTytul.biblAutor_id']."</td><td>".$row['biblAutor_biblTytul.biblTytul_id']."</td><td>".$row['biblTytul.id']."</td><td>".$row['biblTytul.tytul']."</td>");
                     echo("</tr>");
                 }
         echo("</table>");
