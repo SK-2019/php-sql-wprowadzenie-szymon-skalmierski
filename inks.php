@@ -34,11 +34,10 @@
 
 <?php
     echo("<h2 class='h2strona'>Dodano do bazy:");
-    echo("<h3 class='h3strona'>Autor: ".$_POST['autor']."</h3>");
-    echo("<h3 class='h3strona'>Tytuł: ".$_POST['tytul']."</h3>");
 
     require("connect.php");
         $sql = "INSERT INTO bAutor(id, autor) VALUES(NULL, '".$_POST['autor']."')";
+        echo("<h3 class='h3strona'>Autor: ".$_POST['autor']."</h3>");
         if ($conn->query($sql) === TRUE){
             echo("<p class='precord'>  New record created successfully!</p>");
         } else{
@@ -46,6 +45,7 @@
         }
 
         $sql = "INSERT INTO bTytul(id, tytul) VALUES(NULL, '".$_POST['tytul']."')";
+        echo("<h3 class='h3strona'>Tytuł: ".$_POST['tytul']."</h3>");
         if ($conn->query($sql) === TRUE){
             echo("<p class='precord'>  New record created successfully!</p>");
         } else{
