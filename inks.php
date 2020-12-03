@@ -39,17 +39,17 @@
         $sql = "INSERT INTO bAutor(id, autor) VALUES(NULL, '".$_POST['autor']."')";
         echo("<h3 class='h3strona'>Autor: ".$_POST['autor']."</h3>");
         if ($conn->query($sql) === TRUE){
-            echo("<p class='precord'>  New record created successfully!</p>");
+            echo("<p class='precord'> Nowy autor został dodany pomyślnie!</p>");
         } else{
-            echo("<p class='precord1'>'Error: ' . $sql . '<br>' . $conn->error</p>");
+            echo("<p class='precord1'> Ten autor istnieje już w bazie danych!</p>");
         }
 
         $sql = "INSERT INTO bTytul(id, tytul) VALUES(NULL, '".$_POST['tytul']."')";
         echo("<h3 class='h3strona'>Tytuł: ".$_POST['tytul']."</h3>");
         if ($conn->query($sql) === TRUE){
-            echo("<p class='precord'>  New record created successfully!</p>");
+            echo("<p class='precord'> Nowy tytuł został dodany pomyślnie!</p>");
         } else{
-            echo("<p class='precord1'>'Error: ' . $sql . '<br>' . $conn->error</p>");
+            echo("<p class='precord1'> Ten tytuł istnieje już w bazie danych!</p>");
         }
 
         echo("<form action='inks1.php' method=POST>");
