@@ -17,6 +17,7 @@
     </script>
 
 	<h1>Szymon Skalmierski nr26</h1>
+
     
 </body>
 
@@ -30,6 +31,21 @@
 		<a  class="nav2" href="formularz.html"><b>Formularz</b></a>
 		<a  class="nav2" href="daneDoBazy.php"><b>DaneDoBazy</b></a>
     </div>
+    
+	<form class="formularz1" action="inks.php" method="POST">
+        <h2 class="naglowek">Formularz książki:</h2>
+	<ul>
+	<li>
+		<input type="text" name="autor" class="field-style field-split align-left" placeholder="Autor" />
+	</li>
+	<li>
+		<input type="text" name="tytul" class="field-style field-split align-left" placeholder="Tytuł" />
+	</li>
+	<li>
+	<input type="submit" value="Dodaj" />
+	</li>
+	</ul>
+	</form>
     
 <?php
     echo("<hr>");
@@ -51,6 +67,6 @@
         echo("<hr>");
     }
 
-    tabelka5("select bAutor.id as AutorID, bAutor.autor as Autor, bTytul.tytul as Tytul from bTytul, bAutor, bAutor_bTytul where (bAutorID=bAutor.id) and (bTytulID=bTytul.id)", "Książki i ich autorzy:");
+    tabelka5("select bAutor.id as AutorID, bAutor.autor as Autor, bTytul.tytul as Tytul from bTytul, bAutor, bAutor_bTytul where (bAutorID=bAutor.id) and (bTytulID=bTytul.id) order by AutorID", "Książki i ich autorzy:");
 
 ?>

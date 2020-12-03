@@ -19,6 +19,14 @@ body.bodystrona {
   margin-top: 4px;
   text-align: center;
 }
+.precord1 {
+  font-size: 20px;
+  line-height: 22px;
+  font-family: Helvetica;
+  font-weight: bold;
+  margin-top: 4px;
+  text-align: center;
+}
 .redeem1 {
   font-size: 25px;
   margin-top: 5px;
@@ -295,6 +303,29 @@ table {
   font-style: normal;
 }
 #delemp1:hover {
+	background: linear-gradient(to bottom, rgb(236, 96, 50) 5%, rgb(241, 101, 54) 100%);
+}
+.submit2 {
+  text-align: center;
+}
+#delemp2 {
+  margin-left: 10px;
+  margin-top: 0px;
+  position: relative;
+  width: 40%;
+  height: 110px;
+  cursor: pointer;
+  display: inline-block;
+  background: #ee5522;
+  border-radius: 10px;
+  border: 0px solid #444;
+  padding: 12px 18px 15px 18px;
+  color: #ffff;
+  font-size: 55px;
+  font-family: Helvetica;
+  font-weight: 900;
+}
+#delemp2:hover {
 	background: linear-gradient(to bottom, rgb(236, 96, 50) 5%, rgb(241, 101, 54) 100%);
 } 
 td {
