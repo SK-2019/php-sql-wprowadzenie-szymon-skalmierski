@@ -67,6 +67,6 @@
         echo("<hr>");
     }
 
-    tabelka5("select bAutor.id as AutorID, bAutor.autor as Autor, bTytul.tytul as Tytul from bTytul, bAutor, bAutor_bTytul where (bAutorID=bAutor.id) and (bTytulID=bTytul.id) order by AutorID", "Książki i ich autorzy:");
+    tabelka5("select bAutor.id as AutorID, bAutor.autor as Autor, bTytul.tytul as Tytul from bAutor, bTytul, bAutor_bTytul where (bAutorID=bAutor.id) and (bTytulID=bTytul.id) order by AutorID", "Książki i ich autorzy:");
 
 ?>
