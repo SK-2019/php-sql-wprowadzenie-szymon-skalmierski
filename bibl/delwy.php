@@ -12,5 +12,5 @@
       }
     echo("</div>");  
     
-    header("location:https://git-website-com.herokuapp.com/bibl/inwy.php");
+    header("location:https://git-website-com.herokuapp.com/bibl/wypozyczone.php");
 ?>
