@@ -48,7 +48,7 @@
     </form>
     
 
-    <form class="formularz2" action="/bibl/inks.php" method="POST">
+    <form class="formularz2" style='margin-top:400px' action="/bibl/inks.php" method="POST">
         <h2 class="naglowek">Formularz książki:</h2>
 	<ul>
 	<li>
