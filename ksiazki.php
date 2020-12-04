@@ -71,11 +71,10 @@
 
     function tabelka1($sql, $nazwa, $thname, $row1){
         require("connect.php");
-        $sql = "select id, autor from bAutor order by id";
         $result=$conn->query($sql);
-        echo("<div>Autorzy</div>");
+        echo("<div>$nazwa</div>");
         echo("<div class='zapytanie'>($sql)</div>");
-        echo("<table class='table1'>");
+        echo("<table class='table2'>");
             echo("<th>ID</th>");
             echo("<th>$thname</th>");
                 while($row=$result->fetch_assoc()){
