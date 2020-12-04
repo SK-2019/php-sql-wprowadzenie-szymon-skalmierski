@@ -74,7 +74,7 @@
         $result=$conn->query($sql);
         echo("<div>$nazwa</div>");
         echo("<div class='zapytanie'>($sql)</div>");
-        echo("<table class='table2'>");
+        echo("<table>");
             echo("<th>ID</th>");
             echo("<th>$thname</th>");
                 while($row=$result->fetch_assoc()){
