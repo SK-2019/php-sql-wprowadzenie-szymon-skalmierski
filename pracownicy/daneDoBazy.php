@@ -68,7 +68,7 @@
 	</form>
 	<br>
 <?php
-	require("connect.php");
+	require("../connect.php");
 	$sql = "select * from pracownicy, organizacja where dzial=id_org order by id_pracownicy";
         $result=$conn->query($sql);
 		echo("<div>Wszyscy pracownicy:</div>");

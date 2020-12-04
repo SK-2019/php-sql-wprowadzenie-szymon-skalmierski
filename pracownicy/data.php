@@ -36,7 +36,7 @@
 <?php
 
     function tabelka2($zapytanie, $nazwa, $kolumna, $row1){
-        require("connect.php");
+        require("../connect.php");
         $result=$conn->query($zapytanie);
         echo("<div>$nazwa</div>");
 	    echo("<div class='zapytanie'>($zapytanie)</div>");
@@ -52,7 +52,7 @@
     }
 
   function tabelka1($zapytanie, $nazwa, $kolumna){
-        require("/connect.php");
+        require("../connect.php");
         $result=$conn->query($zapytanie);
         echo("<div>$nazwa</div>");
 	    echo("<div class='zapytanie'>($zapytanie)</div>");
@@ -83,7 +83,7 @@
 
 <?php
 
-        require("connect.php");
+        require("../connect.php");
 	$sql="select id_pracownicy, imie, nazwa_dzial, zarobki, year(curdate())-year(data_urodzenia) as wiek from pracownicy, organizacja where id_org=dzial";
         $result=$conn->query($sql);
         echo("<div>Pracownicy + wiek:</div>");

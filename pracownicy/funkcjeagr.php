@@ -36,7 +36,7 @@
     echo("<hr>");
 
     function tabelka1($zapytanie, $nazwa, $kolumna, $row1){
-        require("connect.php");
+        require("../connect.php");
         $result=$conn->query($zapytanie);
         echo("<div>$nazwa</div>");
 	    echo("<div class='zapytanie'>($zapytanie)</div>");
@@ -53,7 +53,7 @@
      }
     
     function tabelka2($zapytanie, $nazwa, $kolumna, $row1){
-        require("connect.php");
+        require("../connect.php");
         $result=$conn->query($zapytanie);
         echo("<div>$nazwa</div>");
 	    echo("<div class='zapytanie'>($zapytanie)</div>");
@@ -69,7 +69,7 @@
      }
 
     function tabelka3($zapytanie, $nazwa, $kolumna, $row1){
-        require("connect.php");
+        require("../connect.php");
         $result=$conn->query($zapytanie);
         echo("<div>$nazwa</div>");
 	    echo("<div class='zapytanie'>($zapytanie)</div>");
