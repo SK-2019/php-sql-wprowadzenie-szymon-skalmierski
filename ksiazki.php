@@ -36,10 +36,10 @@
         <h2 class="naglowek">Formularz książki:</h2>
 	<ul>
 	<li>
-		<input type="text" name="autor" class="field-style field-full align-left" placeholder="Autor" />
+		<input type="text" name="autor" class="field-style field-full" placeholder="Autor" />
 	</li>
 	<li>
-		<input type="text" name="tytul" class="field-style field-full align-left" placeholder="Tytuł" />
+		<input type="text" name="tytul" class="field-style field-full" placeholder="Tytuł" />
 	</li>
 	<li>
 	<input type="submit" value="Dodaj" />
