@@ -43,7 +43,7 @@
             $result=$conn->query($sql);               
     echo '<select name="autor" class="field-style field-full">';
         while($row=$result->fetch_assoc()){
-            echo("<option value=".$row['autor'].">".$row['autor']."</option>");
+            echo("<option value='".$row['autor']."'>".$row['autor']."</option>");
         }
     echo '</select>';
     echo '</li>';
@@ -52,7 +52,7 @@
             $result=$conn->query($sql);
     echo '<select name="tytul" class="field-style field-full">';
         while($row=$result->fetch_assoc()){
-            echo("<option value=".$row['tytul'].">".$row['tytul']."</option>");
+            echo("<option value='".$row['tytul']."'>".$row['tytul']."</option>");
         }
     echo("</select>");
     echo '</li>';
