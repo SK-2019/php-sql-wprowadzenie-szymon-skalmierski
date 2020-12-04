@@ -5,7 +5,6 @@
 	<link rel="stylesheet" href="/style.css">
 	<meta charset="UTF-8">
 <body>
-
 	<div id="czas"></div>
     <script>
         function getTime(){
@@ -67,7 +66,6 @@
 	</ul>
 	</form>
 	<br>
-	
 <?php
 	require("../connect.php");
 	$sql = "select * from pracownicy, organizacja where dzial=id_org order by id_pracownicy";
