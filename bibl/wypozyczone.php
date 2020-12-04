@@ -36,7 +36,7 @@
 <?php
     require("../connect.php");
     echo("<hr>");
-    $sql="select id, autor, tytul from bwyp";
+    $sql="select * from bwyp";
     $result=$conn->query($sql);
     echo("<table>");
         echo("<th>ID</th>");
@@ -46,7 +46,7 @@
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
                     echo("<td>".$row['id']."</td><td>".$row["autor"]."</td><td>".$row["tytul"]."</td>");
-                    echo("<td><form action='delwy.php' method=POST>");
+                    echo("<td><form action='/bibl/delwy.php' method=POST>");
                     echo("<input type='hidden' name='id' value='".$row['id']."'><input id='delemp1' type='submit' value='X'>");
                     echo("</form></td>");
                 echo("</tr>");
