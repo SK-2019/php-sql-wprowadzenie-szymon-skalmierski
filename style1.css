@@ -108,9 +108,14 @@ body.bodystrona {
 	margin:0;
 	list-style:none;
 }
-.formularz0 ul li, .formularz1 ul li, .formularz2 ul li{
+.formularz0 ul li, .formularz1 ul li{
 	display: block;
 	margin-bottom: 30px;
+	min-height: 20px;
+}
+.formularz2 ul li{
+	display: block;
+	margin-bottom: 15px;
 	min-height: 20px;
 }
 .formularz0 ul li  .field-style, .formularz1 ul li  .field-style, .formularz2 ul li  .field-style{
