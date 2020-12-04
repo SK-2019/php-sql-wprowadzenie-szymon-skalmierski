@@ -82,7 +82,6 @@
 ?>
 
 <?php
-
         require("../connect.php");
 	$sql="select id_pracownicy, imie, nazwa_dzial, zarobki, year(curdate())-year(data_urodzenia) as wiek from pracownicy, organizacja where id_org=dzial";
         $result=$conn->query($sql);
@@ -101,5 +100,4 @@
 		}
         echo("</table>");
         echo("<hr>");
-
 ?>
