@@ -53,15 +53,6 @@
 	<ul>
 	<li>
         <select name="autor" class="field-style field-split align-right">
-            <option value="Adam Mickiewicz">Adam Mickiewicz</option>
-            <option value="Alexander Fredro">Alexander Fredro</option>
-            <option value="Henryk Sienkiewicz">Henryk Sienkiewicz</option>
-            <option value="Jan Brzechwa">Jan Brzechwa</option>
-            <option value="Jan Kochanowski">Jan Kochanowski</option>
-            <option value="Kacper Korczak">Kacper Korczak</option>
-            <option value="Rafał Kosik">Rafał Kosik</option>
-            <option value="Tolkien">Tolkien</option>
-            <option value="William Shakespear">William Shakespear</option>
         </select>
 	</li>
 	<li>
@@ -75,17 +66,30 @@
 	</form>
     
 <?php
-    require('../connect.php');
+        require('../connect.php');
         $sql=('SELECT * FROM bTytul');
         $result=$conn->query($sql);
-            echo("<hr>");
-            echo("<h2>Biblioteka Tytul</h2>");
-            echo("<div calss='zapytanie'>$sql");
-            echo("<select name='title' id='title'>");
-                while($row=$result->fetch_assoc()){
-                    echo("<option value=".$row['id'].">".$row['tytul']."</option>");
-                }
-            echo("</select>");
+    echo '<form class="formularz2" style="margin-top:400px" action="/bibl/inwy.php" method="POST">';
+    echo '<h2 class="naglowek">Wypożyczenie książki:</h2>';
+    echo '<ul>';
+    echo '<li>';
+    echo '<select name="autor" class="field-style field-split align-right">';
+    echo '</select>';
+    echo '</li>';
+    echo '<li>';
+    echo '<select name="tytul" class="field-style field-split align-right">';
+        while($row=$result->fetch_assoc()){
+            echo("<option value=".$row['id'].">".$row['tytul']."</option>");
+        }
+    echo("</select>");
+    echo '</li>';
+    echo '<li>';
+    echo '<input type="submit" value="Dodaj" />';
+    echo '</li>';
+    echo '</ul>';
+    echo '</form>';
+
+   
 
         $sql=('SELECT * FROM bAutor');
         $result=$conn->query($sql);
