@@ -35,7 +35,7 @@
 
 <?php
         require('../connect.php');
-    echo '<form class="formularz2" style="margin-top:100px, margin-left:30px" action="/bibl/inwy.php" method="POST">';
+    echo '<form class="formularz2" style="margin-top:100px" action="/bibl/inwy.php" method="POST">';
     echo '<h2 class="naglowek">Wypożyczenie książki:</h2>';
     echo '<ul>';
     echo '<li>';
