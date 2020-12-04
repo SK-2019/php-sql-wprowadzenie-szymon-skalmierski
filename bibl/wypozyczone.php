@@ -71,10 +71,11 @@
         echo("<th>ID</th>");
         echo("<th>Autor</th>");
         echo("<th>Tytul</th>");
+        echo("<th>Wypożyczenie</th>");
         echo("<th>USUŃ</th>");
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
-                    echo("<td>".$row['id']."</td><td>".$row["autor"]."</td><td>".$row["tytul"]."</td>");
+                    echo("<td>".$row['id']."</td><td>".$row["autor"]."</td><td>".$row["tytul"]."</td><td>".$row["datawy"]."</td>");
                     echo("<td><form action='/bibl/delwy.php' method=POST>");
                     echo("<input type='hidden' name='id' value='".$row['id']."'><input id='delemp1' type='submit' value='X'>");
                     echo("</form></td>");
