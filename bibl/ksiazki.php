@@ -45,6 +45,32 @@
 	<input type="submit" value="Dodaj" />
 	</li>
 	</ul>
+    </form>
+    
+
+    <form class="formularz2" action="/bibl/inks.php" method="POST">
+        <h2 class="naglowek">Formularz książki:</h2>
+	<ul>
+	<li>
+        <select name="autor" class="field-style field-split align-right">
+            <option value="Adam Mickiewicz">Adam Mickiewicz</option>
+            <option value="Alexander Fredro">Alexander Fredro</option>
+            <option value="Henryk Sienkiewicz">Henryk Sienkiewicz</option>
+            <option value="Jan Brzechwa">Jan Brzechwa</option>
+            <option value="Jan Kochanowski">Jan Kochanowski</option>
+            <option value="Kacper Korczak">Kacper Korczak</option>
+            <option value="Rafał Kosik">Rafał Kosik</option>
+            <option value="Tolkien">Tolkien</option>
+            <option value="William Shakespear">William Shakespear</option>
+        </select>
+	</li>
+	<li>
+		<input type="text" name="tytul" class="field-style field-full" placeholder="Tytuł" />
+	</li>
+	<li>
+	<input type="submit" value="Dodaj" />
+	</li>
+	</ul>
 	</form>
     
 <?php
