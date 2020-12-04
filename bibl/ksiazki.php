@@ -48,23 +48,6 @@
 	</ul>
     </form>
     
-    <form class="formularz2" style='margin-top:400px' action="/bibl/inwy.php" method="POST">
-        <h2 class="naglowek">Wypożyczenie książki:</h2>
-	<ul>
-	<li>
-        <select name="autor" class="field-style field-split align-right">
-        </select>
-	</li>
-	<li>
-        <select name="tytul" class="field-style field-split align-right">
-        </select>
-	</li>
-	<li>
-	<input type="submit" value="Dodaj" />
-	</li>
-	</ul>
-	</form>
-    
 <?php
     echo("<hr>");
     function tabelka($sql, $nazwa){
