@@ -35,7 +35,7 @@
 
 <?php
         require('../connect.php');
-    echo '<form class="formularz2" style="margin-top:100px" action="/bibl/inwy.php" method="POST">';
+    echo '<form class="formularz2" style="margin-top:100px, left:170px, right:-170px" action="/bibl/inwy.php" method="POST">';
     echo '<h2 class="naglowek">Wypożyczenie książki:</h2>';
     echo '<ul>';
     echo '<li>';
@@ -67,7 +67,7 @@
     $sql="select * from bwyp";
     echo("<div>Wypożyczone książki</div>");
     $result=$conn->query($sql);
-    echo("<table class='tabledel'>");
+    echo("<table class='tabledel' style='width:50%'>");
         echo("<th>ID</th>");
         echo("<th>Autor</th>");
         echo("<th>Tytul</th>");
