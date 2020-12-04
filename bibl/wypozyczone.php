@@ -34,6 +34,7 @@
     </div>
 
 <?php
+    require("../connect.php");
     echo("<hr>");
     $sql="select id, autor, tytul from bwyp";
     $result=$conn->query($sql);
