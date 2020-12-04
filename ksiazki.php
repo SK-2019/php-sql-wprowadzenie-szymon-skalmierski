@@ -32,7 +32,7 @@
 		<a  class="nav2" href="daneDoBazy.php"><b>DaneDoBazy</b></a>
     </div>
     
-	<form class="formularz1" action="inks.php" method="POST">
+	<form class="formularz0" action="inks.php" method="POST">
         <h2 class="naglowek">Formularz książki:</h2>
 	<ul>
 	<li>
