@@ -67,16 +67,21 @@
     
 <?php
         require('../connect.php');
-        $sql=('SELECT * FROM bTytul');
-        $result=$conn->query($sql);
     echo '<form class="formularz2" style="margin-top:400px" action="/bibl/inwy.php" method="POST">';
     echo '<h2 class="naglowek">Wypożyczenie książki:</h2>';
     echo '<ul>';
     echo '<li>';
+            $sql=('SELECT * FROM bAutor');
+            $result=$conn->query($sql);               
     echo '<select name="autor" class="field-style field-split align-right">';
+        while($row=$result->fetch_assoc()){
+            echo("<option value=".$row['id'].">".$row['autor']."</option>");
+        }
     echo '</select>';
     echo '</li>';
     echo '<li>';
+            $sql=('SELECT * FROM bTytul');
+            $result=$conn->query($sql);
     echo '<select name="tytul" class="field-style field-split align-right">';
         while($row=$result->fetch_assoc()){
             echo("<option value=".$row['id'].">".$row['tytul']."</option>");
