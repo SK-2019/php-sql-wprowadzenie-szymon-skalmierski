@@ -86,9 +86,9 @@
         echo("<hr>");
     }
     
-    tabelka1("select * from bAutor order by id", "Autorzy:", "Autorzy", 'autor');
+    tabelka1("select * from bAutor order by id", "Autorzy:", "Autor", 'autor');
 
-    tabelka1("select * from bTytul order by id", "Książki:", "Tytuły", 'tytul');
+    tabelka1("select * from bTytul order by id", "Książki:", "Tytuł", 'tytul');
 
 
 ?>
