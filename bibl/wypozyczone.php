@@ -41,6 +41,7 @@
         echo("<th>ID</th>");
         echo("<th>Autor</th>");
         echo("<th>Tytul</th>");
+        echo("<th>USUŃ</th>");
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
                     echo("<td>".$row['id']."</td><td>".$row["autor"]."</td><td>".$row["tytul"]."</td>");
