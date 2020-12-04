@@ -75,18 +75,35 @@
 	</form>
     
 <?php
-require("../connect.php");
-$sql=('SELECT * FROM bTytul');
-$result=$conn->query($sql);
-    echo("<hr />");
-    echo("<h3>Biblioteka Autor</h3>");
-    echo("<li>$sql");
-    echo("<select name='title' id='title'>");
-        while($row=$result->fetch_assoc()){
-            echo("<option value=".$row['id'].">".$row['autor']."</option>");
-        }
-    echo("</select>");
-    echo("<hr />");
+require_once('../connect.php');
+    $sql=('SELECT * FROM bTytul');
+    $result=$conn->query($sql);
+        echo("<hr />");
+        echo("<h3>Biblioteka Tytul</h3>");
+        echo("<li>$sql");
+        echo("<select name='title' id='title'>");
+    
+            while($row=$result->fetch_assoc()){
+            
+                echo("<option value=".$row['id'].">".$row['tytul']."</option>");
+            /*echo("<option value=2>tytul jakis</option>");*/
+            }
+        echo("</select>");
+
+    $sql=('SELECT * FROM bAutor');
+    $result=$conn->query($sql);
+        echo("<hr />");
+        echo("<h3>Biblioteka Autor</h3>");
+        echo("<li>$sql");
+        echo("<select name='title' id='title'>");
+    
+            while($row=$result->fetch_assoc()){
+            
+                echo("<option value=".$row['id'].">".$row['autor']."</option>");
+            }
+        echo("</select>");
+        echo("<hr />");
+      
 
     // echo("<hr>");
     // function tabelka($sql, $nazwa){
