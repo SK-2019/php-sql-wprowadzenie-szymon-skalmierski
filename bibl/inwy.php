@@ -36,7 +36,7 @@
     echo("<h2 class='h2strona'>Dodano do bazy:");
 
     require("../connect.php");
-        $sql = "INSERT INTO bwyp(id, autor, tytul) VALUES(NULL, '".$_POST['autor']."','".$_POST['tytul']."')";
+        $sql = "INSERT INTO bwyp(id, autor, tytul) VALUES(NULL, '".$_POST['autor']."', '".$_POST['tytul']."')";
         echo("<h3 class='h3strona'>Książka: ".$_POST['tytul']."</h3>");
         if ($conn->query($sql) === TRUE){
             echo("<p class='precord'> Książka została dodana do wypożyczonych!</p>");
