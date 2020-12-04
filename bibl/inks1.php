@@ -8,5 +8,5 @@ echo("<h3 class='h3strona'>Tytul: ".$_POST['IDtytul']."</h3>");
         $sql= "INSERT INTO bAutor_bTytul (bAutorID, bTytulID) VALUES('$IDautor','$IDtytul')";
         $conn->query($sql);
 
-    header("location:ksiazki.php");   
+    header("location:bibl/ksiazki.php");   
 ?>

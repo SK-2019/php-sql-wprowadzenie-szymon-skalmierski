@@ -22,17 +22,17 @@
 	<div class="nav">
 		<a  class="link" href="https://github.com/SK-2019/php-sql-wprowadzenie-szymon-skalmierski"><b>GITHUB</b></a>	
 		<a  class="nav1" href="index.php"><b>Strona Główna</b></a>
-        <a  class="nav1" href="pracownicy.php"><b>Pracownicy</b></a>
-		<a  class="nav1" href="funkcjeagr.php"><b>Funkcje Agregujące</b></a>
-		<a  class="nav1" href="data.php"><b>Data</b></a>
-		<a  class="nav1" href="ksiazki.php"><b>Książki</b></a>
-		<a  class="nav2" href="formularz.html"><b>Formularz</b></a>
-		<a  class="nav2" href="daneDoBazy.php"><b>DaneDoBazy</b></a>
-	</div>
+        <a  class="nav1" href="pracownicy/pracownicy.php"><b>Pracownicy</b></a>
+		<a  class="nav1" href="pracownicy/funkcjeagr.php"><b>Funkcje Agregujące</b></a>
+        <a  class="nav1" href="pracownicy/data.php"><b>Data</b></a>
+        <a  class="nav1" href="bibl/ksiazki.php"><b>Książki</b></a>
+		<a  class="nav2" href="pracownicy/formularz.html"><b>Formularz</b></a>
+		<a  class="nav2" href="pracownicy/daneDoBazy.php"><b>DaneDoBazy</b></a>
+    </div>
 	<hr>
 
 			<!-- Formularz1 -->
-	<form class="formularz1" action="insert.php" method="POST">
+	<form class="formularz1" action="pracownicy/insert.php" method="POST">
         <h2 class="naglowek">Formularz:</h2>
 	<ul>
 	<li>
@@ -55,7 +55,7 @@
 	</form>
 
 			<!-- Formularz2 -->
-	<form class="formularz2" action="delete.php" method="POST">
+	<form class="formularz2" action="pracownicy/delete.php" method="POST">
         <h2 class="naglowek">Formularz:</h2>
 	<ul>
 	<li>
