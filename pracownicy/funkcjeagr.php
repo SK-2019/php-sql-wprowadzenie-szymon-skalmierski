@@ -32,7 +32,6 @@
 		<a  class="nav2" href="/pracownicy/daneDoBazy.php"><b>DaneDoBazy</b></a>
     </div>
 <?php
-
     echo("<hr>");
 
     function tabelka1($zapytanie, $nazwa, $kolumna, $row1){
