@@ -76,7 +76,7 @@
     
 <?php
 
-$sql=('SELECT * FROM biblAutor');
+$sql=('SELECT * FROM bTytul');
 $result=$conn->query($sql);
     echo("<hr />");
     echo("<h3>Biblioteka Autor</h3>");
