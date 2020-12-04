@@ -33,7 +33,7 @@
     </div>
     
 	<form class="formularz2" action="/bibl/inks.php" method="POST">
-        <h2 class="naglowek">Formularz książki:</h2>
+        <h2 class="naglowek">Dodawanie nowej książki:</h2>
 	<ul>
 	<li>
 		<input type="text" name="autor" class="field-style field-full" placeholder="Autor" />
@@ -47,8 +47,8 @@
 	</ul>
     </form>
     
-    <form class="formularz2" style='margin-top:400px' action="/bibl/inks.php" method="POST">
-        <h2 class="naglowek">Formularz książki:</h2>
+    <form class="formularz2" style='margin-top:400px' action="/bibl/inwy.php" method="POST">
+        <h2 class="naglowek">Wypożyczenie książki:</h2>
 	<ul>
 	<li>
         <select name="autor" class="field-style field-split align-right">
@@ -64,7 +64,25 @@
         </select>
 	</li>
 	<li>
-		<input type="text" name="tytul" class="field-style field-full" placeholder="Tytuł" />
+        <select name="tytul" class="field-style field-split align-right">
+            <option value="Akademia Pana Kleksa">Akademia Pana Kleksa</option>
+            <option value="Felix, Net i Nika">Felix, Net i Nika</option>
+            <option value="Hobbit">Hobbit</option>
+            <option value="Jak zmienić nauczyciela z zawo">Jak zmienić nauczyciela z zawo</option>
+            <option value="Jak zmienić szkołę">Jak zmienić szkołę</option>
+            <option value="Krzyżacy">Krzyżacy</option>
+            <option value="Oda do młodości">Oda do młodości</option>
+            <option value="Odprawa posłów greckich">Odprawa posłów greckich</option>
+            <option value="Pan Tadeusz">Pan Tadeusz</option>
+            <option value="Podstawy Linuxa">Podstawy Linuxa</option>
+            <option value="Podstawy MySQL">Podstawy MySQL</option>
+            <option value="Quo vadis">Quo vadis</option>
+            <option value="Romeo i Julia">Romeo i Julia</option>
+            <option value="Treny">Treny</option>
+            <option value="W pustyni i w puszczy">W pustyni i w puszczy</option>
+            <option value="Władca Pierścieni">Władca Pierścieni</option>
+            <option value="Zemsta">Zemsta</option>
+        </select>
 	</li>
 	<li>
 	<input type="submit" value="Dodaj" />
