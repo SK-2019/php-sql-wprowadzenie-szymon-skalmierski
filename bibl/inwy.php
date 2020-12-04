@@ -44,23 +44,8 @@
             echo("<p class='precord1'> Książka jest już wypożyczona!</p>");
         }
 
-        $sql="Select id as id, autor, tytul from bwyp";
-        $result=$conn->query($sql);
-        echo("<table>");
-            echo("<th>ID</th>");
-            echo("<th>Autor</th>");
-            echo("<th>Tytul</th>");
-                while($row=$result->fetch_assoc()){
-                    echo("<tr>");
-                        echo("<td>".$row['id']."</td><td>".$row["autor"]."</td><td>".$row["tytul"]."</td>");
-                        echo("<td><form action='delwy.php' method=POST>");
-                        echo("<input type='hidden' name='id' value='".$row['id']."'><input id='delemp1' type='submit' value='X'>");
-                        echo("</form></td>");
-                    echo("</tr>");
-                }
-        echo("</table>");
 
-    // header("location:ksiazki.php");
+    header("location:bibl/wypozyczone.php");
     // header('Refresh: 5; url=https://git-website-com.herokuapp.com/pracownicy.php');
 	// echo("<div class='redeem1'>Zostaniesz przekierowany na stronę pracowników w ciągu 5 sekund!</div>");  
 ?>
