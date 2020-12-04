@@ -66,35 +66,6 @@
 	</form>
     
 <?php
-        require('../connect.php');
-    echo '<form class="formularz2" style="margin-top:400px" action="/bibl/inwy.php" method="POST">';
-    echo '<h2 class="naglowek">Wypożyczenie książki:</h2>';
-    echo '<ul>';
-    echo '<li>';
-            $sql=('SELECT * FROM bAutor');
-            $result=$conn->query($sql);               
-    echo '<select name="autor" class="field-style field-split align-right">';
-        while($row=$result->fetch_assoc()){
-            echo("<option value=".$row['autor'].">".$row['autor']."</option>");
-        }
-    echo '</select>';
-    echo '</li>';
-    echo '<li>';
-            $sql=('SELECT * FROM bTytul');
-            $result=$conn->query($sql);
-    echo '<select name="tytul" class="field-style field-split align-right">';
-        while($row=$result->fetch_assoc()){
-            echo("<option value=".$row['tytul'].">".$row['tytul']."</option>");
-        }
-    echo("</select>");
-    echo '</li>';
-    echo '<li>';
-    echo '<input type="submit" value="Dodaj" />';
-    echo '</li>';
-    echo '</ul>';
-    echo '</form>';
-
-
     echo("<hr>");
     function tabelka($sql, $nazwa){
         require("../connect.php");
