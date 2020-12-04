@@ -73,7 +73,7 @@
         $result=$conn->query($sql);
 		echo("<div>Wszyscy pracownicy:</div>");
         echo("<div class='zapytanie'>($sql)</div>");
-        echo("<table class='tabledel'>");
+        echo("<table class='tabledel' style='width:47%'>");
             echo("<th>ID</th>");
             echo("<th>Imie</th>");
             echo("<th>Dział</th>");
