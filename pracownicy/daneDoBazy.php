@@ -55,7 +55,7 @@
 	</form>
 
 			<!-- Formularz2 -->
-	<form class="formularz2" action="/pracownicy/delete.php" method="POST">
+	<form class="formularz2" style='margin-top:400px' action="/pracownicy/delete.php" method="POST">
         <h2 class="naglowek">Formularz:</h2>
 	<ul>
 	<li>
