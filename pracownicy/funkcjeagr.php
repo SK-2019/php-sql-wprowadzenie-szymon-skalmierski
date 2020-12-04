@@ -1,7 +1,7 @@
 <head>
 	<title>Szymon Skalmierski 2Ti</title>
 	<link rel="icon" href="https://image.flaticon.com/icons/png/512/25/25231.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
     <meta charset="UTF-8">
 </head>
 <body>
@@ -24,19 +24,19 @@
 	<div class="nav">
 		<a  class="link" href="https://github.com/SK-2019/php-sql-wprowadzenie-szymon-skalmierski"><b>GITHUB</b></a>	
 		<a  class="nav1" href="/index.php"><b>Strona Główna</b></a>
-        <a  class="nav1" href="pracownicy/pracownicy.php"><b>Pracownicy</b></a>
-		<a  class="nav1" href="pracownicy/funkcjeagr.php"><b>Funkcje Agregujące</b></a>
-        <a  class="nav1" href="pracownicy/data.php"><b>Data</b></a>
-        <a  class="nav1" href="bibl/ksiazki.php"><b>Książki</b></a>
-		<a  class="nav2" href="pracownicy/formularz.html"><b>Formularz</b></a>
-		<a  class="nav2" href="pracownicy/daneDoBazy.php"><b>DaneDoBazy</b></a>
+        <a  class="nav1" href="/pracownicy/pracownicy.php"><b>Pracownicy</b></a>
+		<a  class="nav1" href="/pracownicy/funkcjeagr.php"><b>Funkcje Agregujące</b></a>
+        <a  class="nav1" href="/pracownicy/data.php"><b>Data</b></a>
+        <a  class="nav1" href="/bibl/ksiazki.php"><b>Książki</b></a>
+		<a  class="nav2" href="/pracownicy/formularz.html"><b>Formularz</b></a>
+		<a  class="nav2" href="/pracownicy/daneDoBazy.php"><b>DaneDoBazy</b></a>
     </div>
 <?php
 
     echo("<hr>");
 
     function tabelka1($zapytanie, $nazwa, $kolumna, $row1){
-        require("connect.php");
+        require("/connect.php");
         $result=$conn->query($zapytanie);
         echo("<div>$nazwa</div>");
 	    echo("<div class='zapytanie'>($zapytanie)</div>");
@@ -53,7 +53,7 @@
      }
     
     function tabelka2($zapytanie, $nazwa, $kolumna, $row1){
-        require("connect.php");
+        require("/connect.php");
         $result=$conn->query($zapytanie);
         echo("<div>$nazwa</div>");
 	    echo("<div class='zapytanie'>($zapytanie)</div>");
@@ -69,7 +69,7 @@
      }
 
     function tabelka3($zapytanie, $nazwa, $kolumna, $row1){
-        require("connect.php");
+        require("/connect.php");
         $result=$conn->query($zapytanie);
         echo("<div>$nazwa</div>");
 	    echo("<div class='zapytanie'>($zapytanie)</div>");

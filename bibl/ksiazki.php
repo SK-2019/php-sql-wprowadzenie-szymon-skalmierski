@@ -1,7 +1,7 @@
 <head>
 	<title>Szymon Skalmierski 2Ti</title>
 	<link rel="icon" href="https://image.flaticon.com/icons/png/512/25/25231.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
     <meta charset="UTF-8">
 </head>
 <body>
@@ -23,16 +23,16 @@
 
 	<div class="nav">
 		<a  class="link" href="https://github.com/SK-2019/php-sql-wprowadzenie-szymon-skalmierski"><b>GITHUB</b></a>	
-		<a  class="nav1" href="index.php"><b>Strona Główna</b></a>
-        <a  class="nav1" href="pracownicy.php"><b>Pracownicy</b></a>
-		<a  class="nav1" href="funkcjeagr.php"><b>Funkcje Agregujące</b></a>
-        <a  class="nav1" href="data.php"><b>Data</b></a>
-        <a  class="nav1" href="ksiazki.php"><b>Książki</b></a>
-		<a  class="nav2" href="formularz.html"><b>Formularz</b></a>
-		<a  class="nav2" href="daneDoBazy.php"><b>DaneDoBazy</b></a>
+		<a  class="nav1" href="/index.php"><b>Strona Główna</b></a>
+        <a  class="nav1" href="/pracownicy/pracownicy.php"><b>Pracownicy</b></a>
+		<a  class="nav1" href="/pracownicy/funkcjeagr.php"><b>Funkcje Agregujące</b></a>
+        <a  class="nav1" href="/pracownicy/data.php"><b>Data</b></a>
+        <a  class="nav1" href="/bibl/ksiazki.php"><b>Książki</b></a>
+		<a  class="nav2" href="/pracownicy/formularz.html"><b>Formularz</b></a>
+		<a  class="nav2" href="/pracownicy/daneDoBazy.php"><b>DaneDoBazy</b></a>
     </div>
     
-	<form class="formularz2" action="bibl/inks.php" method="POST">
+	<form class="formularz2" action="/bibl/inks.php" method="POST">
         <h2 class="naglowek">Formularz książki:</h2>
 	<ul>
 	<li>
@@ -50,7 +50,7 @@
 <?php
     echo("<hr>");
     function tabelka($sql, $nazwa){
-        require("connect.php");
+        require("/connect.php");
         $result=$conn->query($sql);
         echo("<div>$nazwa</div>");
         echo("<div class='zapytanie'>($sql)</div>");
@@ -70,7 +70,7 @@
     tabelka("select bAutor.id as AutorID, bAutor.autor as Autor, bTytul.tytul as Tytul from bAutor, bTytul, bAutor_bTytul where (bAutorID=bAutor.id) and (bTytulID=bTytul.id) order by AutorID", "Książki i ich autorzy:");
 
     function tabelka1($sql, $nazwa, $thname, $row1){
-        require("connect.php");
+        require("/connect.php");
         $result=$conn->query($sql);
         echo("<div>$nazwa</div>");
         echo("<div class='zapytanie'>($sql)</div>");
