@@ -35,7 +35,7 @@
 <?php
     echo("<h2 class='h2strona'>Dodano do bazy:");
 
-    require("/connect.php");
+    require("connect.php");
         $sql = "INSERT INTO bAutor(id, autor) VALUES(NULL, '".$_POST['autor']."')";
         echo("<h3 class='h3strona'>Autor: ".$_POST['autor']."</h3>");
         if ($conn->query($sql) === TRUE){

@@ -35,7 +35,7 @@
 <?php
     echo("<hr>");
     function tabelka4($sql, $nazwa){
-        require("/connect.php");
+        require("connect.php");
         $result=$conn->query($sql);
         echo("<div>$nazwa</div>");
         echo("<div class='zapytanie'>($sql)</div>");

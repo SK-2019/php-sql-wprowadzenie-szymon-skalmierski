@@ -50,7 +50,7 @@
 <?php
     echo("<hr>");
     function tabelka($sql, $nazwa){
-        require("/connect.php");
+        require("connect.php");
         $result=$conn->query($sql);
         echo("<div>$nazwa</div>");
         echo("<div class='zapytanie'>($sql)</div>");
@@ -70,7 +70,7 @@
     tabelka("select bAutor.id as AutorID, bAutor.autor as Autor, bTytul.tytul as Tytul from bAutor, bTytul, bAutor_bTytul where (bAutorID=bAutor.id) and (bTytulID=bTytul.id) order by AutorID", "Książki i ich autorzy:");
 
     function tabelka1($sql, $nazwa, $thname, $row1){
-        require("/connect.php");
+        require("connect.php");
         $result=$conn->query($sql);
         echo("<div>$nazwa</div>");
         echo("<div class='zapytanie'>($sql)</div>");
