@@ -21,7 +21,7 @@
 	
 	<div class="nav">
 		<a  class="link" href="https://github.com/SK-2019/php-sql-wprowadzenie-szymon-skalmierski"><b>GITHUB</b></a>	
-		<a  class="nav1" href="index.php"><b>Strona Główna</b></a>
+		<a  class="nav1" href="/index.php"><b>Strona Główna</b></a>
         <a  class="nav1" href="pracownicy/pracownicy.php"><b>Pracownicy</b></a>
 		<a  class="nav1" href="pracownicy/funkcjeagr.php"><b>Funkcje Agregujące</b></a>
         <a  class="nav1" href="pracownicy/data.php"><b>Data</b></a>
