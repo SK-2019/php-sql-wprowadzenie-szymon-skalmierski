@@ -46,7 +46,6 @@
         echo("<th>Tytul</th>");
         echo("<th>Data wypożyczenia</th>");
         echo("<th>Data oddania</th>");
-        echo("<th>USUŃ</th>");
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
                     echo("<td>".$row['id']."</td><td>".$row["autor"]."</td><td>".$row["tytul"]."</td><td>".$row["datawy"]."</td><td>".$row["datazw"]."</td>");
