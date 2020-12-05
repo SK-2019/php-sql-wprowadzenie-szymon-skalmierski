@@ -29,6 +29,7 @@
         <a  class="nav1" href="/pracownicy/data.php"><b>Data</b></a>
         <a  class="nav1" href="/bibl/ksiazki.php"><b>Książki</b></a>
         <a  class="nav1" href="/bibl/wypozyczone.php"><b>Wypożyczone</b></a>
+        <a  class="nav1" href="/bibl/oddane.php"><b>Oddane</b></a>
 		<a  class="nav2" href="/pracownicy/formularz.html"><b>Formularz</b></a>
 		<a  class="nav2" href="/pracownicy/daneDoBazy.php"><b>DaneDoBazy</b></a>
     </div>
@@ -77,10 +78,10 @@
                 echo("<tr>");
                     echo("<td>".$row['id']."</td><td>".$row["autor"]."</td><td>".$row["tytul"]."</td><td>".$row["datawy"]."</td>");
                     echo("<td><form action='/bibl/delwy.php' method=POST>");
-                    echo("<input type='hidden' name='id' value='".$row['id']."'>");
-                    echo("<input type='hidden' name='id' value='".$row['autor']."'>");
-                    echo("<input type='hidden' name='id' value='".$row['tytul']."'>");
-                    echo("<input type='hidden' name='id' value='".$row['datawy']."'>");
+                    echo("<input type='text' name='id' value='".$row['id']."'>");
+                    echo("<input type='text' name='autor' value='".$row['autor']."'>");
+                    echo("<input type='text' name='tytul' value='".$row['tytul']."'>");
+                    echo("<input type='text' name='datawy' value='".$row['datawy']."'>");
                     echo("<input id='delemp1' type='submit' value='X'>");
                     echo("</form></td>");
                 echo("</tr>");
