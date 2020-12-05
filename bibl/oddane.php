@@ -35,6 +35,7 @@
     </div>
 
 <?php
+    require("../connect.php");
     echo("<hr>");
     $sql="select * from bodd";
     echo("<div>Oddane książki</div>");
