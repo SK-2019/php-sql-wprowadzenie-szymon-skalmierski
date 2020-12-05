@@ -251,6 +251,23 @@ h1 {
     background-color: #4c7faf;
     color: white; 
 }
+.nav3{
+  font-family:helvetica;
+  background-color: white;
+  color: black;
+  border: 2px solid #d17d38;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin-right: 10px;
+  font-family:helvetica;
+}
+.nav3:hover {
+    background-color: #ca6d21;
+    color: white; 
+}
 table {
   border: 1px solid #000000;
   font-size:20px; 
