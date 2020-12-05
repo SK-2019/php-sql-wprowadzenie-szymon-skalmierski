@@ -38,7 +38,7 @@
     require("../connect.php");
     echo("<hr>");
     $sql="select * from bodd";
-    echo("<div>Oddane książki</div>");
+    echo("<div>Oddane książki:</div>");
     $result=$conn->query($sql);
     echo("<table class='tabledel' style='width:60%'>");
         echo("<th>ID</th>");

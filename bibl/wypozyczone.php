@@ -66,7 +66,7 @@
 
     echo("<hr>");
     $sql="select * from bwyp";
-    echo("<div>Wypożyczone książki</div>");
+    echo("<div>Wypożyczone książki:</div>");
     $result=$conn->query($sql);
     echo("<table class='tabledel' style='width:50%'>");
         echo("<th>ID</th>");
