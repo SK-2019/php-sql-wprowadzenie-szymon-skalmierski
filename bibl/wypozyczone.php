@@ -1,7 +1,7 @@
 <?php include "../body.html" ?>
 <?php
         require('../connect.php');
-    echo '<form class="formularz2" action="/bibl/inwy.php" method="POST">';
+    echo '<form class="formularz2" action="inwy.php" method="POST">';
     echo '<h2 class="naglowek">Wypożyczenie książki:</h2>';
     echo '<ul>';
     echo '<li>';
