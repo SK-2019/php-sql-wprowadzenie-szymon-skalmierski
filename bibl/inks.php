@@ -1,4 +1,4 @@
-<?php include "/body.html" ?>
+<?php include "../body.html" ?>
 <?php
     echo("<h2 class='h2strona'>Dodano do bazy:");
 

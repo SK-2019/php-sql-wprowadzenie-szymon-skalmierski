@@ -1,4 +1,4 @@
-<?php include "/body.html" ?>
+<?php include "../body.html" ?>
 <?php
 
     function tabelka2($zapytanie, $nazwa, $kolumna, $row1){

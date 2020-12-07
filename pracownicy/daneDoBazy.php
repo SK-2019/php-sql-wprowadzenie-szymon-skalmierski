@@ -1,4 +1,4 @@
-<?php include "/body.html" ?>
+<?php include "../body.html" ?>
 
 			<!-- Formularz1 -->
 	<form class="formularz1" action="/pracownicy/insert.php" method="POST">
