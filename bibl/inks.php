@@ -22,7 +22,7 @@
         echo("<form action='/bibl/inks1.php' method=POST>");
         $sql="Select id as IDautor, autor from bAutor where autor = '".$_POST['autor']."'";
         $result=$conn->query($sql);
-        echo("<table>");
+        echo("<table style='text-align:left'>");
             echo("<th>ID</th>");
             echo("<th>Autor</th>");
                 while($row=$result->fetch_assoc()){
@@ -35,7 +35,7 @@
 
         $sql="Select id as IDtytul, tytul from bTytul where tytul = '".$_POST['tytul']."'";
         $result=$conn->query($sql);
-        echo("<table>");
+        echo("<table style='text-align:left'>");
             echo("<th>ID</th>");
             echo("<th>Tytul</th>");
                 while($row=$result->fetch_assoc()){
