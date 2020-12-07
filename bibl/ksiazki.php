@@ -1,4 +1,18 @@
 <?php include "../body.html" ?>
+<form class="formularz2" action="/bibl/inks.php" style='left:190; right:-190' hod="POST">
+        <h2 class="naglowek">Dodawanie nowej książki:</h2>
+	<ul>
+	<li>
+		<input type="text" name="autor" class="field-style field-full" placeholder="Autor" />
+	</li>
+	<li>
+		<input type="text" name="tytul" class="field-style field-full" placeholder="Tytuł" />
+	</li>
+	<li>
+	<input type="submit" value="Dodaj" />
+	</li>
+	</ul>
+    </form>
 <?php
     echo("<hr>");
     function tabelka($sql, $nazwa){
