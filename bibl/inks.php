@@ -22,7 +22,7 @@
         echo("<form action='/bibl/inks1.php' method=POST>");
         $sql="Select id as IDautor, autor from bAutor where autor = '".$_POST['autor']."'";
         $result=$conn->query($sql);
-        echo("<table style='text-align:left'>");
+        echo("<table class='table2'>");
             echo("<th>ID</th>");
             echo("<th>Autor</th>");
                 while($row=$result->fetch_assoc()){
@@ -35,7 +35,7 @@
 
         $sql="Select id as IDtytul, tytul from bTytul where tytul = '".$_POST['tytul']."'";
         $result=$conn->query($sql);
-        echo("<table style='text-align:left'>");
+        echo("<table class='table2'>");
             echo("<th>ID</th>");
             echo("<th>Tytul</th>");
                 while($row=$result->fetch_assoc()){
@@ -50,7 +50,4 @@
         echo("</div>");
         echo("</form>");
 
-    // header("location:ksiazki.php");
-    // header('Refresh: 5; url=https://git-website-com.herokuapp.com/pracownicy.php');
-	// echo("<div class='redeem1'>Zostaniesz przekierowany na stronę pracowników w ciągu 5 sekund!</div>");  
 ?>
