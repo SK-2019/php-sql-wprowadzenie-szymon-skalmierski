@@ -1,5 +1,5 @@
 <?php include "../body.html" ?>
-<form class="formularz2" action="/bibl/inks.php" style='left:190; right:-190' hod="POST">
+<form class="formularz2" action="/bibl/inks.php" style='left:165; right:-165' hod="POST">
         <h2 class="naglowek">Dodawanie nowej książki:</h2>
 	<ul>
 	<li>
