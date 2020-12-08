@@ -16,7 +16,7 @@
       }
     echo("</div>");  
     
-    header("location:https://git-website-com.herokuapp.com/pracownicy/daneDoBazy.php");
+    header("location:daneDoBazy.php");
 	// header('Refresh: 5; url=https://git-website-com.herokuapp.com/pracownicy.php');
 	// echo("<div class='redeem1'>Zostaniesz przekierowany na stronę pracowników w ciągu 5 sekund!</div>");  
 ?>

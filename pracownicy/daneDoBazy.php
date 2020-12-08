@@ -3,7 +3,7 @@
 ?>
 
 			<!-- Formularz1 -->
-	<form class="formularz1" action="/pracownicy/insert.php" method="POST">
+	<form class="formularz1" action="insert.php" method="POST">
         <h2 class="naglowek">Formularz:</h2>
 	<ul>
 	<li>
