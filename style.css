@@ -203,6 +203,7 @@ h1 {
 }
 .links{
   display: flex;
+  flex-wrap: wrap;
 }
 .link{
   font-family:helvetica;
