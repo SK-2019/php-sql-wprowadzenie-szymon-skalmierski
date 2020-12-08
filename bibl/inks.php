@@ -37,7 +37,7 @@
 
         $sql="Select id as IDtytul, tytul from bTytul where tytul = '".$_POST['tytul']."'";
         $result=$conn->query($sql);
-        echo("<table class='table2' style='text-align:left;'>");
+        echo("<table class='table2'>");
             echo("<th>ID</th>");
             echo("<th>Tytul</th>");
                 while($row=$result->fetch_assoc()){
