@@ -1,6 +1,8 @@
-<?php include "../body.html" ?>
-<?php
+<?php 
+    include "../body.html" 
+?>
 
+<?php
     function tabelka2($zapytanie, $nazwa, $kolumna, $row1){
         require("../connect.php");
         $result=$conn->query($zapytanie);

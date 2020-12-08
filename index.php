@@ -1,4 +1,7 @@
-<?php include "body.html" ?>
+<?php 
+    include "body.html" 
+?>
+
 <?php
     echo("<hr>");
     function tabelka4($zapytanie, $nazwa){

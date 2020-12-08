@@ -1,4 +1,7 @@
-<?php include "../body.html" ?>
+<?php
+    include "../body.html" 
+?>
+
 <?php
     echo("<h2 class='h2strona'>Dodano do bazy:");
 
@@ -19,7 +22,7 @@
             echo("<p class='precord1'> Ten tytuł istnieje już w bazie danych!</p>");
         }
 
-        echo("<form action='/bibl/inks1.php' method=POST>");
+        echo("<form action='inks1.php' method=POST>");
         $sql="Select id as IDautor, autor from bAutor where autor = '".$_POST['autor']."'";
         $result=$conn->query($sql);
         echo("<table class='table2'>");

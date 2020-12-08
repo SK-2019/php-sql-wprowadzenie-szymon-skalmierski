@@ -1,4 +1,7 @@
-<?php include "../body.html" ?>
+<?php 
+    include "../body.html" 
+?>
+
 <?php
         require('../connect.php');
     echo '<form class="formularz2" action="inwy.php" method="POST">';
@@ -42,7 +45,7 @@
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
                     echo("<td>".$row['id']."</td><td>".$row["autor"]."</td><td>".$row["tytul"]."</td><td>".$row["datawy"]."</td>");
-                    echo("<td><form action='/bibl/delwy.php' method=POST>");
+                    echo("<td><form action='delwy.php' method=POST>");
                     echo("<input type='hidden' name='id' value='".$row['id']."'>");
                     echo("<input type='hidden' name='autor' value='".$row['autor']."'>");
                     echo("<input type='hidden' name='tytul' value='".$row['tytul']."'>");

@@ -24,5 +24,5 @@
       }
     echo("</div>"); 
     
-    header("location:https://git-website-com.herokuapp.com/bibl/wypozyczone.php");
+    header("location:wypozyczone.php");
 ?>
