@@ -1,4 +1,30 @@
-	/* INSERT.PHP / DELETE.PHP */
+.container {
+  background-color: lightgray;
+  display: flex;
+  flex-wrap: wrap;
+}
+.item {
+  /*  width: 200px;*/
+  /*height: 100px;*/
+  margin: 10px;
+}
+.colorRed {
+  background-color: red;
+  width: 100%;
+}
+.colorBlue {
+  background-color: lightblue;
+  width: 20%;
+}
+.colorGreen {
+  background-color: lightgreen;
+  width: 70%;
+}
+
+
+
+
+/* INSERT.PHP / DELETE.PHP */
 body.bodystrona {
  background: #21303b;
  color: #fff;
@@ -201,10 +227,6 @@ h1 {
   font-family:helvetica; 
   text-align:center;
 }
-.links{
-  display: flex;
-  flex-wrap: wrap;
-}
 .link{
   font-family:helvetica;
   background-color: white;
@@ -220,6 +242,10 @@ h1 {
 .link:hover {
     background-color: #4CAF50;
     color: white;
+}
+.nav {
+  display: flex;
+  flex-wrap: wrap;
 }
 .nav1{
   font-family:helvetica;

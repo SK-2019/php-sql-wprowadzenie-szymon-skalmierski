@@ -1,7 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+		<div class="container">
+			<div class="item colorRed">
+                nr26
+				<h1 class="tltle">Szymon Skalmierski 2Ti</h1>
+			</div>
+			<div class="item colorBlue">zsijp</div>
+			<div class="item colorGreen">technik informatyk</div>
+		</div>
+</body>
+</html>
+
+
 <?php 
     include "body.html" 
 ?>
-
 <?php
     function tabelka4($zapytanie, $nazwa){
         require("connect.php");
