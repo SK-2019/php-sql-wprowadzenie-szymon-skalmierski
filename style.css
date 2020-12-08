@@ -9,16 +9,24 @@
   margin: 10px;
 }
 .colorRed {
-  background-color: red;
+  background: rgb(56,52,122);
+  background: linear-gradient(90deg, rgba(56,52,122,1) 0%, rgba(56,56,177,1) 32%, rgba(0,212,255,1) 83%);
   width: 100%;
+  text-align: center;
 }
 .colorBlue {
-  background-color: lightblue;
+  background: #D9AFD9;
+  background: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
   width: 20%;
+  padding: 10px;
+  text-align: center;
 }
 .colorGreen {
-  background-color: lightgreen;
+  background: #85FFBD;
+  background: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
   width: 70%;
+  padding: 10px;
+  text-align: center;
 }
 
 
