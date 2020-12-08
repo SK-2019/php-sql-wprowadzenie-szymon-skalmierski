@@ -3,7 +3,6 @@
 ?>
 
 <?php
-    echo("<hr>");
     function tabelka4($sql, $nazwa){
         require("../connect.php");
         $result=$conn->query($sql);

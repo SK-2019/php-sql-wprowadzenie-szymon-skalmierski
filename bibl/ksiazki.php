@@ -18,7 +18,6 @@
     </form>
     
 <?php
-    echo("<hr>");
     function tabelka($sql, $nazwa){
         require("../connect.php");
         $result=$conn->query($sql);
