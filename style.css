@@ -13,6 +13,7 @@
   background: linear-gradient(90deg, rgba(56,52,122,1) 0%, rgba(56,56,177,1) 32%, rgba(0,212,255,1) 83%);
   width: 100%;
   text-align: center;
+  color: white;
 }
 .colorBlue {
   background: #D9AFD9;
