@@ -201,6 +201,9 @@ h1 {
   font-family:helvetica; 
   text-align:center;
 }
+.links{
+  display: flex;
+}
 .link{
   font-family:helvetica;
   background-color: white;

@@ -2,7 +2,8 @@
     include "../body.html"
 ?>
 
-<form class="formularz2" action="inks.php" style='left:150; right:-150' method="POST">
+<div class='links'>
+    <form class="formularz2" action="inks.php" style='left:150; right:-150' method="POST">
         <h2 class="naglowek">Dodawanie nowej książki:</h2>
 	<ul>
 	<li>
@@ -16,6 +17,7 @@
 	</li>
 	</ul>
     </form>
+</div>
     
 <?php
     function tabelka($sql, $nazwa){
