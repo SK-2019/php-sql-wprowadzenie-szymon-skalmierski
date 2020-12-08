@@ -5,8 +5,8 @@
 <form class="formularz2" action="inks.php" style='left:150; right:-150' method="POST">
         <h2 class="naglowek">Dodawanie nowej książki:</h2>
 	<ul>
-	<li>
-		<input type="text" name="autor" class="field-style field-full" placeholder="Autor" style='margin-bottom: -10px' />
+	<li style='margin-bottom: -10px' >
+		<input type="text" name="autor" class="field-style field-full" placeholder="Autor"/>
 	</li>
 	<li>
 		<input type="text" name="tytul" class="field-style field-full" placeholder="Tytuł" />
