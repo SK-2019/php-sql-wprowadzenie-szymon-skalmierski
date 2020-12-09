@@ -212,6 +212,7 @@ h1 {
   display: inline-block;
   font-size: 20px;
   margin-right: 10px;
+  margin-bottom: 10px;
 }
 .link:hover {
     background-color: #4CAF50;
@@ -233,6 +234,7 @@ h1 {
   font-size: 20px;
   margin-right: 10px;
   font-family:helvetica;
+  margin-bottom: 10px;
 }
 .nav1:hover {
     background-color: #af4c4c;
@@ -250,6 +252,7 @@ h1 {
   font-size: 20px;
   margin-right: 10px;
   font-family:helvetica;
+  margin-bottom: 10px;
 }
 .nav2:hover {
     background-color: #4c7faf;
@@ -267,6 +270,7 @@ h1 {
   font-size: 20px;
   margin-right: 10px;
   font-family:helvetica;
+  margin-bottom: 10px;
 }
 .nav3:hover {
     background-color: #ab4ad3;
