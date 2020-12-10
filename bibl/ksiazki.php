@@ -22,7 +22,7 @@
 
     tabelka("select bAutor.id as AutorID, bAutor.autor as Autor, bTytul.tytul as Tytul from bAutor, bTytul, bAutor_bTytul where (bAutorID=bAutor.id) and (bTytulID=bTytul.id) order by AutorID", "Książki i ich autorzy:");
 ?>
-    <form class="formularz2" action="inks.php" method="POST">
+    <form class="formularz2" style='margin-top:100px' action="inks.php" method="POST">
         <h2 class="naglowek">Dodawanie nowej książki:</h2>
 	<ul>
 	<li>
