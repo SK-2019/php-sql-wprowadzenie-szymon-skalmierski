@@ -1,31 +1,16 @@
-<?php 
-    include "../body.html" 
-?>
-
+<?php include "../body.html" ?>
+    <div class='phpp'>
 <?php
-    function tabelka2($zapytanie, $nazwa, $kolumna, $row1){
-        require("../connect.php");
-        $result=$conn->query($zapytanie);
-        echo("<div>$nazwa</div>");
-	    echo("<div class='zapytanie'>($zapytanie)</div>");
-        echo("<table class='table2'>");
-            echo("<th>$kolumna</th>");
-                while($row=$result->fetch_assoc()){
-                    echo("<tr>");
-                        echo("<td>".$row[$row1]."</td>");
-                    echo("</tr>");
-		}
-        echo("</table>");
-        echo("<hr>");
-    }
 
   function tabelka1($zapytanie, $nazwa, $kolumna){
         require("../connect.php");
         $result=$conn->query($zapytanie);
+        echo("<table style='margin-right:50px' class='table1'>");
+        echo("<caption>");
         echo("<div>$nazwa</div>");
 	    echo("<div class='zapytanie'>($zapytanie)</div>");
-        echo("<table class='table1'>");
-            echo("<th>ID</th>");
+        echo("</caption>");
+        echo("<th>ID</th>");
 	    echo("<th>Imie</th>");
 	    echo("<th>Dział</th>");
 	    echo("<th>Zarobki</th>");
@@ -36,27 +21,22 @@
                     echo("</tr>");
 		}
         echo("</table>");
-        echo("<hr>");
      }
-
-	tabelka2("select sum(year(curdate()) - year(data_urodzenia)) as suma from pracownicy", "Suma lat wszystkich pracowników:", "Suma", "suma");
-
-	tabelka2("select sum(year(curdate()) - year(data_urodzenia)) as suma from pracownicy where imie like '%a'", "Suma lat kobiet:", "Suma", "suma");
-
-	tabelka2("select sum(year(curdate()) - year(data_urodzenia)) as suma from pracownicy where imie not like '%a'", "Suma lat mężczyzn:", "Suma", "suma");
 
 	tabelka1("select id_pracownicy, imie, nazwa_dzial, zarobki, date_format(data_urodzenia,'%W-%m-%Y') as wiek from pracownicy, organizacja where id_org=dzial", "Wyświetlanie nazwy dni w dacie urodzenia:", "Data urodzenia");
 
 ?>
 
 <?php
-    require("../connect.php");
+        require("../connect.php");
 	$sql="select id_pracownicy, imie, nazwa_dzial, zarobki, year(curdate())-year(data_urodzenia) as wiek from pracownicy, organizacja where id_org=dzial";
         $result=$conn->query($sql);
+        echo("<table style='width:60%'>");
+        echo("<caption>");
         echo("<div>Pracownicy + wiek:</div>");
-	    echo("<div class='zapytanie'>($sql)</div>");
-        echo("<table>");
-            echo("<th>ID</th>");
+        echo("<div class='zapytanie'>($sql)</div>");
+        echo("</caption>");
+        echo("<th>ID</th>");
 	    echo("<th>Imie</th>");
 	    echo("<th>Dział</th>");
 	    echo("<th>Zarobki</th>");
@@ -69,3 +49,5 @@
         echo("</table>");
         echo("<hr>");
 ?>
+    </div>
+</div>

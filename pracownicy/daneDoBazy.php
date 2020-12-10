@@ -1,7 +1,29 @@
-<?php 
-	include "../body.html" 
-?>
+<?php include "../body.html" ?>
+	<div class='phpp'>
+<?php
+	require("../connect.php");
+	$sql = "select * from pracownicy, organizacja where dzial=id_org order by id_pracownicy";
+		$result=$conn->query($sql);
+		echo("<table class='tabledel' style='width:47%'>");
+		echo("<caption style='text-align:left'>");
+		echo("<div>Wszyscy pracownicy:</div>");
+        echo("<div class='zapytanie'>($sql)</div>");
+        echo("</caption>");
+            echo("<th>ID</th>");
+            echo("<th>Imie</th>");
+            echo("<th>Dział</th>");
+            echo("<th>Zarobki</th>");
+            echo("<th>Data Urodzenia</th>");
+            echo("<th>DELETE</th>");
+                while($row=$result->fetch_assoc()){
+                    echo("<tr>");
+                    echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['nazwa_dzial']."</td><td>".$row['zarobki']."</td><td>".$row['data_urodzenia']."</td>");
+                    echo("<td><form action='delete.php' method=POST><input type='hidden' name='id' value='".$row['id_pracownicy']."'><input id='delemp1' type='submit' value='X'></form></td>");
+                    echo("</tr>");
+                }
+		echo("</table>");
 
+?>
 			<!-- Formularz1 -->
 	<form class="formularz1" action="insert.php" method="POST">
         <h2 class="naglowek">Formularz:</h2>
@@ -25,41 +47,5 @@
 	</ul>
 	</form>
 
-			<!-- Formularz2 -->
-	<form class="formularz2" style='margin-top:400px' action="/pracownicy/delete.php" method="POST">
-        <h2 class="naglowek">Formularz:</h2>
-	<ul>
-	<li>
-		<input type="text" name="id" class="field-style field-full" placeholder="ID" required />
-	</li>
-	<li>
-	<input type="submit" value="Usuń" />
-	</li>
-	</ul>
-	</form>
-	<br>
-<?php
-	require("../connect.php");
-	$sql = "select * from pracownicy, organizacja where dzial=id_org order by id_pracownicy";
-        $result=$conn->query($sql);
-		echo("<div>Wszyscy pracownicy:</div>");
-        echo("<div class='zapytanie'>($sql)</div>");
-        echo("<table class='tabledel' style='width:47%'>");
-            echo("<th>ID</th>");
-            echo("<th>Imie</th>");
-            echo("<th>Dział</th>");
-            echo("<th>Zarobki</th>");
-            echo("<th>Data Urodzenia</th>");
-            echo("<th>DELETE</th>");
-                while($row=$result->fetch_assoc()){
-                    echo("<tr>");
-                    echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['nazwa_dzial']."</td><td>".$row['zarobki']."</td><td>".$row['data_urodzenia']."</td>");
-                    echo("<td><form action='delete.php' method=POST><input type='hidden' name='id' value='".$row['id_pracownicy']."'><input id='delemp1' type='submit' value='X'></form></td>");
-                    echo("</tr>");
-                }
-        echo("</table>");
-		echo("<hr>");
-?>
-</body>
-</head>
-</html>
+</div>
+</div>

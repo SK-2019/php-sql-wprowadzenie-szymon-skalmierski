@@ -1,9 +1,8 @@
-<?php
-    include "../body.html" 
-?>
-
+<?php include "../body.html" ?>
+    <div class='phpp'>
 <?php
     echo("<h2 class='h2strona'>Dodano do bazy:");
+
     require("../connect.php");
         $sql = "INSERT INTO bAutor(id, autor) VALUES(NULL, '".$_POST['autor']."')";
         echo("<h3 class='h3strona'>Autor: ".$_POST['autor']."</h3>");
@@ -24,7 +23,7 @@
         echo("<form action='inks1.php' method=POST>");
         $sql="Select id as IDautor, autor from bAutor where autor = '".$_POST['autor']."'";
         $result=$conn->query($sql);
-        echo("<table class='table2'>");
+        echo("<table>");
             echo("<th>ID</th>");
             echo("<th>Autor</th>");
                 while($row=$result->fetch_assoc()){
@@ -37,7 +36,7 @@
 
         $sql="Select id as IDtytul, tytul from bTytul where tytul = '".$_POST['tytul']."'";
         $result=$conn->query($sql);
-        echo("<table class='table2'>");
+        echo("<table>");
             echo("<th>ID</th>");
             echo("<th>Tytul</th>");
                 while($row=$result->fetch_assoc()){
@@ -52,4 +51,9 @@
         echo("</div>");
         echo("</form>");
 
+    // header("location:ksiazki.php");
+    // header('Refresh: 5; url=https://git-website-com.herokuapp.com/pracownicy.php');
+	// echo("<div class='redeem1'>Zostaniesz przekierowany na stronę pracowników w ciągu 5 sekund!</div>");  
 ?>
+    </div>
+</div>

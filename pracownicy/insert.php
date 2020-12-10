@@ -1,7 +1,5 @@
-<?php 
-  include "../body.html" 
-?>
-
+<?php include "../body.html" ?>
+  <div class='phpp'>
 <?php
     echo("<div id='okno1'>");
     echo("<h2 class='h2strona'>Dodano do bazy:");
@@ -23,3 +21,5 @@
     // header('Refresh: 5; url=https://git-website-com.herokuapp.com/pracownicy.php');
 	// echo("<div class='redeem1'>Zostaniesz przekierowany na stronę pracowników w ciągu 5 sekund!</div>");  
 ?>
+    </div>
+</div>

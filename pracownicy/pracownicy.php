@@ -1,14 +1,14 @@
-<?php 
-    include "../body.html" 
-?>
-
+<?php include "../body.html" ?>
+    <div class='phpp'>
 <?php
     function tabelka4($sql, $nazwa){
         require("../connect.php");
         $result=$conn->query($sql);
+        echo("<table class='tabledel'>");
+        echo("<caption style='text-align:left'>");
         echo("<div>$nazwa</div>");
         echo("<div class='zapytanie'>($sql)</div>");
-        echo("<table class='tabledel'>");
+        echo("</caption>");
             echo("<th>ID</th>");
             echo("<th>Imie</th>");
             echo("<th>Dział</th>");
@@ -24,8 +24,9 @@
                     echo("</tr>");
                 }
         echo("</table>");
-        echo("<hr>");
     }
+    
     tabelka4("select * from pracownicy, organizacja where dzial=id_org order by id_pracownicy", "Wszyscy pracownicy:");
 ?>
-
+    </div>
+</div>

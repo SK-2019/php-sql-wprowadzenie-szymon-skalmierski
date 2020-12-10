@@ -1,7 +1,5 @@
-<?php 
-    include "../body.html" 
-?>
-
+<?php include "../body.html" ?>
+    <div class='phpp'>
 <?php
     echo("<div id='okno1'>");
         echo("<h2 class='h2strona'>Wynik:");
@@ -11,3 +9,5 @@
         echo("<h3 class='h3strona'>Data urodzenia: ".$_POST['data_ur']."</h3>");
     echo("<div>");
 ?>
+    </div>
+</div>

@@ -6,8 +6,7 @@
         echo("<h3 class='h3strona'>Tytul: '".$_POST['tytul']."'</h3>");
         echo("<h3 class='h3strona'>Datawy: '".$_POST['datawy']."'</h3>");
 
-  require("../connect.php");
-  
+	require("../connect.php");
 	$sql = "DELETE FROM bwyp WHERE id='".$_POST['id']."'";
 	if ($conn->query($sql) === TRUE) {
         echo("<p class='precord'>  Record deleted successfully!</p>");
