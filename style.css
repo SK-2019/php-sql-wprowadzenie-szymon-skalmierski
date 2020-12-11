@@ -366,10 +366,8 @@ table {
   text-align: center;
 }
 #delemp2 {
-  margin-left: 10px;
-  margin-top: 0px;
-  position: relative;
-  width: 40%;
+  margin:auto;
+  width: 50%;
   height: 110px;
   cursor: pointer;
   display: inline-block;
