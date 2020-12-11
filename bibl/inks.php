@@ -1,7 +1,7 @@
 <?php include "../body.html" ?>
     <div class='phpp' style='display:block'>
 <?php
-    echo("<h2 style='margin-top:-10px; margin-bottom:10px;' class='h2strona'>Dodano do bazy:");
+    echo("<h2 class='div1'>Dodano do bazy:");
 
     require("../connect.php");
         $sql = "INSERT INTO bAutor(id, autor) VALUES(NULL, '".$_POST['autor']."')";

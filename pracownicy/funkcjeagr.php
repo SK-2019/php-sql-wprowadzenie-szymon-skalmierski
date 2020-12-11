@@ -6,7 +6,7 @@
         $result=$conn->query($zapytanie);
         echo("<table style='width:47%' class='table2'>");
         echo("<caption>");
-        echo("<div style='margin-top:20px'>$nazwa</div>");
+        echo("<div class='div1'>$nazwa</div>");
         echo("<div class='zapytanie'>($zapytanie)</div>");
         echo("</caption>");
         echo("<th>$kolumna</th>");

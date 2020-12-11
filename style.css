@@ -1,4 +1,4 @@
-	/* INSERT.PHP / DELETE.PHP */
+  /* INSERT.PHP / DELETE.PHP */
 body.bodystrona {
  background: #21303b;
  color: #fff;
@@ -173,8 +173,44 @@ body.bodystrona {
 }
 
 
-
-  /* INDEX.PHP / PRACOWNICY.PHP / FUNKCJEAGR.PHP / DATA.PHP */
+  /* BODY.PHP */
+  .sidenav {
+  font-family: Helvetica;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: auto;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  font-size: 36px;
+  margin-left: 0px;
+}
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+  font-family: arial;
+  font-weight: bold;
+}
 body {
   background-color: #cccccc
 }
@@ -184,7 +220,7 @@ body {
   margin-bottom:8px;
   margin-top:4px;
 }
-div {
+.div1 {
   font-family:helvetica; 
   font-size:25px; 
   margin-bottom:5px;

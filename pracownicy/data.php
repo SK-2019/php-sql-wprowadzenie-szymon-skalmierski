@@ -33,7 +33,7 @@
         $result=$conn->query($sql);
         echo("<table style='width:60%'>");
         echo("<caption>");
-        echo("<div>Pracownicy + wiek:</div>");
+        echo("<div class='div1'>Pracownicy + wiek:</div>");
         echo("<div class='zapytanie'>($sql)</div>");
         echo("</caption>");
         echo("<th>ID</th>");
@@ -47,7 +47,6 @@
                     echo("</tr>");
 		}
         echo("</table>");
-        echo("<hr>");
 ?>
     </div>
 </div>

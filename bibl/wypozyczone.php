@@ -6,7 +6,7 @@
     $result=$conn->query($sql);
     echo("<table class='tabledel' style='width:70%'>");
     echo("<caption style='text-align:left'>");
-    echo("<div>Wypożyczone książki:</div>");
+    echo("<div class='div1'>Wypożyczone książki:</div>");
     echo("</caption>");
         echo("<th>ID</th>");
         echo("<th>Autor</th>");

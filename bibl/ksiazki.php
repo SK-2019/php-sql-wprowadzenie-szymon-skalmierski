@@ -6,7 +6,7 @@
         $result=$conn->query($sql);
         echo("<table style='width:55%' class='table1'>");
         echo("<caption>");
-        echo("<div>$nazwa</div>");
+        echo("<div class='div1'>$nazwa</div>");
         echo("<div class='zapytanie'>($sql)</div>");
         echo("<caption>");
             echo("<th>ID</th>");
@@ -42,7 +42,7 @@
         $result=$conn->query($sql);
         echo("<table style='width:40%'>");
         echo("<caption>");
-        echo("<div>$nazwa</div>");
+        echo("<div class='div1'>$nazwa</div>");
         echo("<div class='zapytanie'>($sql)</div>");
         echo("</caption>");
             echo("<th>ID</th>");
