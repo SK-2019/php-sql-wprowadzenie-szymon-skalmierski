@@ -5,7 +5,8 @@
 
     require("../connect.php");
         $sql = "INSERT INTO bAutor(id, autor) VALUES(NULL, '".$_POST['autor']."')";
-        echo("<h3 class='h3strona'>Autor: ".$_POST['autor']."</h3>");
+        echo("<h3 style='display:block' class='h3strona'>Autor: ".$_POST['autor']."</h3>");
+        echo("<br>");
         if ($conn->query($sql) === TRUE){
             echo("<p class='precord'> Nowy autor został dodany pomyślnie!</p>");
         } else{
@@ -13,7 +14,8 @@
         }
 
         $sql = "INSERT INTO bTytul(id, tytul) VALUES(NULL, '".$_POST['tytul']."')";
-        echo("<h3 class='h3strona'>Tytuł: ".$_POST['tytul']."</h3>");
+        echo("<h3 style='display:block' class='h3strona'>Tytuł: ".$_POST['tytul']."</h3>");
+        echo("<br>");
         if ($conn->query($sql) === TRUE){
             echo("<p class='precord'> Nowy tytuł został dodany pomyślnie!</p>");
         } else{
@@ -23,7 +25,7 @@
         echo("<form action='inks1.php' method=POST>");
         $sql="Select id as IDautor, autor from bAutor where autor = '".$_POST['autor']."'";
         $result=$conn->query($sql);
-        echo("<table>");
+        echo("<table style='display:block'>");
             echo("<th>ID</th>");
             echo("<th>Autor</th>");
                 while($row=$result->fetch_assoc()){
@@ -36,7 +38,7 @@
 
         $sql="Select id as IDtytul, tytul from bTytul where tytul = '".$_POST['tytul']."'";
         $result=$conn->query($sql);
-        echo("<table>");
+        echo("<table style='display:block'>");
             echo("<th>ID</th>");
             echo("<th>Tytul</th>");
                 while($row=$result->fetch_assoc()){
