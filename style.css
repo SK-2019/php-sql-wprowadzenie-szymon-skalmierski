@@ -206,12 +206,12 @@ body.bodystrona {
   font-size: 36px;
   margin-left: 0px;
 }
-#main {
+/* #main {
   transition: margin-left .5s;
   padding: 16px;
   font-family: arial;
   font-weight: bold;
-}
+} */
 body {
   background-color: #cccccc
 }
