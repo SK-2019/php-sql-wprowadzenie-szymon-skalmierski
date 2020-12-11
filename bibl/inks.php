@@ -1,7 +1,7 @@
 <?php include "../body.html" ?>
     <div class='phpp' style='display:block'>
 <?php
-    echo("<h2 class='h2strona'>Dodano do bazy:");
+    echo("<h2 style='margin-top:-10px; margin-bottom:10px;' class='h2strona'>Dodano do bazy:");
 
     require("../connect.php");
         $sql = "INSERT INTO bAutor(id, autor) VALUES(NULL, '".$_POST['autor']."')";
@@ -25,7 +25,7 @@
         echo("<form action='inks1.php' method=POST>");
         $sql="Select id as IDautor, autor from bAutor where autor = '".$_POST['autor']."'";
         $result=$conn->query($sql);
-        echo("<table");
+        echo("<table>");
             echo("<th>ID</th>");
             echo("<th>Autor</th>");
                 while($row=$result->fetch_assoc()){
