@@ -187,7 +187,6 @@ body.bodystrona {
   transition: 0.5s;
   padding-top: 60px;
   width:260px;
-  margin-right:260px;
 }
 .sidenav a {
   padding: 8px 8px 8px 32px;
@@ -245,6 +244,7 @@ body {
   width: 76%;
   display: flex;
   flex-wrap: wrap;
+  margin-left:270px;
 }
 .cont {
   display: flex;
