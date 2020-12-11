@@ -184,7 +184,7 @@ body.bodystrona {
   left: 0;
   background-color: #111;
   overflow-x: hidden;
-  transition: 0.5s;
+  /* transition: 0.5s; */
   padding-top: 60px;
   width:260px;
 }
@@ -194,7 +194,7 @@ body.bodystrona {
   font-size: 25px;
   color: #818181;
   display: block;
-  transition: 0.3s;
+  /* transition: 0.3s; */
 }
 .sidenav a:hover {
   color: #f1f1f1;
