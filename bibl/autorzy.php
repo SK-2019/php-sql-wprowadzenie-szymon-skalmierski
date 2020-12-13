@@ -4,7 +4,7 @@
     function tabelka($sql, $nazwa){
         require("../connect.php");
         $result=$conn->query($sql);
-        echo("<table style='margin:auto; width:70%' class='table1'>");
+        echo("<table style='display:block; margin:auto; width:70%' class='table1'>");
         echo("<caption>");
         echo("<div class='div1'>$nazwa</div>");
         echo("<div class='zapytanie'>($sql)</div>");
