@@ -4,7 +4,7 @@
     function tabelka1($zapytanie, $nazwa, $kolumna, $row1){
         require("../connect.php");
         $result=$conn->query($zapytanie);
-        echo("<table style='width:47%' class='table2'>");
+        echo("<table style='width:47%'>");
         echo("<caption>");
         echo("<div class='div1'>$nazwa</div>");
         echo("<div class='zapytanie'>($zapytanie)</div>");
@@ -18,11 +18,10 @@
                 }
         echo("</table>");
      }
-    
     function tabelka2($zapytanie, $nazwa, $kolumna, $row1){
         require("../connect.php");
         $result=$conn->query($zapytanie);
-        echo("<table style='width:47%' class='table2'>");
+        echo("<table style='width:47%'>");
         echo("<caption>");
         echo("<div style='margin-top:20px'>$nazwa</div>");
         echo("<div class='zapytanie'>($zapytanie)</div>");
@@ -35,11 +34,10 @@
         }
         echo("</table>");
      }
-
     function tabelka3($zapytanie, $nazwa, $kolumna, $row1){
         require("../connect.php");
         $result=$conn->query($zapytanie);
-        echo("<table style='width:47%' class='table2'>");
+        echo("<table style='width:47%'>");
         echo("<caption>");
         echo("<div style='margin-top:20px'>$nazwa</div>");
         echo("<div class='zapytanie'>($zapytanie)</div>");
@@ -90,6 +88,5 @@
     
     tabelka3("select sum(zarobki) as mysum, if(imie like '%a', 'Kobiety', 'Mężczyźni') as plec1 from pracownicy group by plec1", "Suma zarobków kobiet i mężczyzn:", "Suma", "mysum");
 ?>
-
     </div>
 </div>

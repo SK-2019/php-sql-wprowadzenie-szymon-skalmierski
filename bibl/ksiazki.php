@@ -4,7 +4,7 @@
     function tabelka($sql, $nazwa){
         require("../connect.php");
         $result=$conn->query($sql);
-        echo("<table style='width:55%' class='table1'>");
+        echo("<table style='width:55%'>");
         echo("<caption>");
         echo("<div class='div1'>$nazwa</div>");
         echo("<div class='zapytanie'>($sql)</div>");
@@ -58,7 +58,6 @@
     tabelka1("select * from bTytul order by id", "Książki:", "Tytuł", 'tytul');
 
     tabelka1("select * from bAutor order by id", "Autorzy:", "Autor", 'autor');
-   
 ?>
     </div>
 </div>

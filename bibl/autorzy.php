@@ -20,7 +20,7 @@
                 }
         echo("</table>");
     }
-
+    
     tabelka("select bAutor.id as AutorID, bAutor.autor as Autor, bTytul.tytul as Tytul from bAutor, bTytul, bAutor_bTytul where (bAutorID=bAutor.id) and (bTytulID=bTytul.id) and bAutor.autor='".$_POST['autor']."'", "Autorzy i ich książki:");
 
     require("../connect.php");

@@ -4,7 +4,7 @@
     function tabelka4($sql, $nazwa){
         require("../connect.php");
         $result=$conn->query($sql);
-        echo("<table class='tabledel'>");
+        echo("<table style='width:58%'>");
         echo("<caption style='text-align:left'>");
         echo("<div class='div1'>$nazwa</div>");
         echo("<div class='zapytanie'>($sql)</div>");

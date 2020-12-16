@@ -1,11 +1,10 @@
 <?php include "../body.html" ?>
     <div class='phpp'>
 <?php
-
   function tabelka1($zapytanie, $nazwa, $kolumna){
         require("../connect.php");
         $result=$conn->query($zapytanie);
-        echo("<table style='margin-right:50px' class='table1'>");
+        echo("<table style='margin-right:50px; width:60%'>");
         echo("<caption>");
         echo("<div>$nazwa</div>");
 	    echo("<div class='zapytanie'>($zapytanie)</div>");
@@ -24,9 +23,7 @@
      }
 
 	tabelka1("select id_pracownicy, imie, nazwa_dzial, zarobki, date_format(data_urodzenia,'%W-%m-%Y') as wiek from pracownicy, organizacja where id_org=dzial", "Wyświetlanie nazwy dni w dacie urodzenia:", "Data urodzenia");
-
 ?>
-
 <?php
         require("../connect.php");
 	$sql="select id_pracownicy, imie, nazwa_dzial, zarobki, year(curdate())-year(data_urodzenia) as wiek from pracownicy, organizacja where id_org=dzial";
