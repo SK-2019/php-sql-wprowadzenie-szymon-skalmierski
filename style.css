@@ -380,13 +380,13 @@ table {
   border: 0px solid #444;
   padding: 8px 13px 10px 13px;
   color: #ffff;
-  font-size: 18px;
+  font-size: 20px;
   font-family: Helvetica;
   font-weight: 900;
   font-style: normal;
 }
 #delemp3:hover {
-	background: linear-gradient(to bottom, #367fec 5%, #1d70ec 100%);
+	background: linear-gradient(to bottom, #1d70ec 5%, #367fec 100%);
 }
 .submit2 {
   text-align: center;
