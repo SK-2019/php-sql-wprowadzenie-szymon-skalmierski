@@ -366,7 +366,7 @@ table {
 #delemp1:hover {
 	background: linear-gradient(to bottom, rgb(236, 96, 50) 5%, rgb(241, 101, 54) 100%);
 }
-#delemp2 {
+#delemp3 {
   margin-left: 10px;
   margin-bottom: -20px;
   margin-top: 0px;
@@ -385,7 +385,7 @@ table {
   font-weight: 900;
   font-style: normal;
 }
-#delemp2:hover {
+#delemp3:hover {
 	background: linear-gradient(to bottom, #367fec 5%, #1d70ec 100%);
 }
 .submit2 {
