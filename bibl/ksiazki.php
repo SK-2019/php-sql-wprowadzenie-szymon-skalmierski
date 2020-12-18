@@ -1,6 +1,5 @@
 <?php include "../body.html" ?>
     <div class='phpp'>
-    <i class="fas fa-gavel"></i>
 <?php
     function tabelka($sql, $nazwa){
         require("../connect.php");
@@ -21,7 +20,7 @@
                         echo("<input type='hidden' name='id' value='".$row['AutorID']."'>");
                         echo("<input type='hidden' name='autor' value='".$row['Autor']."'>");
                         echo("<input type='hidden' name='tytul' value='".$row['Tytul']."'>");
-                        echo("<button id='delemp2' type='submit' class='fas fa-gavel'>");
+                        echo("<button id='delemp2' type='submit'><i class='fas fa-gavel'></i></button>");
                     echo("</form></td>");
                     echo("</tr>");
                 }
