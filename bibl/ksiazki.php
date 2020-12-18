@@ -17,9 +17,9 @@
                     echo("<tr>");
                     echo("<td>".$row['AutorID']."</td><td>".$row['Autor']."</td><td>".$row['Tytul']."</td>");
                     echo("<td><form action='inwy1.php' method=POST>");
-                        echo("<input type='hidden' name='id' value='".$row['id']."'>");
-                        echo("<input type='hidden' name='autor' value='".$row['autor']."'>");
-                        echo("<input type='hidden' name='tytul' value='".$row['tytul']."'>");
+                        echo("<input type='hidden' name='id' value='".$row['AutorID']."'>");
+                        echo("<input type='hidden' name='autor' value='".$row['Autor']."'>");
+                        echo("<input type='hidden' name='tytul' value='".$row['Tytul']."'>");
                         echo("<input id='delemp1' type='submit' value='X'>");
                     echo("</form></td>");
                     echo("</tr>");
