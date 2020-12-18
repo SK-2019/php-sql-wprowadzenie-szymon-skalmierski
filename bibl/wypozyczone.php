@@ -21,7 +21,7 @@
                         echo("<input type='hidden' name='autor' value='".$row['autor']."'>");
                         echo("<input type='hidden' name='tytul' value='".$row['tytul']."'>");
                         echo("<input type='hidden' name='datawy' value='".$row['datawy']."'>");
-                        echo("<input id='delemp1' type='submit' value='X'>");
+                        echo("<input id='delemp1' type='submit' value=<i class='fas fa-gavel'></i>>");
                         echo("</form></td>");
                     echo("</tr>");
                 }

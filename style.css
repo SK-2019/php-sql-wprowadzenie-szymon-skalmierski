@@ -366,6 +366,28 @@ table {
 #delemp1:hover {
 	background: linear-gradient(to bottom, rgb(236, 96, 50) 5%, rgb(241, 101, 54) 100%);
 }
+#delemp2 {
+  margin-left: 10px;
+  margin-bottom: -20px;
+  margin-top: 0px;
+  position: relative;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  display: inline-block;
+  background: #2274ee;
+  border-radius: 5px;
+  border: 0px solid #444;
+  padding: 8px 13px 10px 13px;
+  color: #ffff;
+  font-size: 18px;
+  font-family: Helvetica;
+  font-weight: 900;
+  font-style: normal;
+}
+#delemp2:hover {
+	background: linear-gradient(to bottom, #367fec 5%, #1d70ec 100%);
+}
 .submit2 {
   text-align: center;
 }
