@@ -1,5 +1,6 @@
 <?php include "../body.html" ?>
     <div class='phpp'>
+    <i class="fas fa-gavel"></i>
 <?php
     function tabelka($sql, $nazwa){
         require("../connect.php");
