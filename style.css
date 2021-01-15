@@ -179,6 +179,7 @@ body.bodystrona {
   width: 0;
   position: fixed;
   z-index: auto;
+  flex-direction: column;
   top: 0;
   left: 0;
   background-color: #111;
