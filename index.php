@@ -43,5 +43,6 @@
     
     tabelka4("select * from pracownicy, organizacja where dzial=id_org and imie not like '%a' order by nazwa_dzial asc, zarobki asc", "Mężczyźni posortowani rosnąco: po nazwie działu a następnie po wysokości zarobków:");
 ?>
-    </div>
+    
+</div>
 </div>
