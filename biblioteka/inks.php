@@ -1,8 +1,8 @@
-<?php include "/assets/body.html" ?>
+<?php include "../assets/body.html" ?>
     <div class='phpp' style='display:block'>
 <?php
     echo("<div class='div1'>Dodano do bazy: </div>");
-    require("/assets/connect.php");
+    require("../assets/connect.php");
         $sql = "INSERT INTO bAutor(id, autor) VALUES(NULL, '".$_POST['autor']."')";
         echo("<h3 class='h3strona'>Autor: ".$_POST['autor']."</h3>");
         echo("<br>");

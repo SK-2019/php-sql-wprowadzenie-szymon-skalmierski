@@ -1,7 +1,7 @@
-<?php include "/assets/body.html" ?>
+<?php include "../assets/body.html" ?>
 	<div class='phpp'>
 <?php
-	require("/assets/connect.php");
+	require("../assets/connect.php");
 	$sql = "select * from pracownicy, organizacja where dzial=id_org order by id_pracownicy";
 		$result=$conn->query($sql);
 		echo("<table style='width:58%'>");

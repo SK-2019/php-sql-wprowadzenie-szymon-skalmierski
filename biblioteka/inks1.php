@@ -1,5 +1,5 @@
 <?php
-require("/assets/connect.php");
+require("../assets/connect.php");
 echo("<h3 class='h3strona'>Autor: ".$_POST['IDautor']."</h3>");
 echo("<h3 class='h3strona'>Tytul: ".$_POST['IDtytul']."</h3>");
 

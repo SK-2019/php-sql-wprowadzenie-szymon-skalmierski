@@ -1,6 +1,6 @@
 <?php
     echo("<h2 class='h2strona'>Dodano do bazy:");
-    require("/assets/connect.php");
+    require("../assets/connect.php");
         $sql = "INSERT INTO bwyp(id, autor, tytul, datawy) VALUES(NULL, '".$_POST['autor']."', '".$_POST['tytul']."', CURDATE())";
         echo("<h3 class='h3strona'>Książka: ".$_POST['tytul']."</h3>");
         if ($conn->query($sql) === TRUE){
