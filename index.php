@@ -1,8 +1,8 @@
-<?php include 'body.html' ?>
+<?php include '/assets/body.html' ?>
     <div class='phpp'>
 <?php
     function tabelka4($zapytanie, $nazwa){
-        require("connect.php");
+        require("/assets/connect.php");
         $result=$conn->query($zapytanie);
         echo("<table style='width:55%'>");
         echo("<caption>");

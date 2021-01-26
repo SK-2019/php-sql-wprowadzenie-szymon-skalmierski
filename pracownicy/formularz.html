@@ -1,11 +1,13 @@
 <html>
+
 <head>
     <script src="https://kit.fontawesome.com/54d803d7dc.js" crossorigin="anonymous"></script>
     <title>Szymon Skalmierski 2Ti</title>
-	<link rel="icon" href="https://image.flaticon.com/icons/png/512/25/25231.png">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="https://image.flaticon.com/icons/png/512/25/25231.png">
+    <link rel="stylesheet" href="/assets/style.css">
     <meta charset="UTF-8">
 </head>
+
 <body>
     <!-- <script>
         function openNav() {
@@ -20,11 +22,15 @@
     </script> -->
 </body>
 <div class='cont'>
-    <div class='h11'><h1>Szymon Skalmierski nr26</h1><hr></div>
-    
-	<div id="links" class="sidenav">
+    <div class='h11'>
+        <h1>Szymon Skalmierski nr26</h1>
+        <hr>
+    </div>
+
+    <div id="links" class="sidenav">
         <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
-        <a href="https://github.com/SK-2019/php-sql-wprowadzenie-szymon-skalmierski"><i class="fab fa-github"></i><b> GITHUB</b></a>	
+        <a href="https://github.com/SK-2019/php-sql-wprowadzenie-szymon-skalmierski"><i class="fab fa-github"></i><b>
+                GITHUB</b></a>
         <a href="../index.php"><i class="fas fa-home"></i><b> Strona Główna</b></a>
         <a href="../pracownicy/pracownicy.php"><i class="fas fa-users"></i><b> Pracownicy</b></a>
         <a href="../pracownicy/funkcjeagr.php"><i class="fas fa-users"></i><b> Funkcje Agr.</b></a>
@@ -40,33 +46,37 @@
     <!-- <div id="main">
         <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; MENU</span>   
 	</div> -->
-	
-	<div class='phpp'>
-        
-		            <!-- Formularz1 -->
-    <form class="formularz0" style='margin:auto;' action="/pracownicy/strona.php" method="POST">
-        <h2 class="naglowek">Formularz:</h2>
-	<ul>
-	<li>
-		<input type="text" name="imie" class="field-style field-split align-left" placeholder="Imię" required />
-        <select name="dzial" class="field-style field-split align-right" required>
-        <option value="1">Dział 1 - Serwis</option>
-        <option value="2">Dział 2 - Handel</option>
-		<option value="3">Dział 3 - Marketing</option>
-		<option value="4">Dział 4 - IT</option>
-        </select>
-	</li>
-	<li>
-		<input type="text" name="zarobki" class="field-style field-split align-left" placeholder="Zarobki" required />
-		<input type="date" name="data_ur" class="field-style field-split align-right" min="1940-01-01" max="2020-12-31" required />
-	</li>
-	<li>
-	<input type="submit" value="Wyświetl" />
-	</li>
-	</ul>
-	</form>
-	
+
+    <div class='phpp'>
+
+        <!-- Formularz1 -->
+        <form class="formularz0" style='margin:auto;' action="/pracownicy/strona.php" method="POST">
+            <h2 class="naglowek">Formularz:</h2>
+            <ul>
+                <li>
+                    <input type="text" name="imie" class="field-style field-split align-left" placeholder="Imię"
+                        required />
+                    <select name="dzial" class="field-style field-split align-right" required>
+                        <option value="1">Dział 1 - Serwis</option>
+                        <option value="2">Dział 2 - Handel</option>
+                        <option value="3">Dział 3 - Marketing</option>
+                        <option value="4">Dział 4 - IT</option>
+                    </select>
+                </li>
+                <li>
+                    <input type="text" name="zarobki" class="field-style field-split align-left" placeholder="Zarobki"
+                        required />
+                    <input type="date" name="data_ur" class="field-style field-split align-right" min="1940-01-01"
+                        max="2020-12-31" required />
+                </li>
+                <li>
+                    <input type="submit" value="Wyświetl" />
+                </li>
+            </ul>
+        </form>
+
     </div>
 </div>
 </body>
+
 </html>

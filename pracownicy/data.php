@@ -1,8 +1,8 @@
-<?php include "../body.html" ?>
+<?php include "/assets/body.html" ?>
     <div class='phpp'>
 <?php
   function tabelka1($zapytanie, $nazwa, $kolumna){
-        require("../connect.php");
+        require("/assets/connect.php");
         $result=$conn->query($zapytanie);
         echo("<table style='margin-right:50px; width:60%'>");
         echo("<caption>");
@@ -25,8 +25,8 @@
 	tabelka1("select id_pracownicy, imie, nazwa_dzial, zarobki, date_format(data_urodzenia,'%W-%m-%Y') as wiek from pracownicy, organizacja where id_org=dzial", "Wyświetlanie nazwy dni w dacie urodzenia:", "Data urodzenia");
 ?>
 <?php
-        require("../connect.php");
-	$sql="select id_pracownicy, imie, nazwa_dzial, zarobki, year(curdate())-year(data_urodzenia) as wiek from pracownicy, organizacja where id_org=dzial";
+        require("/assets/connect.php");
+	    $sql="select id_pracownicy, imie, nazwa_dzial, zarobki, year(curdate())-year(data_urodzenia) as wiek from pracownicy, organizacja where id_org=dzial";
         $result=$conn->query($sql);
         echo("<table style='width:60%'>");
         echo("<caption>");

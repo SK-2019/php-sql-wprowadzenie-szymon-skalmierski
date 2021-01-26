@@ -1,11 +1,11 @@
-<?php include "../body.html" ?>
+<?php include "/assets/body.html" ?>
   <div class='phpp'>
 <?php
     echo("<div id='okno1'>");
         echo("<h2 class='h2strona'>Usunięto z bazy:");
         echo("<h3 class='h3strona'>ID: ".$_POST['id']."</h3>");
 
-	require_once("../connect.php");
+	require_once("/assets/connect.php");
 	$sql = "DELETE FROM pracownicy WHERE id_pracownicy='".$_POST['id']."'";
 	if ($conn->query($sql) === TRUE) {
         echo("<p class='precord'>  Record deleted successfully!</p>");

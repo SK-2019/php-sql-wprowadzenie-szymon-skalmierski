@@ -1,7 +1,7 @@
-<?php include "../body.html" ?>
+<?php include "/assets/body.html" ?>
     <div class='phpp'>
 <?php
-    require('../connect.php');
+    require('/assets/connect.php');
         $sql="select * from bwyp";
         $result=$conn->query($sql);
         echo("<table style='width:70%'>");
