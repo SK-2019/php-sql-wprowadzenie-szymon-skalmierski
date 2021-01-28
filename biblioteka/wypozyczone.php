@@ -42,7 +42,7 @@
         echo '</select>';
         echo '</li>';
         echo '<li>';
-        echo '<input type="submit" value="Sprwadź" />';
+        echo '<input type="submit" value="Sprawdź" />';
         echo '</li>';
         echo '</ul>';
         echo '</form>';
