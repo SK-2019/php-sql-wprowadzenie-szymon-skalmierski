@@ -1,8 +1,7 @@
 <?php
-    echo("<h2 class='h2strona'>Dodano do bazy:");
     require("../assets/connect.php");
-        $sql = "INSERT INTO bwyp(id, autor, tytul, datawy) VALUES(NULL, '".$_POST['autor']."', '".$_POST['tytul']."', CURDATE())";
-        echo("<h3 class='h3strona'>Książka: ".$_POST['tytul']."</h3>");
+    echo $_POST['autorid'];
+        $sql = "INSERT INTO bwyp(id, autor, tytul, datawy) VALUES(NULL, '".$_POST['autorid']."', '".$_POST['tytul']."', CURDATE())";
         if ($conn->query($sql) === TRUE){
             echo("<p class='precord'> Książka została dodana do wypożyczonych!</p>");
         } else{
