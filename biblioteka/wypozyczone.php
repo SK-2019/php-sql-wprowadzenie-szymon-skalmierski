@@ -64,7 +64,7 @@
         echo("</select>");
         echo '</li>';
         echo '<li>';
-        echo '<input type="submit" value="Wyślij" />';
+        echo '<input type="submit" value="Wypożycz" />';
         echo '</li>';
         echo '</ul>';
         echo '</form>';
