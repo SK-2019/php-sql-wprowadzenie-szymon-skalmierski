@@ -234,11 +234,11 @@ h1 {
   margin-bottom:18px; 
   margin-top:20px; 
   font-family: Helvetica; 
-  margin-left: 350px;
+  text-align: center;
 }
 .h11 {
-  width: 100%;
-  
+  width: 75%;
+  margin-left: 15%;
 }
 .link{
   font-family: Helvetica;
