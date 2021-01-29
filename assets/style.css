@@ -222,7 +222,7 @@ body {
   width: 76%;
   display: flex;
   flex-wrap: wrap;
-  margin-left:270px;
+  margin-left: 20%;
 }
 .cont {
   display: flex;
@@ -238,6 +238,7 @@ h1 {
 }
 .h11 {
   width: 100%;
+  margin-left: 10%;
 }
 .link{
   font-family: Helvetica;
