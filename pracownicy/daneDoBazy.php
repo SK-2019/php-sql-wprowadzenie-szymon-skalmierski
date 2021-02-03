@@ -24,8 +24,8 @@
 		echo("</table>");
 
 ?>
-			<!-- Formularz1 -->
-	<form class="formularz1" action="insert.php" method="POST">
+			<!-- Formularz0 -->
+	<form class="formularz0" style='display:block' action="insert.php" method="POST">
         <h2 class="naglowek">Formularz:</h2>
 	<ul>
 	<li>
