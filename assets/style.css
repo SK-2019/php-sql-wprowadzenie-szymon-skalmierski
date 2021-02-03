@@ -70,6 +70,7 @@ body.bodystrona {
   justify-content: space-around;
 }
 .formularz0{
+  margin-top: 30px;
   height: 200px;
   width: 450px;
 	background: #FAFAFA;
@@ -80,7 +81,6 @@ body.bodystrona {
   margin-left: 10px;
 }
 .formularz1{
-  margin-top:30px;
   max-width: 450px;
 	background: #FAFAFA;
 	padding: 30px;
@@ -220,11 +220,11 @@ body {
   font-size: 20px;
 }
 .phpp {
-  width: 80%;
+  width: 75%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-left:200px;
+  margin-left: 200px;
 }
 .cont {
   display: flex;

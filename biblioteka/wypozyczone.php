@@ -28,29 +28,29 @@
                 }
         echo("</table>");
         
-                
-        echo("<div class='formularz0'>"); 
+        echo '<div class="formularz1">';        
         echo '<form action="wypozyczone.php" method="POST">';
-        echo '<h2 class="naglowek">Wypożyczenie książki:</h2>';
-        echo("<div class='formbox'>"); 
+        echo '<h2 class="naglowek">Wypożycz książkę:</h2>';
+        echo '<div class="formbox">';
         echo '<ul>';
         echo '<li>';
                 $sql=('SELECT autor, id FROM bAutor');
                 $result=$conn->query($sql);               
-        echo '<select name="autor" class="field-style field-split align-right">';
+        echo '<select name="autor" class="field-style field-split align-left">';
             while($row=$result->fetch_assoc()){
                 echo("<option value='".$row['autor']."'>".$row['autor']."</option>");
             }
         echo '</select>';
         echo '</li>';
         echo '<li>';
-        echo '<input type="submit" value="Sprwadź" />';
+        echo '<input type="submit" value="Sprawdź" />';
         echo '</li>';
         echo '</ul>';
         echo '</form>';
 
         $autor = $_POST['autor'];
-        echo '<form action="inwy.php" method="POST">';
+        echo '<form class="formularz2" action="inwy.php" method="POST">';
+        echo '<h2 class="naglowek">Wypożyczenie książki:</h2>';
         echo '<ul>';
         echo '<li>';
         $sql = "select bTytulID, bTytul.id as tytulID, bAutor.id as AutorID, bAutor.autor as Autor, bTytul.tytul as Tytul from bAutor, bTytul, bAutor_bTytul where (bAutorID=bAutor.id) and (bTytulID=bTytul.id) and (bAutor.autor = '$autor')";
@@ -65,12 +65,12 @@
         echo("</select>");
         echo '</li>';
         echo '<li>';
-        echo '<input type="submit" value="Wyślij" />';
+        echo '<input type="submit" value="Wypożycz" />';
         echo '</li>';
         echo '</ul>';
         echo '</form>';
-        echo ("</div>");
-        echo ("</div>");
+        echo '</div>';
+        echo '</div>';
 ?>
     </div>
 </div>
