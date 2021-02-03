@@ -64,29 +64,30 @@ body.bodystrona {
   font-family: helvetica;
   margin-top: -8px;
 }
+.formbox {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
 .formularz0{
-	max-width: 450px;
+  height: 200px;
+  width: 450px;
+	background: #FAFAFA;
+	padding: 25px;
+	box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+	border-radius: 10px;
+  border: 6px solid #305A72;
+  margin-left: 10px;
+}
+.formularz1{
+  margin-top:30px;
+  max-width: 450px;
 	background: #FAFAFA;
 	padding: 30px;
 	box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
 	border-radius: 10px;
   border: 6px solid #305A72;
   display: inline-block;
-  margin-left: 30px;
-}
-.formularz1{
-  margin-top: 100px;
-  height: 200px;
-  width: 450px;
-	background: #FAFAFA;
-	padding: 30px;
-	box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
-	border-radius: 10px;
-  border: 6px solid #305A72;
-  position: relative;
-  display: auto;
-  float: left;
-  margin-left: 10px;
 }
 .formularz2{
   height: 200px;
@@ -106,8 +107,8 @@ body.bodystrona {
 }
 .formularz0 ul li, .formularz1 ul li{
 	display: block;
-	margin-bottom: 30px;
-	min-height: 20px;
+	margin-bottom: 15px;
+  min-height: 30px;
 }
 .formularz2 ul li{
 	display: block;
