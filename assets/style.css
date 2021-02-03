@@ -222,7 +222,7 @@ body {
 .phpp {
   width: 80%;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
   margin-left: 250px;
 }
