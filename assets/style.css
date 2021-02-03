@@ -220,11 +220,11 @@ body {
   font-size: 20px;
 }
 .phpp {
-  width: 90%;
+  width: 80%;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
-  margin-left: 200px;
+  margin-left: 250px;
 }
 .cont {
   display: flex;
