@@ -28,7 +28,7 @@
                 }
         echo("</table>");
         
-        echo '<div class="formularz1">';        
+        echo '<div class="formularz0">';        
         echo '<form action="wypozyczone.php" method="POST">';
         echo '<h2 class="naglowek">Wypożycz książkę:</h2>';
         echo '<div class="formbox">';
