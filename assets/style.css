@@ -115,33 +115,29 @@ body.bodystrona {
 	margin-bottom: 15px;
 	min-height: 20px;
 }
-.formularz0 ul li  .field-style, .formularz1 ul li  .field-style, .formularz2 ul li  .field-style{
+.field-style{
 	box-sizing: border-box; 
 	padding: 8px;
 	outline: none;
 	border: 1px solid #B0CFE0;
 }
-.formularz0 ul li  .field-style:focus, .formularz1 ul li  .field-style:focus, .formularz2 ul li  .field-style:focus{
+.field-style:focus{
 	box-shadow: 0 0 5px #B0CFE0;
 	border:1px solid #B0CFE0;
 }
-.formularz0 ul li .field-split, .formularz1 ul li .field-split{
+.field-split{
   width: 216px;
   height: 36px;
 }
-.formularz1 ul li .field-full, .formularz2 ul li .field-full{
+.field-full{
 	width: 450px;
 }
-.formularz0 ul li input.align-left,
-.formularz0 ul li select.align-left, 
-.formularz1 ul li input.align-left,
-.formularz1 ul li select.align-left{
+.input.align-left,
+.select.align-left{
 	float:left;
 }
-.formularz0 ul li input.align-right,
-.formularz0 ul li select.align-right,
-.formularz1 ul li input.align-right,
-.formularz1 ul li select.align-right{
+.input.align-right,
+.select.align-right{
 	float:right;
 } 
 .formularz0 ul li input[type="submit"], .formularz1 ul li input[type="submit"], .formularz2 ul li input[type="submit"] {
@@ -231,15 +227,13 @@ body {
   flex-wrap: wrap;
   width: 100%;
 }
-h1 {
+.heading {
+  width: 100%;
   font-size:40px; 
   margin-bottom:18px; 
   margin-top:20px; 
-  font-family: Helvetica; 
+  font-family: Helvetica, sans-serif; 
   text-align: center;
-}
-.h11 {
-  width: 100%;
 }
 .nav {
   width: 20%;
