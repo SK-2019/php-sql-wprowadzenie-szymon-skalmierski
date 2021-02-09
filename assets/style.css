@@ -234,6 +234,7 @@ body {
   margin-top:20px; 
   font-family: Helvetica, sans-serif; 
   text-align: center;
+  font-weight: bold;
 }
 .nav {
   width: 20%;
