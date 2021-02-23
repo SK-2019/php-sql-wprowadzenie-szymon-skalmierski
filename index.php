@@ -22,7 +22,7 @@
         }
 
         $hostname = $_SERVER['HTTP_HOST'];
-        echo("<li> hostname: ".$hostname);
+        echo("<li> hostname: ".$hostname. "</li>");
         
     tabelka4("select * from pracownicy, organizacja where dzial=id_org and (dzial=1 or dzial=3) and imie like '%a' order by zarobki", "Kobiety z działu 1 i 3 posortowane po zarobkach:");
 
