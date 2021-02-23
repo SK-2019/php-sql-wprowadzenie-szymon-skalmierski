@@ -24,10 +24,8 @@
         $hostname = $_SERVER['HTTP_HOST'];
         
         if ($hostname == 'localhost:8003') {
-            require_once ("config.php");
+            require_once ("assets/config.php");
         }
-        echo("<li> hostname : ".$hostname);
-        echo("<li> SERVER passsword: ".$_SERVER['pass']);
         
     tabelka4("select * from pracownicy, organizacja where dzial=id_org and (dzial=1 or dzial=3) and imie like '%a' order by zarobki", "Kobiety z działu 1 i 3 posortowane po zarobkach:");
 
