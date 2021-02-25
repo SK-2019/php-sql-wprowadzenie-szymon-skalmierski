@@ -1,7 +1,7 @@
 <?php
 
 $hostname = $_SERVER['HTTP_HOST'];
-if ($hostname == 'localhost:8003') {
+if ($hostname == 'git-website-com.herokuapp.com') {
     require_once ("config.php");
 }
 
