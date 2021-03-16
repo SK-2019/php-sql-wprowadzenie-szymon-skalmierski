@@ -1,5 +1,5 @@
 <?php
-
+echo("<h1>".$_SERVER['HTTP_HOST']."</h1>");
 $hostname = $_SERVER['HTTP_HOST'];
 if ($hostname == 'https://git-website-com.herokuapp.com') {
     require_once ("config.php");
