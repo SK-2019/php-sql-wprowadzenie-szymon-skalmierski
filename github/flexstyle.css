@@ -1,0 +1,89 @@
+.container {
+  background-color: #328fa8;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80%;
+  height: 110vh;
+  flex-direction:column;
+}
+.box {
+  background-color: #5ad1b5;
+  padding: 5px;
+  width: 30%;
+  height: 20%;
+}
+
+.nr1{
+display: flex;
+justify-content: flex-start;
+align-items: flex-start;
+}
+.nr2{
+display: flex;
+justify-content: flex-end;
+align-items: flex-start;
+}
+.nr3{
+display: flex;
+justify-content: flex-start;
+align-items: flex-end;
+}
+.nr4{
+display: flex;
+justify-content: flex-end;
+align-items: flex-end;
+}
+.nr5{
+display: flex;
+justify-content: center;
+align-items: flex-start;
+}
+.nr6{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.nr7{
+display: flex;
+justify-content: center;
+align-items: flex-end;
+}
+.nr8{
+display: flex;
+justify-content: flex-start;
+align-items: flex-start;
+}
+.nr9{
+display: flex;
+justify-content: center;
+align-items: flex-start;
+}
+.nr10{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.nr11{
+display: flex;
+justify-content: center;
+align-items: flex-end;
+}
+.nr12{
+display: flex;
+justify-content: flex-start;
+align-items: flex-start;
+}
+
+.nav {
+  background-color: #ddfa73;
+  padding: 2px;
+  list-style: none;
+  width: 20%;
+  height: 30%;
+}
+
+.space {
+  margin-left: 10px;
+}
