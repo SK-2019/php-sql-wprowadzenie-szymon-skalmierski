@@ -151,11 +151,13 @@ align-items: flex-start;
 .link2:hover{
   background-color: rgb(255, 159, 49);
   color: rgb(206, 36, 36);
+  font-size: 20px;
 }
 .link3:hover{
   background-color: rgb(41, 241, 84);
   color: rgb(27, 121, 245);
   border-radius: 10px;
+  font-size: 20px;
 }
 .link4:hover{
   background-color: rgb(231, 16, 27);
