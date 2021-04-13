@@ -107,7 +107,6 @@ align-items: flex-start;
 .link1{
   display: inline-block;
   padding: 5px;
-  margin: 1px;
   background-color: aliceblue;
   text-decoration: none;
   font-size: 15px;
@@ -117,7 +116,6 @@ align-items: flex-start;
 .link2{
   display: inline-block;
   padding: 5px;
-  margin: 1px;
   background-color: aliceblue;
   text-decoration: none;
   font-size: 15px;
@@ -127,7 +125,6 @@ align-items: flex-start;
 .link3{
   display: inline-block;
   padding: 5px;
-  margin: 1px;
   width: 60%;
   background-color: aliceblue;
   text-decoration: none;
@@ -138,7 +135,6 @@ align-items: flex-start;
 .link4{
   display:inline-block;
   padding: 5px;
-  margin: 1px;
   width: 60%;
   background-color: aliceblue;
   text-decoration: none;
