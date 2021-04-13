@@ -83,6 +83,7 @@ align-items: flex-start;
   height: 30%;
 }
 .nav1 {
+  display: block;
   background-color: #ddfa73;
   padding: 2px;
   list-style: none;
