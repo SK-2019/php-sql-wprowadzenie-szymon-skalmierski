@@ -95,6 +95,7 @@ align-items: flex-start;
 .row{
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
 }
 .colum{
   display: flex;
