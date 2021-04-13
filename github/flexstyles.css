@@ -98,12 +98,14 @@ align-items: flex-start;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
+  align-items:flex-start;
 }
 .colum{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   flex-wrap: wrap;
+  align-items:flex-start;
 }
 .link1{
   display: inline-block;
