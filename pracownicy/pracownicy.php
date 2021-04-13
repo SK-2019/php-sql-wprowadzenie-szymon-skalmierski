@@ -27,12 +27,6 @@
     }
     
     tabelka4("select * from pracownicy, organizacja where dzial=id_org order by id_pracownicy", "Wszyscy pracownicy:");
-
-    $hostname = $_SERVER['HTTP_HOST'];
-        
-        if ($hostname == 'localhost:8003') {
-            require_once ("config.php");
-        }
 ?>
     </div>
 </div>
