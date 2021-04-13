@@ -96,6 +96,7 @@ align-items: flex-start;
 .row{
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 .colum{
@@ -147,7 +148,6 @@ align-items: flex-start;
 .link1:hover{
   background-color: rgb(54, 30, 2);
   color: white;
-  font-size: 20px;
 }
 .link2:hover{
   background-color: rgb(255, 159, 49);
