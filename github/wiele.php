@@ -8,7 +8,7 @@
         echo("<caption>");
         echo("<div class='div1'>Pracownicy w działach:</div>");
         echo("<div class='zapytanie'>('select * from pracownik,dzial where (dzial_id=dzial.id) order by nazwaDzial')</div>");
-        echo("<caption>");
+        echo("</caption>");
             echo("<th>Nazwa Działu</th>");
             echo("<th>Imię</th>");
             echo("<th>Wynagrodzenie</th>");
@@ -21,7 +21,7 @@
         echo("</table>");
     
     $result=$conn->query("select * from pracownik order by id");
-        echo("<table style='width:60%'>");
+        echo("<table style='width:55%'>");
         echo("<caption>");
         echo("<div class='div1'>Pracownicy:</div>");
         echo("<div class='zapytanie'>(select * from pracownik order by id)</div>");
