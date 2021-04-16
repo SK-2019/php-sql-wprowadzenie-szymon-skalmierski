@@ -4,7 +4,7 @@
     echo("<div class='wiele1'>");
     require("../assets/connect.php");
     $result=$conn->query('select * from pracownik,dzial where (dzial_id=dzial.id) order by nazwaDzial');
-        echo("<table style='width:85%'>");
+        echo("<table style='width:55%'>");
         echo("<caption>");
         echo("<div class='div1'>Pracownicy w działach:</div>");
         echo("<div class='zapytanie'>('select * from pracownik,dzial where (dzial_id=dzial.id) order by nazwaDzial')</div>");
@@ -52,5 +52,5 @@
                     echo("</tr>");
                 }
         echo("</table>");
-        echo("</div>");
+    echo("</div>");
 ?>
