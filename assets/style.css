@@ -176,9 +176,11 @@ body.bodystrona {
   font-size: 25px;
   color: #818181;
   display: block;
+  transition: 0.2s;
 }
 .sidenav a:hover {
   color: #f1f1f1;
+  font-size: 27px;
 }
 .sidenav .closebtn {
   position: absolute;
