@@ -3,7 +3,7 @@
 <?php
     echo("<div class='wiele1'>");
     require("../assets/connect.php");
-    $result=$conn->query($sql);
+    $result=$conn->query('select * from pracownik,dzial where (dzial_id=dzial.id) order by nazwaDzial');
         echo("<table style='width:55%'>");
         echo("<caption>");
         echo("<div class='div1'>Pracownicy w działach:</div>");
