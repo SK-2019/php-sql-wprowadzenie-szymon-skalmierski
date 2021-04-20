@@ -22,11 +22,11 @@
 
         // INSERT
     echo '<form style="margin:auto; margin-top:15px" class="formularz0" action="insertwiele.php" method="POST">';
-    echo '<h2 class="naglowek">Filtrowanie wg autora:</h2>';
+    echo '<h2 class="naglowek">Dodawanie pracownika:</h2>';
     echo '<ul>';
     echo '<li>';
         echo '<input type="text" name="imie" class="field-style field-split align-left" placeholder="Imię" />';
-        $sql=('select * from pracownik,dzial');
+        $sql=('select * from dzial');
                 $result=$conn->query($sql);               
         echo '<select name="nazwaDzial" class="field-style field-split align-right">';
             while($row=$result->fetch_assoc()){
