@@ -37,3 +37,7 @@
         <a class="a2" href="/wiele/wiele9.php"><i class="fas fa-atom"></i> Pracownik-Projekt</a>
     </div>
 <div class='phpp'>
+<?php
+$path = new SplFileInfo(__FILE__);
+echo 'The real path is '.$path->getRealPath();
+?>

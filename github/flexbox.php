@@ -32,18 +32,18 @@
       <div class="box nr3">
         <div class="nav1">
           <div class="column">
-            <a href="/app/index.php" class="link3"><b>Obraz</b></a>
-            <a href="/app/index.php" class="link3"><b>Kontakt</b></a>
-            <a href="/app/index.php" class="link3"><b>Informacje</b></a>
+            <a href="/index.php" class="link3"><b>Obraz</b></a>
+            <a href="/index.php" class="link3"><b>Kontakt</b></a>
+            <a href="/index.php" class="link3"><b>Informacje</b></a>
           </div>
         </div>
       </div>
       <div class="box nr4">
         <div class="nav1">
           <div class="column">
-            <a href="/app/index.php" class="link4"><b>Przejdź dalej</b></a>
-            <a href="/app/index.php" class="link4"><b>Kontener</b></a>
-            <a href="/app/index.php" class="link4"><b>Flexbox</b></a>
+            <a href="/index.php" class="link4"><b>Przejdź dalej</b></a>
+            <a href="/index.php" class="link4"><b>Kontener</b></a>
+            <a href="/index.php" class="link4"><b>Flexbox</b></a>
           </div>
         </div>
       </div>
