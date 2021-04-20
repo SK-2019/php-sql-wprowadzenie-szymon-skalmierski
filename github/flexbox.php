@@ -14,9 +14,9 @@
       <div class="box nr1">
         <div class="nav1">
           <div class="row">
-            <a href="/app/index.php" class="link1"><b>Strona Główna</b></a>
-            <a href="/app/index.php" class="link1"><b>Menu</b></a>
-            <a href="/app/index.php" class="link1"><b>Pozycja</b></a>
+            <a href="/index.php" class="link1"><b>Strona Główna</b></a>
+            <a href="/index.php" class="link1"><b>Menu</b></a>
+            <a href="/index.php" class="link1"><b>Pozycja</b></a>
           </div>
         </div>
       </div>
