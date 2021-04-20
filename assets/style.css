@@ -167,7 +167,7 @@ body.bodystrona {
   left: 0;
   background-color: #111;
   overflow-x: hidden;
-  padding-top: 20px;
+  padding: 10px 0px;
   width:280px;
 }
 .sidenav .a1 {
