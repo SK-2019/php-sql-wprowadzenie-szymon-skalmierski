@@ -23,9 +23,9 @@
       <div class="box nr2">
         <div class="nav1">
           <div class="row">
-            <a href="/app/index.php" class="link2"><b>Tło</b></a>
-            <a href="/app/index.php" class="link2"><b>Przycisk</b></a>
-            <a href="/app/index.php" class="link2"><b>Niebo</b></a>
+            <a href="/index.php" class="link2"><b>Tło</b></a>
+            <a href="/index.php" class="link2"><b>Przycisk</b></a>
+            <a href="/index.php" class="link2"><b>Niebo</b></a>
           </div>
         </div>
       </div>

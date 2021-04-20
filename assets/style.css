@@ -228,7 +228,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-left: 250px;
+  margin-left: 10%;
 }
 .cont {
   display: flex;
@@ -236,7 +236,8 @@ body {
   width: 100%;
 }
 .heading {
-  width: 100%;
+  margin-left: 16%;
+  width: 86%;
   font-size:40px; 
   margin-bottom:18px; 
   margin-top:20px; 
