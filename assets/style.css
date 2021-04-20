@@ -167,7 +167,7 @@ body.bodystrona {
   left: 0;
   background-color: #111;
   overflow-x: hidden;
-  padding-top: 20px;
+  padding: 20px 0px;
   width:280px;
 }
 .sidenav a {
@@ -347,6 +347,8 @@ th {
   justify-content: center;
 }
 .kat{
+  margin-left: 5px;
+  margin-top:10px;
   font-size: 23px;
   color: #818181;
   font-weight: bold;
