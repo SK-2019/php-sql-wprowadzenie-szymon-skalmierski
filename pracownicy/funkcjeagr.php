@@ -1,8 +1,8 @@
-<?php include "../assets/body.html" ?>
+<?php include "/app/assets/body.html" ?>
     <div class='phpp'>
 <?php
     function tabelka1($zapytanie, $nazwa, $kolumna, $row1){
-        require("../assets/connect.php");
+        require("/app/assets/connect.php");
         $result=$conn->query($zapytanie);
         echo("<table style='width:47%'>");
         echo("<caption>");
@@ -19,7 +19,7 @@
         echo("</table>");
      }
     function tabelka2($zapytanie, $nazwa, $kolumna, $row1){
-        require("../assets/connect.php");
+        require("/app/assets/connect.php");
         $result=$conn->query($zapytanie);
         echo("<table style='width:47%'>");
         echo("<caption>");
@@ -35,7 +35,7 @@
         echo("</table>");
      }
     function tabelka3($zapytanie, $nazwa, $kolumna, $row1){
-        require("../assets/connect.php");
+        require("/app/assets/connect.php");
         $result=$conn->query($zapytanie);
         echo("<table style='width:47%'>");
         echo("<caption>");

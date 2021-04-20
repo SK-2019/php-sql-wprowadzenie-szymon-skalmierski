@@ -1,6 +1,6 @@
-<?php include "../assets/body.html" ?>
+<?php include "/app/assets/body.html" ?>
 <?php
-    require("../assets/connect.php");
+    require("/app/assets/connect.php");
     $sql="select * from bodd";
     $result=$conn->query($sql);
     echo("<table style='width:90%'>");

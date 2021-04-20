@@ -1,5 +1,5 @@
 <?php
-    require("../assets/connect.php");
+    require("/app/assets/connect.php");
     echo $_POST['autorid'];
         $sql = "INSERT INTO bwyp(id, autor, tytul, datawy) VALUES(NULL, '".$_POST['autorid']."', '".$_POST['tytul']."', CURDATE())";
         if ($conn->query($sql) === TRUE){

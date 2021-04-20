@@ -1,4 +1,4 @@
-<?php include "../assets/body.html" ?>
+<?php include "/app/assets/body.html" ?>
     <div class='phpp'>
 <?php
     echo("<div id='okno1'>");

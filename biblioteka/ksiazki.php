@@ -1,7 +1,7 @@
-<?php include "../assets/body.html" ?>
+<?php include "/app/assets/body.html" ?>
 <?php
     function tabelka($sql, $nazwa){
-        require("../assets/connect.php");
+        require("/app/assets/connect.php");
         $result=$conn->query($sql);
         echo("<table style='width:55%'>");
         echo("<caption>");

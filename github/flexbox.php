@@ -1,9 +1,10 @@
+<?php include "/app/assets/body.html" ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <script src="https://kit.fontawesome.com/54d803d7dc.js" crossorigin="anonymous"></script>
     <title>Szymon Skalmierski 2Ti</title>
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/app/assets/favicon-16x16.png">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="flexstyles.css" />
   </head>
@@ -13,36 +14,36 @@
       <div class="box nr1">
         <div class="nav1">
           <div class="row">
-            <a href="../index.php" class="link1"><b>Strona Główna</b></a>
-            <a href="../index.php" class="link1"><b>Menu</b></a>
-            <a href="../index.php" class="link1"><b>Pozycja</b></a>
+            <a href="/app/index.php" class="link1"><b>Strona Główna</b></a>
+            <a href="/app/index.php" class="link1"><b>Menu</b></a>
+            <a href="/app/index.php" class="link1"><b>Pozycja</b></a>
           </div>
         </div>
       </div>
       <div class="box nr2">
         <div class="nav1">
           <div class="row">
-            <a href="../index.php" class="link2"><b>Tło</b></a>
-            <a href="../index.php" class="link2"><b>Przycisk</b></a>
-            <a href="../index.php" class="link2"><b>Niebo</b></a>
+            <a href="/app/index.php" class="link2"><b>Tło</b></a>
+            <a href="/app/index.php" class="link2"><b>Przycisk</b></a>
+            <a href="/app/index.php" class="link2"><b>Niebo</b></a>
           </div>
         </div>
       </div>
       <div class="box nr3">
         <div class="nav1">
           <div class="column">
-            <a href="../index.php" class="link3"><b>Obraz</b></a>
-            <a href="../index.php" class="link3"><b>Kontakt</b></a>
-            <a href="../index.php" class="link3"><b>Informacje</b></a>
+            <a href="/app/index.php" class="link3"><b>Obraz</b></a>
+            <a href="/app/index.php" class="link3"><b>Kontakt</b></a>
+            <a href="/app/index.php" class="link3"><b>Informacje</b></a>
           </div>
         </div>
       </div>
       <div class="box nr4">
         <div class="nav1">
           <div class="column">
-            <a href="../index.php" class="link4"><b>Przejdź dalej</b></a>
-            <a href="../index.php" class="link4"><b>Kontener</b></a>
-            <a href="../index.php" class="link4"><b>Flexbox</b></a>
+            <a href="/app/index.php" class="link4"><b>Przejdź dalej</b></a>
+            <a href="/app/index.php" class="link4"><b>Kontener</b></a>
+            <a href="/app/index.php" class="link4"><b>Flexbox</b></a>
           </div>
         </div>
       </div>
@@ -82,3 +83,4 @@
   </body>
 </html>
 
+</div>
