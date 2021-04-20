@@ -1,5 +1,4 @@
 <?php include "../assets/body.html" ?>
-    <div class='phpp'>
 <?php error_reporting(0); ?>
 <?php
     require('../assets/connect.php');

@@ -1,5 +1,4 @@
 <?php include 'assets/body.html' ?>
-    <div class='phpp'>
 <?php
     function tabelka4($zapytanie, $nazwa){
         require("assets/connect.php");

@@ -1,5 +1,4 @@
 <?php include "../assets/body.html" ?>
-    <div class='phpp' style='display:block'>
 <?php
     echo("<div class='div1'>Dodano do bazy: </div>");
     require("../assets/connect.php");

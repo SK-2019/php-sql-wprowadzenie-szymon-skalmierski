@@ -176,6 +176,7 @@ body.bodystrona {
   color: #818181;
   display: block;
   transition: 0.2s;
+  font-weight: bold;
 }
 .sidenav .a1:hover {
   color: #f1f1f1;
@@ -188,6 +189,7 @@ body.bodystrona {
   color: #818181;
   display: block;
   transition: 0.2s;
+  font-weight: bold;
 }
 .sidenav .a2:hover {
   color: #f1f1f1;

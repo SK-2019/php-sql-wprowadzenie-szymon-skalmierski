@@ -1,6 +1,5 @@
 <?php error_reporting(0); ?>
 <?php include "../assets/body.html" ?>
-    <div class='phpp' style='display:block'>
 <?php
     function tabelka($sql, $nazwa){
         require("../assets/connect.php");

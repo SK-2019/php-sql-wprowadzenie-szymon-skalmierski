@@ -1,5 +1,4 @@
 <?php include "../assets/body.html" ?>
-    <div class='phpp'>
 <?php
     require("../assets/connect.php");
     $sql="select * from bodd";
