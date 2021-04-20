@@ -1,4 +1,6 @@
 <?php include "../../assets/body.html" ?>
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16x16.png">
+<link rel="stylesheet" href="../assets/style.css">
 <?php
         // PRACOWNICY I DZIAŁY
     echo("<div class='wiele1'>");
