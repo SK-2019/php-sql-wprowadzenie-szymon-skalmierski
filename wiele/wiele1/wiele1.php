@@ -1,4 +1,4 @@
-<?php include "../assets/body.html" ?>
+<?php include "../../assets/body.html" ?>
 <?php
         // PRACOWNICY I DZIAŁY
     echo("<div class='wiele1'>");
