@@ -341,4 +341,8 @@ th {
 }
 .wiele1{
   width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  justify-content:center;
 }
