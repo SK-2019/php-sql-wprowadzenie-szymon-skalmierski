@@ -80,4 +80,8 @@
     echo("<hr>");
     echo("</div>");
 
+
+    $path = new SplFileInfo(__FILE__);
+echo 'The real path is '.$path->getRealPath();
+
 ?>
