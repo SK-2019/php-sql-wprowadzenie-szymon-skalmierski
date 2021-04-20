@@ -167,10 +167,11 @@ body.bodystrona {
   left: 0;
   background-color: #111;
   overflow-x: hidden;
-  padding: 20px 0px;
+  padding-top: 20px;
+  padding-bottom: 50px;
   width:280px;
 }
-.sidenav a {
+.sidenav .a1 {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
@@ -178,16 +179,21 @@ body.bodystrona {
   display: block;
   transition: 0.2s;
 }
-.sidenav a:hover {
+.sidenav .a1:hover {
   color: #f1f1f1;
   font-size: 27px;
 }
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 0px;
-  font-size: 36px;
-  margin-left: 0px;
+.sidenav .a2 {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.2s;
+}
+.sidenav .a2:hover {
+  color: #f1f1f1;
+  font-size: 23px;
 }
 body {
   background-color: #cccccc
