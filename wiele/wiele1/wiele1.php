@@ -1,8 +1,8 @@
-<?php include "../assets/body.html" ?>
+<?php include "../../assets/body.html" ?>
 <?php
         // PRACOWNICY I DZIAŁY
     echo("<div class='wiele1'>");
-    require("../assets/connect.php");
+    require("../../assets/connect.php");
     $result=$conn->query('select * from pracownik,dzial where (dzial_id=dzial.id) order by nazwaDzial');
         echo("<table style='width:50%'>");
         echo("<caption>");
@@ -21,7 +21,7 @@
         echo("</table>");
 
         // INSERT
-    echo '<form style="margin:auto; margin-top:15px" class="formularz0" action="insertwiele.php" method="POST">';
+    echo '<form style="margin:auto; margin-top:15px" class="formularz0" action="insertwiele1.php" method="POST">';
     echo '<h2 class="naglowek">Dodawanie pracownika:</h2>';
     echo '<ul>';
     echo '<li>';
