@@ -41,7 +41,7 @@
 		echo '<input type="date" name="dataUrodzenia" class="field-style field-split align-right" min="1940-01-01" max="2020-12-31" />';
     echo '</li>';
     echo '<li>';
-    echo '<input type="submit" value="Szukaj" />';
+    echo '<input type="submit" value="Dodaj" />';
     echo '</li>';
     echo '</ul>';
     echo '</form>';
