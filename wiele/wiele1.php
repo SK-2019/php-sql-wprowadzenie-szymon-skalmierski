@@ -1,8 +1,8 @@
-<?php include "../../assets/body.html" ?>
+<?php include "../assets/body.html" ?>
 <?php
         // PRACOWNICY I DZIAŁY
     echo("<div class='wiele1'>");
-    require("../../assets/connect.php");
+    require("../assets/connect.php");
     $result=$conn->query('select * from pracownik,dzial where (dzial_id=dzial.id) order by nazwaDzial');
         echo("<table style='width:50%'>");
         echo("<caption>");
