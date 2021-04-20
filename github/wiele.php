@@ -53,6 +53,7 @@
                     echo("</tr>");
                 }
         echo("</table>");
+    echo("<hr>");
     echo("</div>");
 
 

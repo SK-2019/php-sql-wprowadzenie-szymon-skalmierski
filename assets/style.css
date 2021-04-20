@@ -343,6 +343,6 @@ th {
   width: 90%;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 20px;
-  justify-content:center;
+  margin-bottom: 25px;
+  justify-content: center;
 }
