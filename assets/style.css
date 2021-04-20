@@ -159,8 +159,7 @@ body.bodystrona {
   /* BODY.PHP */
 .sidenav {
   font-family: Tahoma, Helvetica, sans-serif;
-  height: 94%;
-  width: 0;
+  height: 100%;
   position: fixed;
   z-index: auto;
   top: 0;
