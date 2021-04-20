@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="flexstyles.css" />
   </head>
   <body>
-    <h2>Szymon Skalmierski 2Ti</h2>
     <div class="container">
       <div class="box nr1">
         <div class="nav1">
