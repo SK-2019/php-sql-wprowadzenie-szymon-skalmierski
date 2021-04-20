@@ -21,11 +21,11 @@
         echo("</table>");
 
         // INSERT
-    echo '<form style="margin:auto; margin-top:15px" class="formularz0" action="" method="POST">';
+    echo '<form style="margin:auto; margin-top:15px" class="formularz0" action="insertwiele.php" method="POST">';
     echo '<h2 class="naglowek">Filtrowanie wg autora:</h2>';
     echo '<ul>';
     echo '<li>';
-        echo '<input type="text" name="imie" class="field-style field-split align-left" placeholder="Imię" />'
+        echo '<input type="text" name="imie" class="field-style field-split align-left" placeholder="Imię" />';
         $sql=('select * from pracownik,dzial where (dzial_id=dzial.id)');
                 $result=$conn->query($sql);               
         echo '<select name="nazwaDzial" class="field-style field-split align-right">';
@@ -35,8 +35,8 @@
         echo '</select>';
     echo '</li>';
     echo '<li>';
-        echo '<input type="text" name="wynagrodzenie" class="field-style field-split align-left" placeholder="Wynagrodzenie" />'
-		echo '<input type="date" name="dataUrodzenia" class="field-style field-split align-right" min="1940-01-01" max="2020-12-31" />'
+        echo '<input type="text" name="wynagrodzenie" class="field-style field-split align-left" placeholder="Wynagrodzenie" />';
+		echo '<input type="date" name="dataUrodzenia" class="field-style field-split align-right" min="1940-01-01" max="2020-12-31" />';
     echo '</li>';
     echo '<li>';
     echo '<input type="submit" value="Szukaj" />';
