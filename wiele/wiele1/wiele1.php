@@ -1,8 +1,8 @@
-<?php include "../../assets/body.html" ?>
+<?php include "/app/assets/body.html" ?>
 <?php
         // PRACOWNICY I DZIAŁY
     echo("<div class='wiele1'>");
-    require("../../assets/connect.php");
+    require("/app/assets/connect.php");
     $result=$conn->query('select * from pracownik,dzial where (dzial_id=dzial.id) order by nazwaDzial');
         echo("<table style='width:50%'>");
         echo("<caption>");
@@ -80,8 +80,7 @@
     echo("<hr>");
     echo("</div>");
 
-
-    $path = new SplFileInfo(__FILE__);
-echo 'The real path is '.$path->getRealPath();
+//     $path = new SplFileInfo(__FILE__);
+// echo 'The real path is '.$path->getRealPath();
 
 ?>
