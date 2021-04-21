@@ -1,5 +1,4 @@
 <?php include "/app/assets/body.html" ?>
-    <div class='phpp'>
 <?php
     echo("<div id='okno1'>");
         echo("<h2 class='h2strona'>Wynik:");
