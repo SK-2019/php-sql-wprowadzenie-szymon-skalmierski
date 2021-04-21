@@ -22,7 +22,7 @@
     
     tabelka("select bAutor.id as AutorID, bAutor.autor as Autor, bTytul.tytul as Tytul from bAutor, bTytul, bAutor_bTytul where (bAutorID=bAutor.id) and (bTytulID=bTytul.id) and bAutor.autor='".$_POST['autor']."'", "Autorzy i ich książki:");
 
-    require("../assets/connect.php");
+    require("/app/assets/connect.php");
     echo '<form style="margin:auto; margin-top:15px" class="formularz2" action="autorzy.php" method="POST">';
     echo '<h2 class="naglowek">Filtrowanie wg autora:</h2>';
     echo '<ul>';

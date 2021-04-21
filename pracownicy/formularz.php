@@ -1,5 +1,4 @@
 <?php include "/app/assets/body.html" ?>
-    <div class='phpp'>
         <!-- Formularz0 -->
         <form class="formularz0" action="strona.php" method="POST">
             <h2 class="naglowek">Formularz:</h2>
