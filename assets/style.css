@@ -224,11 +224,11 @@ body {
   font-size: 20px;
 }
 .phpp {
-  width: 86%;
+  width: 88%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-left: 10%;
+  margin-left: 16%;
 }
 .cont {
   display: flex;
