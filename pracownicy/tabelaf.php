@@ -8,4 +8,5 @@
 
     tabela("SELECT * FROM pracownik where (dzial_id=2 or dzial_id=4)","Pracownicy z działu 2 i 4:");
 
+    tabela("SELECT avg(zarobki),dzial_id FROM pracownik group by dzial_id","Średnie zarobki w poszczególnych działach:");
 ?>
