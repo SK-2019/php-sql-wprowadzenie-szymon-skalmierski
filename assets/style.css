@@ -361,3 +361,9 @@ th {
   color: #818181;
   font-weight: bold;
 }
+.formarea{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  width: 40%;
+}

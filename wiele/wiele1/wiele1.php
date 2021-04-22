@@ -20,6 +20,8 @@
                 }
         echo("</table>");
 
+    
+    echo("<div class='formarea'>");
         // INSERT
     echo '<form style="margin:auto; margin-top:15px" class="formularz0" action="insertwiele1.php" method="POST">';
     echo '<h2 class="naglowek">Dodawanie pracownika:</h2>';
@@ -43,7 +45,27 @@
     echo '</li>';
     echo '</ul>';
     echo '</form>';
-
+    
+            // DELETE
+    echo '<form style="margin:auto; margin-top:15px" class="formularz0" action="delwiele1.php" method="POST">';
+    echo '<h2 class="naglowek">Dodawanie pracownika:</h2>';
+    echo '<ul>';
+    echo '<li>';
+        $sql=('select * from pracownik');
+                $result=$conn->query($sql);               
+        echo '<select name="id" class="field-style field-full">';
+            while($row=$result->fetch_assoc()){
+                echo("<option value='".$row['id']."'>".$row['id']."</option>");
+            }
+        echo '</select>';
+    echo '</li>';
+    echo '<li>';
+    echo '<input type="submit" value="Usuń" />';
+    echo '</li>';
+    echo '</ul>';
+    echo '</form>';
+    
+    echo("</div>");
 
     $result=$conn->query("select * from pracownik order by id");
         echo("<table style='width:50%;'>");
@@ -79,7 +101,6 @@
         echo("</table>");
     echo("<hr>");
     echo("</div>");
-
 //     $path = new SplFileInfo(__FILE__);
 // echo 'The real path is '.$path->getRealPath();
 
