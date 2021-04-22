@@ -9,7 +9,7 @@ function tabela($sql,$nazwa)
 
     if (mysqli_num_rows($result) > 0) 
     {           
-        echo "<div class='div1'>"$nazwa"</div>";
+        echo "<div class='div1'>$nazwa</div>";
         echo "<table border=1>";
         echo "<tr>";
         foreach ($fetchFields as $fetchedField)
@@ -31,7 +31,6 @@ function tabela($sql,$nazwa)
             echo "</tr>";           
         } 
         echo "</table>";        
-
     } 
     else
     {
