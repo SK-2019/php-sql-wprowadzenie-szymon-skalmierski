@@ -47,7 +47,7 @@
     echo '</form>';
     
             // DELETE
-    echo '<form style="margin: 15px auto" class="formularz0" action="delwiele1.php" method="POST">';
+    echo '<form style="margin: 15px auto 0px" class="formularz0" action="delwiele1.php" method="POST">';
     echo '<h2 class="naglowek">Usuwanie pracownika:</h2>';
     echo '<ul>';
     echo '<li>';
