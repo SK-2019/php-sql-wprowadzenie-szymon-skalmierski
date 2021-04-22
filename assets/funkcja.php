@@ -3,7 +3,7 @@ function tabela($sql,$nazwa)
 {
     require("/app/assets/connect.php");
 
-    $result = mysqli_query($conn,$sql);
+    $result = $conn->query($sql);
     $fetchFields = mysqli_fetch_fields($result);
     $fetchValues = mysqli_fetch_fields($result);
 
@@ -37,7 +37,7 @@ function tabela($sql,$nazwa)
     } 
     else
     {
-      echo "Nie znaleziono rekordów";
+      echo "<div class='div1'>Nie znaleziono rekordów</div>";
     }
 }
 ?>
