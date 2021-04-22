@@ -22,7 +22,7 @@ function tabela($sql,$nazwa)
             echo "</td>";
         }       
         echo "</tr>";
-        while($totalRows = mysqli_fetch_array($result)) 
+        while($totalRows = $result ->fetch_assoc()) 
         {           
             echo "<tr>";                                
             for($eachRecord = 0; $eachRecord < count($fetchValues);$eachRecord++)
