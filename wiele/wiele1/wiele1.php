@@ -47,8 +47,8 @@
     echo '</form>';
     
             // DELETE
-    echo '<form style="margin:auto; margin-top:15px" class="formularz0" action="delwiele1.php" method="POST">';
-    echo '<h2 class="naglowek">Dodawanie pracownika:</h2>';
+    echo '<form style="margin: 15px auto" class="formularz0" action="delwiele1.php" method="POST">';
+    echo '<h2 class="naglowek">Usuwanie pracownika:</h2>';
     echo '<ul>';
     echo '<li>';
         $sql=('select * from pracownik');
