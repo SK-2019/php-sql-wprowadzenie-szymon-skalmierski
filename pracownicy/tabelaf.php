@@ -2,7 +2,7 @@
 <?php
     require("/app/assets/funkcja.php");
 
-    tabela("SELECT * FROM pracownik", "Wszyscy pracownicy");
+    tabela("SELECT * FROM pracownik", "Wszyscy pracownicy:");
 
     tabela("SELECT * FROM pracownik where (dzial_id=1 or dzial_id=3)","Pracownicy z działu 1 i 3:");
 
