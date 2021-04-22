@@ -17,9 +17,9 @@ function tabela($sql,$nazwa)
         echo "<tr>";
         foreach ($fetchFields as $fetchedField)
          {          
-            echo "<td>";
+            echo "<th>";
             echo "<b>" . $fetchedField->name . "<b></a>";
-            echo "</td>";
+            echo "</th>";
         }       
         echo "</tr>";
         while($totalRows = $result ->fetch_array()) 
