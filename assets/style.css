@@ -364,7 +364,6 @@ th {
 .formarea{
   display: flex;
   flex-wrap: wrap;
-  align-items:flex-start;
   margin-top: 15px;
   width: 45%;
 }

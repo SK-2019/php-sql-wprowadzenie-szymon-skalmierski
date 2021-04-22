@@ -23,7 +23,7 @@
     
     echo("<div class='formarea'>");
         // INSERT
-    echo '<form style="margin: 15px auto 0px" class="formularz0" action="insertwiele1.php" method="POST">';
+    echo '<form style="margin: 15px auto" class="formularz0" action="insertwiele1.php" method="POST">';
     echo '<h2 class="naglowek">Dodawanie pracownika:</h2>';
     echo '<ul>';
     echo '<li>';
