@@ -21,7 +21,7 @@
                     }
             echo("</table>");
     
-        $sql="select * from pracownik";
+        $sql="select *,pracownik.id as procownikID from pracownik,dzial where pracownik.id=dzial.id";
         $result=$conn->query($sql);
             echo("<table style='width:50%'>");
             echo("<caption>");
@@ -35,7 +35,7 @@
                 echo("<th>Data urodzenia</th>");
                     while($row=$result->fetch_assoc()){
                         echo("<tr>");
-                        echo("<td>".$row['id']."</td><td>".$row['imie']."</td><td>".$row['nazwaDzial']."</td><td>".$row['id']."</td><td>".$row['id']."</td>");
+                        echo("<td>".$row['procownikID']."</td><td>".$row['imie']."</td><td>".$row['nazwaDzial']."</td><td>".$row['wynagrodzenie']."</td><td>".$row['dataUrodzenia']."</td>");
                         echo("</tr>");
                     }
             echo("</table>");
