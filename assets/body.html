@@ -5,13 +5,25 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
     <link rel="stylesheet" href="/assets/style.css">
     <meta charset="UTF-8">
+    <script>
+        function show() {
+          document.getElementById("links").classList.toggle("active");
+          document.getElementById("btn").classList.toggle("active");
+          document.getElementById("wbtn").classList.toggle("active");
+        }
+    </script>
 </head>
 <div class='cont'>
     <div class='heading'>
         Szymon Skalmierski nr26
         <hr>
     </div>
-
+    
+    <div class="button" id="btn" onclick="show()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     <div id="links" class="sidenav">
         <a class="a1" href="https://github.com/SK-2019/php-sql-wprowadzenie-szymon-skalmierski"><i class="fab fa-github"></i> GITHUB</a>
         <a class="a1" href="/index.php"><i class="fas fa-home"></i> Strona Główna</a>

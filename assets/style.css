@@ -367,3 +367,57 @@ th {
   margin-top: 15px;
   width: 45%;
 }
+@media only screen and (max-width: 700px) {
+  #links {
+    font-family: Tahoma, Helvetica, sans-serif;
+    height: 100%;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding: 30px 0px;
+    width: 100%;
+    left: -100%;
+    transition: 0.5s;
+  }
+  #links.active {
+    left: 0%;
+  }
+  #btn {
+    z-index: 10;
+    position: fixed;
+    top: 10px;
+    left: 2%;
+    transition: 0.4s;
+  }
+  #btn div {
+    width: 35px;
+    height: 4px;
+    background: rgb(53, 50, 50);
+    display: block;
+    margin-top: 4px;
+  }
+  #btn.active {
+    position: fixed;
+    top: 10px;
+    left: 90%;
+  }
+  #wbtn {
+    position: fixed;
+    top: 10px;
+    left: -100%;
+    transition: 0.5s;
+  }
+  #wbtn div {
+    width: 35px;
+    height: 4px;
+    background: rgb(53, 50, 50);
+    display: block;
+    margin-top: 4px;
+  }
+  #wbtn.active {
+    position: fixed;
+    left: 90%;
+  }
+}
