@@ -3,7 +3,7 @@
         // PRACOWNICY I PROJEKTY
         echo("<div class='wiele1'>");
         require("/app/assets/connect.php");
-        $sql= "select *, pracownik.id as pracownikID from pracownik,projekt,pracownik_projekt,dzial where (pracownik.id=idPracownik) and (projekt.id=idProjekt) and (pracownik.id=dzial.id)";
+        $sql= "select *, pracownik.id as pracownikID from pracownik,projekt,pracownik_projekt,dzial where (pracownik.id=idPracownik) and (projekt.id=idProjekt) and (dzial_id=dzial.id)";
         $result=$conn->query($sql);
             echo("<table style='width:50%'>");
             echo("<caption>");
@@ -21,7 +21,7 @@
                     }
             echo("</table>");
     
-        $sql="select *,pracownik.id as procownikID from pracownik,dzial where pracownik.id=dzial.id";
+        $sql="select *,pracownik.id as procownikID from pracownik,dzial where dzial_id=dzial.id";
         $result=$conn->query($sql);
             echo("<table style='width:50%'>");
             echo("<caption>");
