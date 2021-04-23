@@ -379,7 +379,7 @@ th {
     padding: 30px 0px;
     width: 100%;
     left: -100%;
-    transition: 0.5s;
+    transition: 0.4s;
   }
   #links.active {
     left: 0%;
@@ -401,23 +401,34 @@ th {
   #btn.active {
     position: fixed;
     top: 10px;
-    left: 90%;
+    left: 86%;
   }
-  #wbtn {
-    position: fixed;
-    top: 10px;
-    left: -100%;
-    transition: 0.5s;
-  }
-  #wbtn div {
-    width: 35px;
-    height: 4px;
-    background: rgb(53, 50, 50);
+  .sidenav .a1 {
+    padding: 7px 7px 7px 32px;
+    text-decoration: none;
+    font-size: 23px;
+    color: #818181;
     display: block;
-    margin-top: 4px;
+    transition: 0.2s;
+    font-weight: bold;
+    text-align: center;
   }
-  #wbtn.active {
-    position: fixed;
-    left: 90%;
+  .sidenav .a2 {
+    padding: 7px 7px 7px 30px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.2s;
+    font-weight: bold;
+    margin: auto;
+    text-align: center;
+  }
+  .phpp {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 5%;
   }
 }
