@@ -3,7 +3,7 @@
         // OSOBY I ROLE
         echo("<div class='wiele1'>");
         require("/app/assets/connect.php");
-        $sql= "select *, osoba.id as osobaID from osoba,rola,osoba_rola where (osoba.id=idOsoba) and (rola.id=idRola)";
+        $sql= "select * from osoba,rola,osoba_rola where (osoba.id=idOsoba) and (rola.id=idRola)";
         $result=$conn->query($sql);
             echo("<table style='width:50%'>");
             echo("<caption>");
@@ -16,7 +16,7 @@
                 echo("<th>Rola</th>");
                     while($row=$result->fetch_assoc()){
                         echo("<tr>");
-                        echo("<td>".$row['osobaID']."</td><td>".$row['imie']."</td><td>".$row['nazwisko']."</td><td>".$row['nazwaRoli']."</td>");
+                        echo("<td>".$row['osoba.id']."</td><td>".$row['imie']."</td><td>".$row['nazwisko']."</td><td>".$row['nazwaRoli']."</td>");
                         echo("</tr>");
                     }
             echo("</table>");
