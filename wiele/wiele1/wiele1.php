@@ -101,6 +101,7 @@
         echo("</table>");
     echo("<hr>");
     echo("</div>");
+    echo("</div>");
 //     $path = new SplFileInfo(__FILE__);
 // echo 'The real path is '.$path->getRealPath();
 

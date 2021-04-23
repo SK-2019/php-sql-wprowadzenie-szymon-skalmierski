@@ -1,9 +1,9 @@
-<?php include "../assets/body.html" ?>
+<?php include "/app/assets/body.html" ?>
 <?php
 
         // KSIĄŻKI I AUTORZY
     echo("<div class='wiele1'>");
-    require("../assets/connect.php");
+    require("/app/assets/connect.php");
     $result=$conn->query('select *, autor.id as autorid from autor,tytul,autor_tytul where (autor.id=autor_id) and (tytul.id=tytul_id) order by autor.id');
         echo("<table style='width:50%'>");
         echo("<caption>");
@@ -49,6 +49,7 @@
                     echo("</tr>");
                 }
         echo("</table>");
+    echo("</div>");
     echo("</div>");
     
 ?>
