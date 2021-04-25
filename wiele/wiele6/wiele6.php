@@ -28,11 +28,11 @@
     echo '<ul>';
     echo '<li>';
         echo '<input type="text" name="imie" class="field-style field-split align-left" placeholder="Imię" />';
-        $sql=('select * from dzial');
+        $sql=('select * from pracownik,dzial where dzial_id=nazwaDzial');
                 $result=$conn->query($sql);               
-        echo '<select name="nazwaDzial" class="field-style field-split align-right">';
+        echo '<select name="dzial_id" class="field-style field-split align-right">';
             while($row=$result->fetch_assoc()){
-                echo("<option value='".$row['nazwaDzial']."'>".$row['nazwaDzial']."</option>");
+                echo("<option value='".$row['dzial_id']."'>".$row['nazwaDzial']."</option>");
             }
         echo '</select>';
     echo '</li>';
