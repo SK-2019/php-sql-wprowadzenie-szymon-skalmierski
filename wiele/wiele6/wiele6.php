@@ -28,7 +28,7 @@
     echo '<ul>';
     echo '<li>';
         echo '<input type="text" name="imie" class="field-style field-split align-left" placeholder="Imię" />';
-        $sql=('select * from pracownik,dzial where dzial_id=nazwaDzial');
+        $sql=('select * from pracownik,dzial where dzial_id=dzial.id');
                 $result=$conn->query($sql);               
         echo '<select name="dzial_id" class="field-style field-split align-right">';
             while($row=$result->fetch_assoc()){
