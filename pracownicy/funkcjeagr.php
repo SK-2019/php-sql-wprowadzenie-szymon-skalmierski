@@ -3,7 +3,7 @@
     function tabelka1($zapytanie, $nazwa, $kolumna, $row1){
         require("/app/assets/connect.php");
         $result=$conn->query($zapytanie);
-        echo("<table style='width:47%'>");
+        echo("<table class='mtable'>");
         echo("<caption>");
         echo("<div class='div1'>$nazwa</div>");
         echo("<div class='zapytanie'>($zapytanie)</div>");
@@ -20,7 +20,7 @@
     function tabelka2($zapytanie, $nazwa, $kolumna, $row1){
         require("/app/assets/connect.php");
         $result=$conn->query($zapytanie);
-        echo("<table style='width:47%'>");
+        echo("<table class='mtable'>");
         echo("<caption>");
         echo("<div style='margin-top:20px'>$nazwa</div>");
         echo("<div class='zapytanie'>($zapytanie)</div>");
@@ -36,7 +36,7 @@
     function tabelka3($zapytanie, $nazwa, $kolumna, $row1){
         require("/app/assets/connect.php");
         $result=$conn->query($zapytanie);
-        echo("<table style='width:47%'>");
+        echo("<table class='mtable'>");
         echo("<caption>");
         echo("<div style='margin-top:20px'>$nazwa</div>");
         echo("<div class='zapytanie'>($zapytanie)</div>");

@@ -5,7 +5,7 @@
         require("/app/assets/connect.php");
         $sql= "select *, lekarz.id as lekarzID from lekarz,pacjent,lekarz_pacjent where (lekarz.id=idLekarz) and (pacjent.id=idPacjent)";
         $result=$conn->query($sql);
-            echo("<table style='width:50%'>");
+            echo("<table class='mtable'>");
             echo("<caption>");
             echo("<div class='div1'>Lekarze i ich pacjenci:</div>");
             echo("<div class='zapytanie'>($sql)</div>");
@@ -22,7 +22,7 @@
     
         $sql="select * from lekarz";
         $result=$conn->query($sql);
-            echo("<table style='width:50%'>");
+            echo("<table class='mtable'>");
             echo("<caption>");
             echo("<div class='div1'>Lekarze:</div>");
             echo("<div class='zapytanie'>($sql)</div>");
@@ -38,7 +38,7 @@
         
         $sql="select * from pacjent";
         $result=$conn->query($sql);
-            echo("<table style='width:30%;'>");
+            echo("<table class='stable'>");
             echo("<caption>");
             echo("<div class='div1'>Pacjenci:</div>");
             echo("<div class='zapytanie'>($sql)</div>");

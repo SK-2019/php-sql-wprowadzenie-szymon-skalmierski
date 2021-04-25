@@ -5,7 +5,7 @@
     echo("<div class='wiele1'>");
     require("/app/assets/connect.php");
     $result=$conn->query('select *, autor.id as autorid from autor,tytul,autor_tytul where (autor.id=autor_id) and (tytul.id=tytul_id) order by autor.id');
-        echo("<table style='width:50%'>");
+        echo("<table class='mtable'>");
         echo("<caption>");
         echo("<div class='div1'>Autorzy i ich dzieła:</div>");
         echo("<div class='zapytanie'>(select *, autor.id as autorid from autor,tytul,autor_tytul where (autor.id=autor_id) and (tytul.id=tytul_id) order by autor.id)</div>");
@@ -21,7 +21,7 @@
         echo("</table>");
 
     $result=$conn->query("select * from tytul order by id");
-        echo("<table style='width:50%'>");
+        echo("<table class='mtable'>");
         echo("<caption>");
         echo("<div class='div1'>Tytuły:</div>");
         echo("<div class='zapytanie'>(select * from tytul order by id)</div>");
@@ -36,7 +36,7 @@
         echo("</table>");
     
     $result=$conn->query("select * from autor order by id");
-        echo("<table style='width:30%;'>");
+        echo("<table class='stable'>");
         echo("<caption>");
         echo("<div class='div1'>Autorzy:</div>");
         echo("<div class='zapytanie'>(select * from autor order by id)</div>");

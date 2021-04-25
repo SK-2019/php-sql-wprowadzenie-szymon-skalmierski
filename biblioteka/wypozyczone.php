@@ -4,7 +4,7 @@
     require('/app/assets/connect.php');
         $sql="select * from bwyp";
         $result=$conn->query($sql);
-        echo("<table style='width:70%'>");
+        echo("<table class='ltable'>");
         echo("<caption style='text-align:left'>");
         echo("<div class='div1'>Wypożyczone książki:</div>");
         echo("</caption>");

@@ -9,7 +9,7 @@ function tabela($sql,$nazwa)
 
     if (mysqli_num_rows($result) > 0) 
     {           
-        echo "<table style='width:55%'>";
+        echo "<table class='mtable'>";
         echo "<caption>";
         echo("<div class='div1'>$nazwa</div>");
         echo("<div class='zapytanie'>($sql)</div>");

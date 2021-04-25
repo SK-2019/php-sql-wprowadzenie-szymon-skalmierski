@@ -3,7 +3,7 @@
     function tabelka4($sql, $nazwa){
         require("/app/assets/connect.php");
         $result=$conn->query($sql);
-        echo("<table style='width:58%'>");
+        echo("<table class='mtable'>");
         echo("<caption style='text-align:left'>");
         echo("<div class='div1'>$nazwa</div>");
         echo("<div class='zapytanie'>($sql)</div>");

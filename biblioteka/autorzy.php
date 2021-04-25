@@ -4,7 +4,7 @@
     function tabelka($sql, $nazwa){
         require("/app/assets/connect.php");
         $result=$conn->query($sql);
-        echo("<table style='margin:auto; width:70%'>");
+        echo("<table class='ltable'>");
         echo("<caption>");
         echo("<div class='div1'>$nazwa</div>");
         echo("<div class='zapytanie'>($sql)</div>");
@@ -23,7 +23,7 @@
     tabelka("select bAutor.id as AutorID, bAutor.autor as Autor, bTytul.tytul as Tytul from bAutor, bTytul, bAutor_bTytul where (bAutorID=bAutor.id) and (bTytulID=bTytul.id) and bAutor.autor='".$_POST['autor']."'", "Autorzy i ich książki:");
 
     require("/app/assets/connect.php");
-    echo '<form style="margin:auto; margin-top:15px" class="formularz2" action="autorzy.php" method="POST">';
+    echo '<form style="margin: 15px auto 0px" class="formularz2" action="autorzy.php" method="POST">';
     echo '<h2 class="naglowek">Filtrowanie wg autora:</h2>';
     echo '<ul>';
     echo '<li>';

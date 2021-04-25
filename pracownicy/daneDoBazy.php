@@ -4,7 +4,7 @@
 	require("/app/assets/connect.php");
 	$sql = "select * from pracownicy, organizacja where dzial=id_org order by id_pracownicy";
 		$result=$conn->query($sql);
-		echo("<table style='width:58%'>");
+		echo("<table class='mtable'>");
 		echo("<caption style='text-align:left'>");
 		echo("<div class='div1'>Wszyscy pracownicy:</div>");
         echo("<div class='zapytanie'>($sql)</div>");

@@ -3,7 +3,7 @@
   function tabelka1($zapytanie, $nazwa, $kolumna){
         require("/app/assets/connect.php");
         $result=$conn->query($zapytanie);
-        echo("<table style='margin-right:50px; width:60%'>");
+        echo("<table class='mtable'>");
         echo("<caption>");
         echo("<div>$nazwa</div>");
 	    echo("<div class='zapytanie'>($zapytanie)</div>");
@@ -27,7 +27,7 @@
         require("/app/assets/connect.php");
 	    $sql="select id_pracownicy, imie, nazwa_dzial, zarobki, year(curdate())-year(data_urodzenia) as wiek from pracownicy, organizacja where id_org=dzial";
         $result=$conn->query($sql);
-        echo("<table style='width:60%'>");
+        echo("<table class='mtable'>");
         echo("<caption>");
         echo("<div class='div1'>Pracownicy + wiek:</div>");
         echo("<div class='zapytanie'>($sql)</div>");

@@ -250,7 +250,20 @@ body {
 .nav {
   width: 20%;
 }
-table {
+
+    /* TABELE */
+.stable{
+  border: 1px solid #000000;
+  font-size: 20px; 
+  font-family: arial;
+  border-collapse: collapse;
+  font-display: inline-block;
+  box-shadow: 0px 0px 14px 2px rgba(0,0,0,0.75);
+  margin-bottom:15px;
+  width: 30%;
+}
+.mtable{
+  width: 50%;
   border: 1px solid #000000;
   font-size: 20px; 
   font-family: arial;
@@ -259,6 +272,38 @@ table {
   box-shadow: 0px 0px 14px 2px rgba(0,0,0,0.75);
   margin-bottom:15px;
 }
+.ltable{
+  border: 1px solid #000000;
+  font-size: 20px; 
+  font-family: arial;
+  border-collapse: collapse;
+  font-display: inline-block;
+  box-shadow: 0px 0px 14px 2px rgba(0,0,0,0.75);
+  margin-bottom:15px;
+  width: 80%;
+}
+.stable td, .mtable td, .ltable td {
+  padding: 10px; 
+  text-align: center;
+}
+.stable tr, .mtable tr, .ltable tr {
+  background-color: #ffff80;
+}
+.stable tr:nth-child(even), .mtable tr:nth-child(even), .ltable tr:nth-child(even) {
+  background-color: #ffffb3;
+}
+.stable tr:hover, .mtable tr:hover, .ltable tr:hover {
+  background-color: #ffffcc;
+}
+.stable th, .mtable th, .ltable th {
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 8px;
+  background-color: #ffff1a;
+  color: black;
+}
+
+
 #delemp1 {
   margin-left: 10px;
   margin-bottom: -20px;
@@ -324,27 +369,6 @@ table {
 #delemp2:hover {
 	background: linear-gradient(to bottom, rgb(236, 96, 50) 5%, rgb(241, 101, 54) 100%);
 } 
-td {
-  padding: 10px; 
-  text-align: center;
-}
-tr {
-  background-color: #ffff80;
-}
-tr:nth-child(even) {
-  background-color: #ffffb3;
-}
-
-tr:hover {
-  background-color: #ffffcc;
-}
-th {
-  text-align: center;
-  padding-top: 12px;
-  padding-bottom: 8px;
-  background-color: #ffff1a;
-  color: black;
-}
 .wiele1{
   width: 90%;
   display: flex;
@@ -404,7 +428,8 @@ th {
   #btn.active {
     position: fixed;
     top: 10px;
-    left: 92%;
+    left: auto;
+    right: 2%;
   }
   .sidenav .a1 {
     padding: 7px 7px 7px 32px;

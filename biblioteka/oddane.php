@@ -3,7 +3,7 @@
     require("/app/assets/connect.php");
     $sql="select * from bodd";
     $result=$conn->query($sql);
-    echo("<table style='width:90%'>");
+    echo("<table class='ltable'>");
     echo("<caption style='text-align:left'>");
     echo("<div class='div1'>Oddane książki:</div>");
     echo("</caption>");

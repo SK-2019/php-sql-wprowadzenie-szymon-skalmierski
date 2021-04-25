@@ -5,7 +5,7 @@
         require("/app/assets/connect.php");
         $sql= "select *, pracownik.id as pracownikID from pracownik,projekt,pracownik_projekt,dzial where (pracownik.id=idPracownik) and (projekt.id=idProjekt) and (dzial_id=dzial.id)";
         $result=$conn->query($sql);
-            echo("<table style='width:50%'>");
+            echo("<table class='mtable'>");
             echo("<caption>");
             echo("<div class='div1'>Pracownicy i projekty:</div>");
             echo("<div class='zapytanie'>($sql)</div>");
@@ -23,7 +23,7 @@
     
         $sql="select *,pracownik.id as procownikID from pracownik,dzial where dzial_id=dzial.id";
         $result=$conn->query($sql);
-            echo("<table style='width:50%'>");
+            echo("<table class='mtable'>");
             echo("<caption>");
             echo("<div class='div1'>Pracownicy:</div>");
             echo("<div class='zapytanie'>($sql)</div>");
@@ -42,7 +42,7 @@
         
         $sql="select * from projekt";
         $result=$conn->query($sql);
-            echo("<table style='width:30%;'>");
+            echo("<table class='stable'>");
             echo("<caption>");
             echo("<div class='div1'>Projekty:</div>");
             echo("<div class='zapytanie'>($sql)</div>");
