@@ -428,9 +428,23 @@ th {
     text-align: center;
   }
   .phpp {
-    width: 98%;
+    width: 88%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+  .cont {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .heading {
+    width: 86%;
+    font-size:40px; 
+    margin-bottom:18px; 
+    margin-top:20px; 
+    font-family: Helvetica, sans-serif; 
+    text-align: center;
+    font-weight: bold;
   }
 }
