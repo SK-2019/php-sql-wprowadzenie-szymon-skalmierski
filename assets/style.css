@@ -129,6 +129,7 @@ body.bodystrona {
 .field-split{
   width: 47%;
   height: 36px;
+  margin-right: 5px;
 }
 .field-full{
 	width: 95%;
@@ -363,9 +364,8 @@ th {
   font-weight: bold;
 }
 .formarea{
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 15px;
+  display: block;
+  margin-top: 30px;
   width: 45%;
 }
 @media only screen and (max-width: 700px) {

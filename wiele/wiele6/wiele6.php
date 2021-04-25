@@ -23,13 +23,11 @@
     
     echo("<div class='formarea'>");
         // INSERT
-    echo '<form style="margin: 0px 15px" class="formularz0" action="" method="POST">';
+    echo '<form style="margin: 15px" class="formularz0" action="" method="POST">';
     echo '<h2 class="naglowek">Dodawanie pracownika:</h2>';
     echo '<ul>';
     echo '<li>';
         echo '<input type="text" name="imie" class="field-style field-split align-left" placeholder="Imię" />';
-    echo '</li>';
-    echo '<li>';
         $sql=('select * from dzial');
                 $result=$conn->query($sql);               
         echo '<select name="nazwaDzial" class="field-style field-split align-right">';
@@ -40,8 +38,6 @@
     echo '</li>';
     echo '<li>';
         echo '<input type="text" name="wynagrodzenie" class="field-style field-split align-left" placeholder="Wynagrodzenie" />';
-    echo '</li>';
-    echo '<li>';
 		echo '<input type="date" name="dataUrodzenia" class="field-style field-split align-right" min="1940-01-01" max="2020-12-31" />';
     echo '</li>';
     echo '<li>';
@@ -51,7 +47,7 @@
     echo '</form>';
     
             // DELETE
-    echo '<form style="margin: 0px 15px" class="formularz0" action="" method="POST">';
+    echo '<form style="margin: 15px" class="formularz0" action="" method="POST">';
     echo '<h2 class="naglowek">Usuwanie pracownika:</h2>';
     echo '<ul>';
     echo '<li>';
