@@ -376,7 +376,11 @@ th {
   margin-top: 30px;
   width: 45%;
 }
-
+.w100{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
     /* MOBILE */
 @media only screen and (max-width: 700px) {
   body{
