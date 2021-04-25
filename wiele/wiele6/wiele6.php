@@ -23,7 +23,7 @@
     
     echo("<div class='formarea'>");
         // INSERT
-    echo '<form style="margin: 15px" class="formularz0" action="" method="POST">';
+    echo '<form style="margin: 15px" class="formularz0" action="insertwiele6.php" method="POST">';
     echo '<h2 class="naglowek">Dodawanie pracownika:</h2>';
     echo '<ul>';
     echo '<li>';
@@ -47,7 +47,7 @@
     echo '</form>';
     
             // DELETE
-    echo '<form style="margin: 15px" class="formularz0" action="" method="POST">';
+    echo '<form style="margin: 15px" class="formularz0" action="delwiele6.php" method="POST">';
     echo '<h2 class="naglowek">Usuwanie pracownika:</h2>';
     echo '<ul>';
     echo '<li>';
