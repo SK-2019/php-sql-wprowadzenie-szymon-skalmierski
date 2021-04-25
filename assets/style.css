@@ -432,16 +432,12 @@ th {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
-  .cont {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+    margin: auto;
   }
   .heading {
-    width: 86%;
+    width: 100%;
     font-size:40px; 
-    margin-bottom:18px; 
+    margin-bottom:17px; 
     margin-top:20px; 
     font-family: Helvetica, sans-serif; 
     text-align: center;
