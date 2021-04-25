@@ -35,7 +35,7 @@
         echo '<li>';
                 $sql=('SELECT autor, id FROM bAutor');
                 $result=$conn->query($sql);               
-        echo '<select name="autor" class="field-style field-split align-left">';
+        echo '<select style="width:95%" name="autor" class="field-style field-split align-left">';
             while($row=$result->fetch_assoc()){
                 echo("<option value='".$row['autor']."'>".$row['autor']."</option>");
             }
@@ -53,7 +53,7 @@
         echo '<li>';
         $sql = "select bTytulID, bTytul.id as tytulID, bAutor.id as AutorID, bAutor.autor as Autor, bTytul.tytul as Tytul from bAutor, bTytul, bAutor_bTytul where (bAutorID=bAutor.id) and (bTytulID=bTytul.id) and (bAutor.autor = '$autor')";
                 $result=$conn->query($sql);
-        echo '<select name="tytul" class="field-style field-split align-right">';
+        echo '<select style="width:95%"name="tytul" class="field-style field-split align-right">';
             while($row=$result->fetch_assoc()){
                 echo("<option value='".$row['Tytul']."'>".$row['Tytul']."</option>");
             }
