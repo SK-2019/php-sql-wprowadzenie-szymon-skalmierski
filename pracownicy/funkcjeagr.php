@@ -3,7 +3,7 @@
     function tabelka1($zapytanie, $nazwa, $kolumna, $row1){
         require("/app/assets/connect.php");
         $result=$conn->query($zapytanie);
-        echo("<table class='mtable'>");
+        echo("<table class='stable'>");
         echo("<caption>");
         echo("<div class='div1'>$nazwa</div>");
         echo("<div class='zapytanie'>($zapytanie)</div>");
