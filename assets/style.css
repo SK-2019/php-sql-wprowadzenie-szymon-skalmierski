@@ -437,8 +437,7 @@ th {
   .heading {
     width: 100%;
     font-size:40px; 
-    margin-bottom:17px; 
-    margin-top:20px; 
+    margin: 20px 0px 17px;
     font-family: Helvetica, sans-serif; 
     text-align: center;
     font-weight: bold;
