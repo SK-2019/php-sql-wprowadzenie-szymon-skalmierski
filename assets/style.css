@@ -127,11 +127,11 @@ body.bodystrona {
 	border:1px solid #B0CFE0;
 }
 .field-split{
-  width: 216px;
+  width: 47%;
   height: 36px;
 }
 .field-full{
-	width: 450px;
+	width: 95%;
 }
 .input.align-left,
 .select.align-left{
