@@ -282,12 +282,15 @@ th {
 }
 .stable{
   width: 40%;
+  margin-right: 5px;
 }
 .mtable{
   width: 51%;
+  margin-right: 5px;
 }
 .ltable{
   width: 80%;
+  margin-right: 5px;
 }
 #delemp1 {
   margin-left: 10px;
