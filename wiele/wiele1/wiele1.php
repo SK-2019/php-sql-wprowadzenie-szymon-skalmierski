@@ -20,7 +20,25 @@
                         echo("</tr>");
                     }
             echo("</table>");
-    
+
+      // INSERT
+      echo '<form style="margin: 15px" class="formularz0" action="insertwiele1.php" method="POST">';
+      echo '<h2 class="naglowek">Dodawanie osoby i roli:</h2>';
+      echo '<ul>';
+      echo '<li>';
+          echo '<input type="text" name="imie" class="field-style field-split align-left" placeholder="Imię" />';
+          echo '<input type="text" name="nazwisko" class="field-style field-split align-left" placeholder="Nazwisko" />';
+      echo '</li>';
+      echo '<li>';
+      echo '<input type="text" name="rola" class="field-style field-full" placeholder="Rola" />';
+      echo '</li>';
+      echo '<li>';
+      echo '<input type="submit" value="Dodaj" />';
+      echo '</li>';
+      echo '</ul>';
+      echo '</form>';
+
+
         $sql="select * from osoba";
         $result=$conn->query($sql);
             echo("<table class='mtable'>");
