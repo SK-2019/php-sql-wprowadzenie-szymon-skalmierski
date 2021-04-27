@@ -19,12 +19,33 @@
 
 
         echo("<form action='inwiele1.php' method=POST>");
-        tabelka("Select *, id as osobaID from osoba where (imie='".$_POST['imie']."') and (nazwisko='".$_POST['nazwisko']."')","Dodana osoba:");
+        $sql="Select * from osoba where (imie='".$_POST['imie']."') and (nazwisko='".$_POST['nazwisko']."')";
+        $result=$conn->query($sql);
+        echo("<table>");
+            echo("<th>ID</th>");
+            echo("<th>Autor</th>");
+                while($row=$result->fetch_assoc()){
+                    echo("<tr>");
+                        echo("<td>".$row["id"]."</td><td>".$row["imie"]."</td><td>".$row["nazwisko"]."</td>");
+                        echo("<input type='hidden' name='osobaID' value='".$row['id']."'>");
+                    echo("</tr>");
+                }
+        echo("</table>");
 
-        tabelka("Select *, id as rolaID from rola where (nazwaRoli='".$_POST['rola']."')","Dodana Rola:");
-
-        echo("<input id='click' type='submit'>");
+        $sql="Select * from rola where (nazwaRoli='".$_POST['rola']."')";
+        $result=$conn->query($sql);
+        echo("<table>");
+            echo("<th>ID</th>");
+            echo("<th>Rola</th>");
+                while($row=$result->fetch_assoc()){
+                    echo("<tr>");
+                        echo("<td>".$row['id']."</td><td>".$row["nazwaRoli"]."</td>");
+                        echo("<input type='hidden' name='rolaID' value='".$row['id']."'>");
+                    echo("</tr>");
+                }
+        echo("</table>");
+        echo("<div class='submit2'>");
+        echo("<input id='click' type='submit' value='MERGE DATA'>");
+        echo("</div>");
         echo("</form>");
-
-    header("location:inwiele1.php");
 ?>
