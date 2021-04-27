@@ -1,8 +1,10 @@
-    <script>
-        $(document).ready(function(){
-            $('#click').trigger('click');
-        });
-    </script>
+<head>
+<script type="text/javascript">
+window.onload = function(){
+  document.getElementById('clickButton').click();
+}
+</script>
+</head>
 <?php include "/app/assets/body.html" ?>
 <?php
     require("/app/assets/funkcja.php");
@@ -45,7 +47,7 @@
                 }
         echo("</table>");
         echo("<div class='submit2'>");
-        echo("<input id='click' type='submit' value='MERGE DATA'>");
+        echo("<input id='clickButton' type='submit' value='MERGE DATA'>");
         echo("</div>");
         echo("</form>");
 ?>
