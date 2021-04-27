@@ -45,7 +45,7 @@ window.onload = function(){
         echo("</table>");
         echo '<br>';
         echo("<div class='submit2'>");
-        echo("<input id='clickButton delemp2' type='submit' value='MERGE DATA'>");
+        echo("<input id='clickButton' type='submit' value='MERGE DATA'>");
         echo("</div>");
         echo("</form>");
 ?>
