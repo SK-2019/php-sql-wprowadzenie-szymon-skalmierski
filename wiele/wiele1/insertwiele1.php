@@ -25,4 +25,6 @@
 
         echo("<input id='click' type='submit'>");
         echo("</form>");
+        
+    header("location:insertwiele1.php");
 ?>
