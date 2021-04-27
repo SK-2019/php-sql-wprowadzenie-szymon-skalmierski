@@ -7,7 +7,6 @@ window.onload = function(){
 </head>
 <?php include "/app/assets/body.html" ?>
 <?php
-    require("/app/assets/funkcja.php");
     require("/app/assets/connect.php");
         $sql = "INSERT INTO osoba(id, imie, nazwisko) VALUES(NULL, '".$_POST['imie']."', '".$_POST['nazwisko']."')";
         echo("<h3 class='h3strona'>Autor: ".$_POST['autor']."</h3>");
@@ -33,6 +32,7 @@ window.onload = function(){
                     echo("</tr>");
                 }
         echo("</table>");
+        echo '<br>';
 
         $sql="Select * from rola where (nazwaRoli='".$_POST['rola']."')";
         $result=$conn->query($sql);
@@ -46,6 +46,7 @@ window.onload = function(){
                     echo("</tr>");
                 }
         echo("</table>");
+        echo '<br>';
         echo("<div class='submit2'>");
         echo("<input id='clickButton' type='submit' value='MERGE DATA'>");
         echo("</div>");
