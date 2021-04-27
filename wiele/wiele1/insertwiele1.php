@@ -1,9 +1,9 @@
 <head>
-<!-- <script type="text/javascript">
+<script type="text/javascript">
 window.onload = function(){
   document.getElementById('clickButton').click();
 }
-</script> -->
+</script>
 </head>
 <?php include "/app/assets/body.html" ?>
 <?php
@@ -45,7 +45,7 @@ window.onload = function(){
         echo("</table>");
         echo '<br>';
         echo("<div class='submit2'>");
-        echo("<input id='clickButton' type='submit' value='MERGE DATA'>");
+        echo("<input id='clickButton delemp2' type='submit' value='MERGE DATA'>");
         echo("</div>");
         echo("</form>");
 ?>
