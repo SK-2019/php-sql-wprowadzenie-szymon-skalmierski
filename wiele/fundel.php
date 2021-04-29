@@ -1,5 +1,5 @@
 <?php
-function tabdel($sql,$nazwa, $file, $name, $rowname)
+function tabdelm($sql,$nazwa, $file, $name, $rowname, $class)
 {
     require("/app/assets/connect.php");
 
@@ -9,7 +9,7 @@ function tabdel($sql,$nazwa, $file, $name, $rowname)
 
     if (mysqli_num_rows($result) > 0) 
     {           
-        echo "<table class='mtable'>";
+        echo "<table class=$class>";
         echo "<caption>";
         echo("<div class='div1'>$nazwa</div>");
         echo("<div class='zapytanie'>($sql)</div>");
