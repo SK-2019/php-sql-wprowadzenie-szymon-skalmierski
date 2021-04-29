@@ -19,10 +19,17 @@ require("/app/assets/connect.php");
         "delwiele5.php",
         "procownikID",
         "praid",
-        "stable"
+        "mtable"
     );
    
-    tabdel("select * from projekt", "Projekty:","delwiele5.php","id","proid","stable");
+    tabdel(
+        "select * from projekt", 
+        "Projekty:",
+        "delwiele5.php",
+        "id",
+        "proid",
+        "stable"
+    );
     
     echo("</div>");
     echo("</div>");
