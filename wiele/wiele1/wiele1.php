@@ -4,9 +4,7 @@ ini_set('display_errors', '1');
 ini_set('display_startup_errors', '1');
 error_reporting(E_ALL);
 
-function del($rown){
-    echo("<td><form action='delwiele1.php' method=POST>$rown<input id='delemp1' type='submit' value='X'></form></td>");
-}
+require("../functiondel.php");
 
         // OSOBY I ROLE
         echo("<div class='wiele1'>");
@@ -26,7 +24,7 @@ function del($rown){
                     while($row=$result->fetch_assoc()){
                         echo("<tr>");
                         echo("<td>".$row['mid']."</td><td>".$row['imie']."</td><td>".$row['nazwisko']."</td><td>".$row['nazwaRoli']."</td>");
-                        del("<input type='hidden' name=mid value='".$row['mid']."'>");
+                        del("<input type='hidden' name=mid value='".$row['mid']."'>", "delwiele1.php");
                         echo("</tr>");
                     }
             echo("</table>");
@@ -63,7 +61,7 @@ function del($rown){
                     while($row=$result->fetch_assoc()){
                         echo("<tr>");
                         echo("<td>".$row['id']."</td><td>".$row['imie']."</td><td>".$row['nazwisko']."</td>");
-                        echo("<td><form action='delwiele1.php' method=POST><input type='hidden' name=oid value='".$row['id']."'><input id='delemp1' type='submit' value='X'></form></td>");
+                        del("<input type='hidden' name=oid value='".$row['id']."'>", "delwiele1.php");
                         echo("</tr>");
                     }
             echo("</table>");
@@ -81,7 +79,7 @@ function del($rown){
                     while($row=$result->fetch_assoc()){
                         echo("<tr>");
                         echo("<td>".$row['id']."</td><td>".$row['nazwaRoli']."</td>");
-                        echo("<td><form action='delwiele1.php' method=POST><input type='hidden' name=rid value='".$row['id']."'><input id='delemp1' type='submit' value='X'></form></td>");
+                        del("<input type='hidden' name=rid value='".$row['id']."'>", "delwiele1.php");
                         echo("</tr>");
                     }
             echo("</table>");

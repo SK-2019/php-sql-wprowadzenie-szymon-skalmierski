@@ -1,9 +1,11 @@
 <?php include "/app/assets/body.html" ?>
 <?php
+require("../functiondel.php");
+
         // PRACOWNICY I PROJEKTY
         echo("<div class='wiele1'>");
         require("/app/assets/connect.php");
-        $sql= "select *, pracownik.id as pracownikID from pracownik,projekt,pracownik_projekt,dzial where (pracownik.id=idPracownik) and (projekt.id=idProjekt) and (dzial_id=dzial.id)";
+        $sql= "select *, pracownik_projekt.id as mid from pracownik,projekt,pracownik_projekt,dzial where (pracownik.id=idPracownik) and (projekt.id=idProjekt) and (dzial_id=dzial.id)";
         $result=$conn->query($sql);
             echo("<table class='mtable'>");
             echo("<caption>");
@@ -16,7 +18,8 @@
                 echo("<th>Projekt</th>");
                     while($row=$result->fetch_assoc()){
                         echo("<tr>");
-                        echo("<td>".$row['pracownikID']."</td><td>".$row['imie']."</td><td>".$row['nazwaDzial']."</td><td>".$row['nazwaProjektu']."</td>");
+                        echo("<td>".$row['mid']."</td><td>".$row['imie']."</td><td>".$row['nazwaDzial']."</td><td>".$row['nazwaProjektu']."</td>");
+                        del("<input type='hidden' name=mid value='".$row['mid']."'>", "delwiele5.php");
                         echo("</tr>");
                     }
             echo("</table>");
@@ -36,6 +39,7 @@
                     while($row=$result->fetch_assoc()){
                         echo("<tr>");
                         echo("<td>".$row['procownikID']."</td><td>".$row['imie']."</td><td>".$row['nazwaDzial']."</td><td>".$row['wynagrodzenie']."</td><td>".$row['dataUrodzenia']."</td>");
+                        del("<input type='hidden' name=praid value='".$row['procownikID']."'>", "delwiele5.php");
                         echo("</tr>");
                     }
             echo("</table>");
@@ -52,6 +56,7 @@
                     while($row=$result->fetch_assoc()){
                         echo("<tr>");
                         echo("<td>".$row['id']."</td><td>".$row['nazwaProjektu']."</td>");
+                        del("<input type='hidden' name=proid value='".$row['id']."'>", "delwiele5.php");
                         echo("</tr>");
                     }
             echo("</table>");
