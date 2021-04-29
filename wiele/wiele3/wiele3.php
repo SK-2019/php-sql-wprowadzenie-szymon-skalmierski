@@ -5,7 +5,7 @@ ini_set('display_startup_errors', '1');
 error_reporting(E_ALL);
 
 function del($rowname,$name,$file){
-    echo("<td><form action=$file method=POST><input type='hidden' name=$name value='.$rowname.'><input id='delemp1' type='submit' value='X'></form></td>");
+    echo("<td><form action=$file method=POST><input type='hidden' name=$name value='".$rowname."'><input id='delemp1' type='submit' value='X'></form></td>");
 }
 
         // LEKARZE I PACJENCI
