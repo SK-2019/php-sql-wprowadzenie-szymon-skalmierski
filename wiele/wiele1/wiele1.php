@@ -1,9 +1,14 @@
 <?php include "/app/assets/body.html" ?>
 <?php
+
+function del($file, $name, $rowname){
+    echo("<td><form action=$file method=POST><input type='hidden' name=$name value='".$row[$rowname]."'><input id='delemp1' type='submit' value='X'></form></td>");
+}
+
         // OSOBY I ROLE
         echo("<div class='wiele1'>");
         require("/app/assets/connect.php");
-        $sql= "select *, osoba.id as osobaID from osoba,rola,osoba_rola where (osoba.id=idOsoba) and (rola.id=idRola)";
+        $sql= "select *, osoba.id as osobaID, osoba_rola.id as mid from osoba,rola,osoba_rola where (osoba.id=idOsoba) and (rola.id=idRola)";
         $result=$conn->query($sql);
             echo("<table class='mtable'>");
             echo("<caption>");
@@ -17,6 +22,7 @@
                     while($row=$result->fetch_assoc()){
                         echo("<tr>");
                         echo("<td>".$row['osobaID']."</td><td>".$row['imie']."</td><td>".$row['nazwisko']."</td><td>".$row['nazwaRoli']."</td>");
+                        del("delwiele1.php", "mid", "mid");
                         echo("</tr>");
                     }
             echo("</table>");
@@ -52,6 +58,7 @@
                     while($row=$result->fetch_assoc()){
                         echo("<tr>");
                         echo("<td>".$row['id']."</td><td>".$row['imie']."</td><td>".$row['nazwisko']."</td>");
+                        del("delwiele1.php", "oid", "id");
                         echo("</tr>");
                     }
             echo("</table>");
@@ -68,6 +75,7 @@
                     while($row=$result->fetch_assoc()){
                         echo("<tr>");
                         echo("<td>".$row['id']."</td><td>".$row['nazwaRoli']."</td>");
+                        del("delwiele1.php", "rid", "id");
                         echo("</tr>");
                     }
             echo("</table>");
