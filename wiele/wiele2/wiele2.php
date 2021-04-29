@@ -4,7 +4,7 @@ require("../fundel.php");
 
         // KSIĄŻKI I AUTORZY
     tabdel(
-        "select *, autor_tytul.id as mid from autor,tytul,autor_tytul where (autor.id=autor_id) and (tytul.id=tytul_id)", 
+        "select autor_tytul.id as mid,nazwisko,tytul from autor,tytul,autor_tytul where (autor.id=autor_id) and (tytul.id=tytul_id)", 
         "Autorzy i ich dzieła:",
         "delwiele2.php",
         "mid",
