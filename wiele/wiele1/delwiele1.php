@@ -15,21 +15,21 @@ $rid = $_POST['rid'];
     {
         $sql = "DELETE FROM osoba_rola WHERE id='".$mid."'";
         $conn->query($sql); 
-        header("location:wiele1.php"); 
+        // header("location:wiele1.php"); 
     }
 
     if(isset($_POST['oid']))
     {
         $sql = "DELETE FROM osoba WHERE id='".$oid."'";
         $conn->query($sql);
-        header("location:wiele1.php");  
+        // header("location:wiele1.php");  
     }
 
     if(isset($_POST['rid']))
     {
         $sql = "DELETE FROM rola WHERE id='".$rid."'";
         $conn->query($sql); 
-        header("location:wiele1.php");
+        // header("location:wiele1.php");
     }
  
 ?>
