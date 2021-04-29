@@ -25,7 +25,7 @@ function del($name, $rowname){
                     while($row=$result->fetch_assoc()){
                         echo("<tr>");
                         echo("<td>".$row['osobaID']."</td><td>".$row['imie']."</td><td>".$row['nazwisko']."</td><td>".$row['nazwaRoli']."</td>");
-                        del("mid", 'mid');
+                        echo("<td><form action='delwiele1.php' method=POST><input type='hidden' name=mid value='".$row['mid']."'><input id='delemp1' type='submit' value='X'></form></td>");
                         echo("</tr>");
                     }
             echo("</table>");
