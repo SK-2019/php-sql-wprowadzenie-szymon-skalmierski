@@ -4,9 +4,9 @@ ini_set('display_errors', '1');
 ini_set('display_startup_errors', '1');
 error_reporting(E_ALL);
 
-echo ".$_POST['mid'].";
-echo ".$_POST['rid'].";
-echo ".$_POST['oid'].";
+echo $_POST['mid'];
+echo $_POST['rid'];
+echo $_POST['oid'];
     if($_POST('mid')!="")
     {
         require_once("/app/assets/connect.php");
