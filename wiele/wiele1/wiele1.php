@@ -22,6 +22,7 @@ error_reporting(E_ALL);
                 echo("<th>Imie</th>");
                 echo("<th>Nazwisko</th>");
                 echo("<th>Rola</th>");
+                echo("<th>DELETE</th>");
                     while($row=$result->fetch_assoc()){
                         echo("<tr>");
                         echo("<td>".$row['mid']."</td><td>".$row['imie']."</td><td>".$row['nazwisko']."</td><td>".$row['nazwaRoli']."</td>");
@@ -58,6 +59,7 @@ error_reporting(E_ALL);
                 echo("<th>ID</th>");
                 echo("<th>Imie</th>");
                 echo("<th>Nazwisko</th>");
+                echo("<th>DELETE</th>");
                     while($row=$result->fetch_assoc()){
                         echo("<tr>");
                         echo("<td>".$row['id']."</td><td>".$row['imie']."</td><td>".$row['nazwisko']."</td>");
@@ -75,6 +77,7 @@ error_reporting(E_ALL);
             echo("</caption>");
                 echo("<th>ID</th>");
                 echo("<th>Rola</th>");
+                echo("<th>DELETE</th>");
                     while($row=$result->fetch_assoc()){
                         echo("<tr>");
                         echo("<td>".$row['id']."</td><td>".$row['nazwaRoli']."</td>");
