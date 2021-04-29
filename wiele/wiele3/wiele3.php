@@ -1,12 +1,6 @@
 <?php include "/app/assets/body.html" ?>
 <?php
-ini_set('display_errors', '1');
-ini_set('display_startup_errors', '1');
-error_reporting(E_ALL);
-
-function del($rowname,$name,$file){
-    echo("<td><form action=$file method=POST><input type='hidden' name=$name value='".$rowname."'><input id='delemp1' type='submit' value='X'></form></td>");
-}
+require("../functiondel.php");
 
         // LEKARZE I PACJENCI
         echo("<div class='wiele1'>");
@@ -24,7 +18,7 @@ function del($rowname,$name,$file){
                     while($row=$result->fetch_assoc()){
                         echo("<tr>");
                         echo("<td>".$row['mid']."</td><td>".$row['lekarz']."</td><td>".$row['pacjent']."</td>");
-                        del("$row['mid']", "mid", "delwiele3.php");
+                        del("<input type='hidden' name=mid value='".$row['mid']."'>", "delwiele3.php");
                         echo("</tr>");
                     }
             echo("</table>");
@@ -41,7 +35,7 @@ function del($rowname,$name,$file){
                     while($row=$result->fetch_assoc()){
                         echo("<tr>");
                         echo("<td>".$row['id']."</td><td>".$row['lekarz']."</td>");
-                        del("$row['id']", "lid", "delwiele3.php");
+                        del("<input type='hidden' name=lid value='".$row['id']."'>", "delwiele3.php");
                         echo("</tr>");
                     }
             echo("</table>");
@@ -60,7 +54,7 @@ function del($rowname,$name,$file){
                     while($row=$result->fetch_assoc()){
                         echo("<tr>");
                         echo("<td>".$row['id']."</td><td>".$row['pacjent']."</td>");
-                        del("$row['id']", "pid", "delwiele3.php");
+                        del("<input type='hidden' name=pid value='".$row['id']."'>", "delwiele3.php");
                         echo("</tr>");
                     }
             echo("</table>");

@@ -1,29 +1,11 @@
 <?php include "/app/assets/body.html" ?>
 <?php
-require("../functiondel.php");
+require("../fundel.php");
 
         // PRACOWNICY I PROJEKTY
-        echo("<div class='wiele1'>");
-        require("/app/assets/connect.php");
-        $sql= "select *, pracownik_projekt.id as mid from pracownik,projekt,pracownik_projekt,dzial where (pracownik.id=idPracownik) and (projekt.id=idProjekt) and (dzial_id=dzial.id)";
-        $result=$conn->query($sql);
-            echo("<table class='mtable'>");
-            echo("<caption>");
-            echo("<div class='div1'>Pracownicy i projekty:</div>");
-            echo("<div class='zapytanie'>($sql)</div>");
-            echo("</caption>");
-                echo("<th>ID</th>");
-                echo("<th>Imie</th>");
-                echo("<th>Dzial</th>");
-                echo("<th>Projekt</th>");
-                    while($row=$result->fetch_assoc()){
-                        echo("<tr>");
-                        echo("<td>".$row['mid']."</td><td>".$row['imie']."</td><td>".$row['nazwaDzial']."</td><td>".$row['nazwaProjektu']."</td>");
-                        del("<input type='hidden' name=mid value='".$row['mid']."'>", "delwiele5.php");
-                        echo("</tr>");
-                    }
-            echo("</table>");
-    
+        tabdel("select pracownik_projekt.id as mid,imie,nazwaDzial, nazwaProjektu from pracownik,projekt,pracownik_projekt,dzial where (pracownik.id=idPracownik) and (projekt.id=idProjekt) and (dzial_id=dzial.id)", "Pracownicy i projekty","delwiele5.php","mid","mid");
+        
+        
         $sql="select *,pracownik.id as procownikID from pracownik,dzial where dzial_id=dzial.id";
         $result=$conn->query($sql);
             echo("<table class='mtable'>");
