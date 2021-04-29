@@ -14,11 +14,11 @@ require("/app/assets/connect.php");
     );
    
     tabdel(
-        "select pracownik.id as procownikID,imie,nazwaDzial,wynagrodzenie,dataUrodzenia from pracownik,dzial where dzial_id=dzial.id", 
+        "select pracownik.id as praid,imie,nazwaDzial,wynagrodzenie,dataUrodzenia from pracownik,dzial where dzial_id=dzial.id", 
         "Pracownicy:",
         "delwiele5.php",
         "praid",
-        "procownikID",
+        "praid",
         "mtable"
     );
    
