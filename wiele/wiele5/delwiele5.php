@@ -8,23 +8,23 @@ require_once("/app/assets/connect.php");
 
     if(!empty($_POST['mid']))
     {
-        $sql = "DELETE FROM osoba_rola WHERE id='".$_POST['mid']."'";
+        $sql = "DELETE FROM pracownik_projekt WHERE id='".$_POST['mid']."'";
         $conn->query($sql); 
-        header("location:wiele1.php"); 
+        header("location:wiele5.php"); 
     }
 
-    if(!empty($_POST['oid']))
+    if(!empty($_POST['praid']))
     {
-        $sql = "DELETE FROM osoba WHERE id='".$_POST['oid']."'";
+        $sql = "DELETE FROM pracownik WHERE id='".$_POST['praid']."'";
         $conn->query($sql);
-        header("location:wiele1.php");  
+        header("location:wiele5.php");  
     }
 
-    if(!empty($_POST['rid']))
+    if(!empty($_POST['proid']))
     {
-        $sql = "DELETE FROM rola WHERE id='".$_POST['rid']."'";
+        $sql = "DELETE FROM projekt WHERE id='".$_POST['proid']."'";
         $conn->query($sql); 
-        header("location:wiele1.php");
+        header("location:wiele5.php");
     }
  
 ?>
