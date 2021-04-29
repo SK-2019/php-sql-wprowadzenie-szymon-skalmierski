@@ -20,7 +20,8 @@ function tabdel($sql,$nazwa, $file, $name, $rowname)
             echo "<th>";
             echo "<b>" . $fetchedField->name . "<b></a>";
             echo "</th>";
-        }       
+        }   
+        echo "<th>DELETE</th>"; 
         echo "</tr>";
         while($totalRows = $result ->fetch_array()) 
         {           
