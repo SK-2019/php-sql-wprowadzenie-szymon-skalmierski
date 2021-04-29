@@ -8,7 +8,7 @@ require("../fundel.php");
 
         // OSOBY I ROLE
         tabdel(
-            "select *, osoba_rola.id as mid,imie,nazwisko,nazwaRoli from osoba,rola,osoba_rola where (osoba.id=idOsoba) and (rola.id=idRola) order by osoba_rola.id", 
+            "select osoba_rola.id as mid,imie,nazwisko,nazwaRoli from osoba,rola,osoba_rola where (osoba.id=idOsoba) and (rola.id=idRola) order by osoba_rola.id", 
             "Osoby i role:",
             "delwiele1.php",
             "mid",
