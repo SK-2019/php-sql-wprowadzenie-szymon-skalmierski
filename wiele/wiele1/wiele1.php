@@ -25,7 +25,7 @@ function del($name, $rowname){
                     while($row=$result->fetch_assoc()){
                         echo("<tr>");
                         echo("<td>".$row['osobaID']."</td><td>".$row['imie']."</td><td>".$row['nazwisko']."</td><td>".$row['nazwaRoli']."</td>");
-                        del("mid", "mid");
+                        del("mid", 'mid');
                         echo("</tr>");
                     }
             echo("</table>");
@@ -61,7 +61,7 @@ function del($name, $rowname){
                     while($row=$result->fetch_assoc()){
                         echo("<tr>");
                         echo("<td>".$row['id']."</td><td>".$row['imie']."</td><td>".$row['nazwisko']."</td>");
-                        del("oid", "id");
+                        del("oid", 'id');
                         echo("</tr>");
                     }
             echo("</table>");
@@ -78,7 +78,7 @@ function del($name, $rowname){
                     while($row=$result->fetch_assoc()){
                         echo("<tr>");
                         echo("<td>".$row['id']."</td><td>".$row['nazwaRoli']."</td>");
-                        del("rid", "id");
+                        del("rid", 'id');
                         echo("</tr>");
                     }
             echo("</table>");
