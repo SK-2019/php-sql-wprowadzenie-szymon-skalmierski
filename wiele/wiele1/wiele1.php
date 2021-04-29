@@ -4,9 +4,9 @@ ini_set('display_errors', '1');
 ini_set('display_startup_errors', '1');
 error_reporting(E_ALL);
 
-function del($name, $rowname){
-    echo("<td><form action='delwiele1.php' method=POST><input type='hidden' name=$name value='".$row[$rowname]."'><input id='delemp1' type='submit' value='X'></form></td>");
-}
+// function del($name, $rowname){
+//     echo("<td><form action='delwiele1.php' method=POST><input type='hidden' name=$name value='".$row[$rowname]."'><input id='delemp1' type='submit' value='X'></form></td>");
+// }
 
         // OSOBY I ROLE
         echo("<div class='wiele1'>");
@@ -61,7 +61,7 @@ function del($name, $rowname){
                     while($row=$result->fetch_assoc()){
                         echo("<tr>");
                         echo("<td>".$row['id']."</td><td>".$row['imie']."</td><td>".$row['nazwisko']."</td>");
-                        del("oid", 'id');
+                        echo("<td><form action='delwiele1.php' method=POST><input type='hidden' name=mid value='".$row['mid']."'><input id='delemp1' type='submit' value='X'></form></td>");
                         echo("</tr>");
                     }
             echo("</table>");
@@ -78,7 +78,7 @@ function del($name, $rowname){
                     while($row=$result->fetch_assoc()){
                         echo("<tr>");
                         echo("<td>".$row['id']."</td><td>".$row['nazwaRoli']."</td>");
-                        del("rid", 'id');
+                        echo("<td><form action='delwiele1.php' method=POST><input type='hidden' name=mid value='".$row['mid']."'><input id='delemp1' type='submit' value='X'></form></td>");
                         echo("</tr>");
                     }
             echo("</table>");
