@@ -1,4 +1,4 @@
-<?php
+<?php include "/app/assets/body.html"
 function tabdelm($sql, $nazwa, $file, $name, $rowname, $tclass)
 {
     require("/app/assets/connect.php");
