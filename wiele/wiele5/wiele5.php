@@ -1,9 +1,5 @@
 <?php include "/app/assets/body.html" ?>
 <?php
-ini_set('display_errors', '1');
-ini_set('display_startup_errors', '1');
-error_reporting(E_ALL);
-
 require("../fundel.php");
 require("/app/assets/connect.php");
 
@@ -13,7 +9,7 @@ require("/app/assets/connect.php");
         "Pracownicy i projekty:",
         "delwiele5.php",
         "mid",
-        "mid",
+        'mid',
         "mtable"
     );
    
