@@ -23,7 +23,6 @@ function tabdel($sql, $nazwa, $file, $name, $rowname, $tclass)
         }   
         echo "<th>DELETE</th>"; 
         echo "</tr>";
-        $rown = $row[$rowname];
         while($totalRows = $result ->fetch_array()) 
         {           
             echo "<tr>";                                
@@ -33,7 +32,7 @@ function tabdel($sql, $nazwa, $file, $name, $rowname, $tclass)
                 echo $totalRows[$eachRecord];
                 echo "</td>";              
             }
-            echo "<td><form action=$file method=POST><input type='text' name=$name value='".$row[$rowname]."'><input id='delemp1' type='submit' value='X'></form></td>"; 
+            echo "<td><form action=$file method=POST><input type='text' name=$name value='.$row[$rowname].'><input id='delemp1' type='submit' value='X'></form></td>"; 
             echo "</tr>";           
         } 
         echo "</table>";        
