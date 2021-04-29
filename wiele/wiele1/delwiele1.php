@@ -6,8 +6,6 @@ error_reporting(E_ALL);
 
 require_once("/app/assets/connect.php");
 print_r($_POST['mid']);
-print_r($_POST['oid']);
-print_r($_POST['rid']);
 
     if(!empty($_POST['mid']))
     {
