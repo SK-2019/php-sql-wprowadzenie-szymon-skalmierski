@@ -4,9 +4,8 @@ ini_set('display_errors', '1');
 ini_set('display_startup_errors', '1');
 error_reporting(E_ALL);
 
-function delform($name, $rowname){
-    $rown = $row[$rowname];
-    echo("<td><form action='delwiele1.php' method=POST><input type='hidden' name=$name value='".$rown."'><input id='delemp1' type='submit' value='X'></form></td>");
+function del($rown){
+    echo("<td><form action='delwiele1.php' method=POST>$rown<input id='delemp1' type='submit' value='X'></form></td>");
 }
 
         // OSOBY I ROLE
@@ -27,7 +26,7 @@ function delform($name, $rowname){
                     while($row=$result->fetch_assoc()){
                         echo("<tr>");
                         echo("<td>".$row['mid']."</td><td>".$row['imie']."</td><td>".$row['nazwisko']."</td><td>".$row['nazwaRoli']."</td>");
-                        delform("mid","mid");
+                        del("<input type='hidden' name=mid value='".$row['mid']."'>");
                         echo("</tr>");
                     }
             echo("</table>");
