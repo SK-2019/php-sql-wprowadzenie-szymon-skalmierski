@@ -1,5 +1,5 @@
-<?php include "/app/assets/body.html"
-function tabdelm($sql, $nazwa, $file, $name, $rowname, $tclass)
+<?php include "/app/assets/body.html";
+function tabdel($sql, $nazwa, $file, $name, $rowname, $tclass)
 {
     require("/app/assets/connect.php");
 
@@ -9,10 +9,10 @@ function tabdelm($sql, $nazwa, $file, $name, $rowname, $tclass)
 
     if (mysqli_num_rows($result) > 0) 
     {           
-        echo "<table class='$tclass'>";
+        echo "<table class=$tclass>";
         echo "<caption>";
-        echo("<div class='div1'>$nazwa</div>");
-        echo("<div class='zapytanie'>($sql)</div>");
+        echo "<div class='div1'>$nazwa</div>";
+        echo "<div class='zapytanie'>($sql)</div>";
         echo "</caption>";
         echo "<tr>";
         foreach ($fetchFields as $fetchedField)
