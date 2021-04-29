@@ -7,4 +7,4 @@
     header("location:wiele6.php"); 
 ?>
     </div>
-</div>
+</div> 
