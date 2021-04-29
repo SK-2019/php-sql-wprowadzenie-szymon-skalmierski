@@ -61,7 +61,7 @@ error_reporting(E_ALL);
                     while($row=$result->fetch_assoc()){
                         echo("<tr>");
                         echo("<td>".$row['id']."</td><td>".$row['imie']."</td><td>".$row['nazwisko']."</td>");
-                        echo("<td><form action='delwiele1.php' method=POST><input type='hidden' name=mid value='".$row['mid']."'><input id='delemp1' type='submit' value='X'></form></td>");
+                        echo("<td><form action='delwiele1.php' method=POST><input type='hidden' name=oid value='".$row['id']."'><input id='delemp1' type='submit' value='X'></form></td>");
                         echo("</tr>");
                     }
             echo("</table>");
@@ -78,7 +78,7 @@ error_reporting(E_ALL);
                     while($row=$result->fetch_assoc()){
                         echo("<tr>");
                         echo("<td>".$row['id']."</td><td>".$row['nazwaRoli']."</td>");
-                        echo("<td><form action='delwiele1.php' method=POST><input type='hidden' name=mid value='".$row['mid']."'><input id='delemp1' type='submit' value='X'></form></td>");
+                        echo("<td><form action='delwiele1.php' method=POST><input type='hidden' name=rid value='".$row['id']."'><input id='delemp1' type='submit' value='X'></form></td>");
                         echo("</tr>");
                     }
             echo("</table>");
