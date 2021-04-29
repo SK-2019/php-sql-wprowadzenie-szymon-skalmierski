@@ -11,7 +11,7 @@ error_reporting(E_ALL);
         // OSOBY I ROLE
         echo("<div class='wiele1'>");
         require("/app/assets/connect.php");
-        $sql= "select *, osoba.id as osobaID, osoba_rola.id as mid from osoba,rola,osoba_rola where (osoba.id=idOsoba) and (rola.id=idRola)";
+        $sql= "select *, osoba_rola.id as mid from osoba,rola,osoba_rola where (osoba.id=idOsoba) and (rola.id=idRola) order by osoba_rola.id";
         $result=$conn->query($sql);
             echo("<table class='mtable'>");
             echo("<caption>");
@@ -24,7 +24,7 @@ error_reporting(E_ALL);
                 echo("<th>Rola</th>");
                     while($row=$result->fetch_assoc()){
                         echo("<tr>");
-                        echo("<td>".$row['osobaID']."</td><td>".$row['imie']."</td><td>".$row['nazwisko']."</td><td>".$row['nazwaRoli']."</td>");
+                        echo("<td>".$row['mid']."</td><td>".$row['imie']."</td><td>".$row['nazwisko']."</td><td>".$row['nazwaRoli']."</td>");
                         echo("<td><form action='delwiele1.php' method=POST><input type='hidden' name=mid value='".$row['mid']."'><input id='delemp1' type='submit' value='X'></form></td>");
                         echo("</tr>");
                     }
