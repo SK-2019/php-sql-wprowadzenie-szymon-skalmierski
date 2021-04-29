@@ -5,7 +5,9 @@ ini_set('display_startup_errors', '1');
 error_reporting(E_ALL);
 
 require_once("/app/assets/connect.php");
-
+print_r($_POST['mid']);
+print_r($_POST['praid']);
+print_r($_POST['proid']);
     if(!empty($_POST['mid']))
     {
         $sql = "DELETE FROM pracownik_projekt WHERE id='".$_POST['mid']."'";
