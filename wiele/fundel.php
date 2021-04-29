@@ -1,5 +1,5 @@
 <?php
-function tabdel($sql, $nazwa, $file, $name, $rowname, $tclass)
+function tabdel($sql, $sqlname, $file, $name, $rowname, $tclass)
 {
     require("/app/assets/connect.php");
 
@@ -11,7 +11,7 @@ function tabdel($sql, $nazwa, $file, $name, $rowname, $tclass)
     {           
         echo "<table class=$tclass>";
         echo "<caption>";
-        echo "<div class='div1'>$nazwa</div>";
+        echo "<div class='div1'>$sqlname</div>";
         echo "<div class='zapytanie'>($sql)</div>";
         echo "</caption>";
         echo "<tr>";
@@ -32,7 +32,7 @@ function tabdel($sql, $nazwa, $file, $name, $rowname, $tclass)
                 echo $totalRows[$eachRecord];
                 echo "</td>";              
             }
-            echo "<td><form action=$file method=POST><input type='text' name=$name value='$rowname'><input id='delemp1' type='submit' value='X'></form></td>"; 
+            echo "<td><form action=$file method=POST><input type='text' name=$name value='".$totalRows[$rowname]."'><input id='delemp1' type='submit' value='X'></form></td>"; 
             echo "</tr>";           
         } 
         echo "</table>";        
