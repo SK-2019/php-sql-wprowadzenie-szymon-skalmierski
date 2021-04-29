@@ -5,7 +5,10 @@ ini_set('display_startup_errors', '1');
 error_reporting(E_ALL);
 
 require_once("/app/assets/connect.php");
-echo(".$_POST['mid'].");
+print_r($_POST['mid']);
+print_r($_POST['oid']);
+print_r($_POST['rid']);
+
     if(!empty($_POST['mid']))
     {
         $sql = "DELETE FROM osoba_rola WHERE id='".$_POST['mid']."'";
