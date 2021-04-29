@@ -11,25 +11,30 @@ $oid = $_POST['oid'];
 $rid = $_POST['rid'];
 
 
-    if(!isset($mid))
+    if(isset($mid))
     {
+    }
+    else{
         $sql = "DELETE FROM osoba_rola WHERE id='".$mid."'";
         $conn->query($sql); 
         header("location:wiele1.php"); 
     }
 
     if(!isset($oid))
-    {
+    {}
+    else{
         $sql = "DELETE FROM osoba WHERE id='".$oid."'";
         $conn->query($sql);
         header("location:wiele1.php");  
     }
 
     if(!isset($rid))
-    {
+    { 
+    }
+    else{
         $sql = "DELETE FROM rola WHERE id='".$rid."'";
         $conn->query($sql); 
-        header("location:wiele1.php"); 
+        header("location:wiele1.php");
     }
     
 ?>
