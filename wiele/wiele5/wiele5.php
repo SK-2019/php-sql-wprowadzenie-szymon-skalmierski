@@ -17,8 +17,8 @@ require("/app/assets/connect.php");
         "select pracownik.id as praid,imie,nazwaDzial,wynagrodzenie,dataUrodzenia from pracownik,dzial where dzial_id=dzial.id", 
         "Pracownicy:",
         "delwiele5.php",
-        "praid",
-        "praid",
+        "pid",
+        "pid",
         "mtable"
     );
    

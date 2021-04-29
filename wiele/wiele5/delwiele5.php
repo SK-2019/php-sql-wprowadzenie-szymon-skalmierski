@@ -15,9 +15,9 @@ print_r($_POST['proid']);
         header("location:wiele5.php"); 
     }
 
-    if(!empty($_POST['praid']))
+    if(!empty($_POST['pid']))
     {
-        $sql = "DELETE FROM pracownik WHERE id='".$_POST['praid']."'";
+        $sql = "DELETE FROM pracownik WHERE id='".$_POST['pid']."'";
         $conn->query($sql);
         header("location:wiele5.php");  
     }
