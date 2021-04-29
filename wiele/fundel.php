@@ -32,7 +32,7 @@ function tabdel($sql, $sqlname, $file, $name, $rowname, $tclass)
                 echo $totalRows[$eachRecord];
                 echo "</td>";              
             }
-            echo "<td><form action=$file method=POST><input type='text' name=$name value='".$totalRows[$rowname]."'><input id='delemp1' type='submit' value='X'></form></td>"; 
+            echo "<td><form action=$file method=POST><input type='hidden' name=$name value='".$totalRows[$rowname]."'><input id='delemp1' type='submit' value='X'></form></td>"; 
             echo "</tr>";           
         } 
         echo "</table>";        
