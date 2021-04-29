@@ -17,8 +17,8 @@ require("/app/assets/connect.php");
         "select pracownik.id as procownikID,imie,nazwaDzial,wynagrodzenie,dataUrodzenia from pracownik,dzial where dzial_id=dzial.id", 
         "Pracownicy:",
         "delwiele5.php",
-        "procownikID",
         "praid",
+        "procownikID",
         "mtable"
     );
    
@@ -26,8 +26,8 @@ require("/app/assets/connect.php");
         "select * from projekt", 
         "Projekty:",
         "delwiele5.php",
-        "id",
         "proid",
+        "id",
         "stable"
     );
     
