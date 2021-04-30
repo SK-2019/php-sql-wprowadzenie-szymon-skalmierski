@@ -1,6 +1,7 @@
 <?php include "/app/assets/body.html" ?>
 <?php
 require("../fundel.php");
+require("/app/assets/connect.php");
 
         // KSIĄŻKI I AUTORZY
     tabdel(
