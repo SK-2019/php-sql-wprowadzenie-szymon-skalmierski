@@ -27,7 +27,7 @@ require("/app/assets/connect.php");
             echo '</select>';
             echo '</li>';
             echo '<li>';
-            $sql=('select *, tytul.id as tytulID from dzial');
+            $sql=('select *, tytul.id as tytulID from tytul');
                     $result=$conn->query($sql);               
             echo '<select name="tytulid" class="field-style field-full">';
                 while($row=$result->fetch_assoc()){
