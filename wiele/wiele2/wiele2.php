@@ -61,7 +61,7 @@ require("/app/assets/connect.php");
 
     echo "<div class='w100'>";
     // INSERT
-        echo '<form style="margin: 15px" class="formularz0" action="insertwiele1.php" method="POST">';
+        echo '<form style="margin: 15px" class="formularz0" action="insertwiele2.php" method="POST">';
             echo '<h2 class="naglowek">Dodawanie tytułu:</h2>';
             echo '<ul>';
             echo '<li>';
@@ -76,7 +76,7 @@ require("/app/assets/connect.php");
         echo '</form>';
 
     // INSERT
-        echo '<form style="margin: 15px" class="formularz0" action="insertwiele1.php" method="POST">';
+        echo '<form style="margin: 15px" class="formularz0" action="insertwiele2.php" method="POST">';
             echo '<h2 class="naglowek">Dodawanie autorów:</h2>';
             echo '<ul>';
             echo '<li>';
