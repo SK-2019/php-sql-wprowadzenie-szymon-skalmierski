@@ -12,7 +12,6 @@ function minform($action,$header,$sql1,$name1,$rowid1,$rowname1,$sql2,$name2,$ro
                 echo("<option value='".$row[$rowid1]."'>".$row[$rowname1]."</option>");
                 }
             echo "</select>";
-            }
         echo "</li>";
         echo "<li>";
         $result=$conn->query($sql1);               
@@ -21,7 +20,6 @@ function minform($action,$header,$sql1,$name1,$rowid1,$rowname1,$sql2,$name2,$ro
                 echo("<option value='".$row[$rowid1]."'>".$row[$rowname1]."</option>");
                 }
             echo "</select>";
-            }
         echo "</li>";
         echo "<li>";
         echo "<input type='submit' value='Dodaj' />";
