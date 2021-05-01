@@ -19,7 +19,7 @@ window.onload = function(){
         $conn->query($sql);
     }
 
-        echo("<form style='display:none' action='inwiele1.php' method=POST>");
+        echo("<form style='visibility:hidden' action='inwiele1.php' method=POST>");
         $sql="Select * from osoba where (imie='".$_POST['imie']."') and (nazwisko='".$_POST['nazwisko']."')";
         $result=$conn->query($sql);
         echo("<table>");
