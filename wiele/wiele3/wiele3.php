@@ -1,5 +1,9 @@
 <?php include "/app/assets/body.html" ?>
 <?php
+ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');
+error_reporting(E_ALL);
+
 require("../fundel.php");
 require("../funin.php");
 
