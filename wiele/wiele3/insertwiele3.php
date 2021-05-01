@@ -3,9 +3,9 @@
     require("/app/assets/connect.php");
 
     
-    if(!empty($_POST['lekarzid']))
+    if(!empty($_POST['lekarzID']))
     {
-        $sql = "INSERT INTO lekarz_pacjent(id, idLekarz, idPacjent) VALUES(NULL, '".$_POST['lekarzid']."', '".$_POST['pacjentid']."')";
+        $sql = "INSERT INTO lekarz_pacjent(id, idLekarz, idPacjent) VALUES(NULL, '".$_POST['lekarzID']."', '".$_POST['pacjentID']."')";
         $conn->query($sql);
         header("location:wiele3.php"); 
     }

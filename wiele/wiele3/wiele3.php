@@ -1,9 +1,5 @@
 <?php include "/app/assets/body.html" ?>
 <?php
-ini_set('display_errors', '1');
-ini_set('display_startup_errors', '1');
-error_reporting(E_ALL);
-
 require("../fundel.php");
 require("../funin.php");
 
@@ -22,11 +18,9 @@ require("../funin.php");
             "insertwiele3.php",
             "Lekarze i pacjenci:",
             "select *, lekarz.id as lekarzID from lekarz",
-            "lekarzid",
             "lekarzID",
             "lekarz",
             "select *, pacjent.id as pacjentID from pacjent",
-            "pacjentid",
             "pacjentID",
             "pacjent",
         );

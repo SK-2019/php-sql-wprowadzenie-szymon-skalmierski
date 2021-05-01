@@ -1,12 +1,12 @@
 <?php
-function minform($action,$header,$sql1,$name1,$rowid1,$rowname1,$sql2,$name2,$rowid2,$rowname2){
+function minform($action,$header,$sql1,$rowid1,$rowname1,$sql2,$rowid2,$rowname2){
     require("/app/assets/connect.php");
     echo "<form style='margin: 15px' class='formularz0' action=$action method='POST'>";
         echo "<h2 class='naglowek'>$header</h2>";
         echo "<ul>";
         echo "<li>";
             $result=$conn->query($sql1);               
-            echo "<select name=$name1 class='field-style field-full'>";
+            echo "<select name=$rowid1 class='field-style field-full'>";
                 while($row=$result->fetch_assoc()){
                 echo("<option value='".$row[$rowid1]."'>".$row[$rowname1]."</option>");
                 }
@@ -14,7 +14,7 @@ function minform($action,$header,$sql1,$name1,$rowid1,$rowname1,$sql2,$name2,$ro
         echo "</li>";
         echo "<li>";
         $result=$conn->query($sql2);               
-            echo "<select name=$name2 class='field-style field-full'>";
+            echo "<select name=$rowid2 class='field-style field-full'>";
                 while($row=$result->fetch_assoc()){
                 echo("<option value='".$row[$rowid2]."'>".$row[$rowname2]."</option>");
                 }

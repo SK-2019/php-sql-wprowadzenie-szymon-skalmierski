@@ -1,6 +1,7 @@
 <?php include "/app/assets/body.html" ?>
 <?php
 require("../fundel.php");
+require("../funin.php");
 
         // NAUCZYCIELE I KLASY
         tabdel(
@@ -12,6 +13,19 @@ require("../fundel.php");
             "mtable"
         );
 
+        // INSERT - LEKARZE I PACJENCI
+        minform(
+            "insertwiele4.php",
+            "Nauczyciele i klasy:",
+            "select *, nauczyciel.id as nauczycielID from nauczyciel",
+            "nauczycielID",
+            "nauczyciel",
+            "select *, klasa.id as klasaID from klasa",
+            "klasaID",
+            "klasa",
+        );
+
+        // NAUCZYCIELE
         tabdel(
             "select * from nauczyciel", 
             "Nauczyciele:",
@@ -21,6 +35,7 @@ require("../fundel.php");
             "mtable"
         );
 
+        // KLASY
         tabdel(
             "select * from klasa", 
             "Klasy:",
@@ -30,6 +45,23 @@ require("../fundel.php");
             "stable"
         );
         
-        echo("</div>");
-        echo("</div>");
+        // INSERT - NAUCZYCIELE    |    INSERT - KLASY
+        echo "<div class='w100'>";
+            inform(
+                "insertwiele4.php",
+                "Dodawanie nauczyciela:",
+                "nauczyciel",
+                "Nauczyciel"
+            );
+
+            inform(
+                "insertwiele4.php",
+                "Dodawanie klasy:",
+                "klasa",
+                "Klasa"
+            );
+        echo "</div>";
+        
+echo("</div>");
+echo("</div>");
 ?>
