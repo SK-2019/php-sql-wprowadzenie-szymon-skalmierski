@@ -13,10 +13,10 @@ function minform($action,$header,$sql1,$name1,$rowid1,$rowname1,$sql2,$name2,$ro
             echo "</select>";
         echo "</li>";
         echo "<li>";
-        $result=$conn->query($sql1);               
-            echo "<select name=$name1 class='field-style field-full'>";
+        $result=$conn->query($sql2);               
+            echo "<select name=$name2 class='field-style field-full'>";
                 while($row=$result->fetch_assoc()){
-                echo("<option value='".$row[$rowid1]."'>".$row[$rowname1]."</option>");
+                echo("<option value='".$row[$rowid2]."'>".$row[$rowname2]."</option>");
                 }
             echo "</select>";
         echo "</li>";
