@@ -7,7 +7,7 @@ window.onload = function(){
 </head>
 <?php include "/app/assets/body.html" ?>
 <?php
-    if(!empty($_POST['imie'] && !empty($_POST['nazwisko']))
+    if(!empty($_POST['imie']) && (!empty($_POST['nazwisko'])
     {
         $sql = "INSERT INTO osoba(id, imie, nazwisko) VALUES(NULL, '".$_POST['imie']."', '".$_POST['nazwisko']."')";
         $conn->query($sql);
