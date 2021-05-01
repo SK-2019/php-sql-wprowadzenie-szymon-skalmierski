@@ -37,9 +37,5 @@ function tabdel($sql, $sqlname, $file, $name, $rowname, $tclass)
         } 
         echo "</table>";        
     } 
-    else
-    {
-      echo "<div class='div1'>Nie znaleziono rekordów</div>";
-    }
 }
 ?>

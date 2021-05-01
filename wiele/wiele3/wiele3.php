@@ -1,6 +1,7 @@
 <?php include "/app/assets/body.html" ?>
 <?php
 require("../fundel.php");
+require("../funin.php");
 
         // LEKARZE I PACJENCI
         tabdel(
@@ -12,6 +13,21 @@ require("../fundel.php");
             "mtable"
         );
 
+        // INSERT - LEKARZE I PACJENCI
+        minform(
+            "insertwiele3.php",
+            "Lekarze i pacjenci:",
+            "select *, lekarz.id as lekarzID from lekarz",
+            "lekarzid",
+            "lekarzID",
+            "lekarz",
+            "select *, pacjent.id as pacjentID from pacjent",
+            "pacjentid",
+            "pacjentID",
+            "pacjent",
+        );
+
+        // LEKARZE
         tabdel(
             "select * from lekarz", 
             "Lekarze:",
@@ -21,6 +37,7 @@ require("../fundel.php");
             "mtable"
         );
 
+        // PACJENCI
         tabdel(
             "select * from pacjent", 
             "Pacjenci:",
@@ -29,7 +46,25 @@ require("../fundel.php");
             'id',
             "stable"
         );
+
         
-        echo("</div>");
-        echo("</div>");
+        // INSERT - LEKARZE    |    INSERT - PACJENCI
+        echo "<div class='w100'>";
+            inform(
+                "insertwiele3.php",
+                "Dodawanie lekarza:",
+                "lekarz",
+                "Lekarz"
+            );
+
+            inform(
+                "insertwiele3.php",
+                "Dodawanie pacjenta:",
+                "pacjent",
+                "Pacjent"
+            );
+        echo "</div>";
+
+echo("</div>");
+echo("</div>");
 ?>

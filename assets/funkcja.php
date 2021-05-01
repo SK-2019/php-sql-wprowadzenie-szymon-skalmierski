@@ -35,9 +35,5 @@ function tabela($sql,$nazwa)
         } 
         echo "</table>";        
     } 
-    else
-    {
-      echo "<div class='div1'>Nie znaleziono rekordów</div>";
-    }
 }
 ?>
