@@ -11,7 +11,7 @@ window.onload = function(){
 ini_set('display_errors', '1');
 ini_set('display_startup_errors', '1');
 error_reporting(E_ALL);
-
+require("/app/assets/connect.php");
 
     if(!empty($_POST['imie']) && !empty($_POST['nazwisko']))
     {
