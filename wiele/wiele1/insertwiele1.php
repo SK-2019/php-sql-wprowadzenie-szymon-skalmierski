@@ -1,10 +1,10 @@
-<head>
+<!-- <head>
 <script type="text/javascript">
 window.onload = function(){
   document.getElementById('clickButton').click();
 }
 </script>
-</head>
+</head> -->
 <?php include "/app/assets/body.html" ?>
 <?php
 
