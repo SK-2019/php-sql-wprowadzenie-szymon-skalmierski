@@ -1,16 +1,12 @@
-<!-- <head>
+<head>
 <script type="text/javascript">
 window.onload = function(){
   document.getElementById('clickButton').click();
 }
 </script>
-</head> -->
+</head>
 <?php include "/app/assets/body.html" ?>
 <?php
-ini_set('display_errors', '1');
-ini_set('display_startup_errors', '1');
-error_reporting(E_ALL);
-
     require("/app/assets/connect.php");
         $sql = "INSERT INTO osoba(id, imie, nazwisko) VALUES(NULL, '".$_POST['imie']."', '".$_POST['nazwisko']."')";
         $conn->query($sql);

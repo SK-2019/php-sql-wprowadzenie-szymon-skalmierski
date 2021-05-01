@@ -1,9 +1,5 @@
 <?php include "/app/assets/body.html" ?>
 <?php
-ini_set('display_errors', '1');
-ini_set('display_startup_errors', '1');
-error_reporting(E_ALL);
-
 require("../fundel.php");
 
         // OSOBY I ROLE
@@ -34,7 +30,7 @@ require("../fundel.php");
         echo '</form>';
 
         tabdel(
-            "select * from osoba", 
+            "select * from osoba order by id", 
             "Osoby:",
             "delwiele1.php",
             "oid",
@@ -43,7 +39,7 @@ require("../fundel.php");
         );
     
         tabdel(
-            "select * from rola", 
+            "select * from rola order by id", 
             "Role:",
             "delwiele1.php",
             "rid",
