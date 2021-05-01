@@ -7,12 +7,7 @@ window.onload = function(){
 </head>
 <?php include "/app/assets/body.html" ?>
 <?php
-ini_set('display_errors', '1');
-ini_set('display_startup_errors', '1');
-error_reporting(E_ALL);
-
-
-    if(!empty($_POST['imie']) && (!empty($_POST['nazwisko'])
+    if(!empty($_POST['imie']) && !empty($_POST['nazwisko']))
     {
         $sql = "INSERT INTO osoba(id, imie, nazwisko) VALUES(NULL, '".$_POST['imie']."', '".$_POST['nazwisko']."')";
         $conn->query($sql);
@@ -23,7 +18,6 @@ error_reporting(E_ALL);
         $sql = "INSERT INTO rola(id, nazwaRoli) VALUES(NULL, '".$_POST['rola']."')";
         $conn->query($sql);
     }
-
 
         echo("<form style='display:none' action='inwiele1.php' method=POST>");
         $sql="Select * from osoba where (imie='".$_POST['imie']."') and (nazwisko='".$_POST['nazwisko']."')";
