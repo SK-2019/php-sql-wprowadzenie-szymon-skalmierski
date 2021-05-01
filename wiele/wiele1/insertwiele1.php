@@ -11,17 +11,15 @@ window.onload = function(){
     {
         $sql = "INSERT INTO osoba(id, imie, nazwisko) VALUES(NULL, '".$_POST['imie']."', '".$_POST['nazwisko']."')";
         $conn->query($sql);
-        header("location:wiele2.php"); 
     }
 
     if(!empty($_POST['rola']))
     {
         $sql = "INSERT INTO rola(id, nazwaRoli) VALUES(NULL, '".$_POST['rola']."')";
         $conn->query($sql);
-        header("location:wiele2.php"); 
     }
 
-    
+
         echo("<form style='display:none' action='inwiele1.php' method=POST>");
         $sql="Select * from osoba where (imie='".$_POST['imie']."') and (nazwisko='".$_POST['nazwisko']."')";
         $result=$conn->query($sql);
