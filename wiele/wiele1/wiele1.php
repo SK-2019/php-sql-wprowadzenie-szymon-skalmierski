@@ -13,6 +13,7 @@ require("../fundel.php");
         );
     
          // INSERT
+         echo '<div class="aligncenter">';
         echo '<form style="margin: 15px" class="formularz0" action="insertwiele1.php" method="POST">';
             echo '<h2 class="naglowek">Dodawanie osoby i roli:</h2>';
             echo '<ul>';
@@ -28,6 +29,7 @@ require("../fundel.php");
             echo '</li>';
             echo '</ul>';
         echo '</form>';
+        echo '</div>';
 
         tabdel(
             "select * from osoba order by id", 
