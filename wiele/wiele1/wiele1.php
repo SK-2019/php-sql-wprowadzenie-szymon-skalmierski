@@ -13,7 +13,7 @@ require("../fundel.php");
         );
     
          // INSERT
-         echo '<div class="aligncenter">';
+         echo '<div class="acent">';
         echo '<form style="margin: 15px" class="formularz0" action="insertwiele1.php" method="POST">';
             echo '<h2 class="naglowek">Dodawanie osoby i roli:</h2>';
             echo '<ul>';

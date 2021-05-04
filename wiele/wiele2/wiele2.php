@@ -14,6 +14,7 @@ require("/app/assets/connect.php");
     );
 
     // INSERT
+    echo '<div class="acent">';
         echo '<form style="margin: 15px" class="formularz0" action="insertwiele2.php" method="POST">';
             echo '<h2 class="naglowek">Autorzy i tytuły:</h2>';
             echo '<ul>';
@@ -40,6 +41,7 @@ require("/app/assets/connect.php");
             echo '</li>';
             echo '</ul>';
         echo '</form>';
+    echo '</div>';
 
     tabdel(
         "select * from tytul order by id", 

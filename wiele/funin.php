@@ -1,6 +1,7 @@
 <?php
 function minform($action,$header,$sql1,$rowid1,$rowname1,$sql2,$rowid2,$rowname2){
     require("/app/assets/connect.php");
+    echo '<div class="acent">';
     echo "<form style='margin: 15px' class='formularz0' action=$action method='POST'>";
         echo "<h2 class='naglowek'>$header</h2>";
         echo "<ul>";
@@ -25,6 +26,7 @@ function minform($action,$header,$sql1,$rowid1,$rowname1,$sql2,$rowid2,$rowname2
         echo "</li>";
         echo "</ul>";
     echo "</form>";
+    echo '</div>';
 }
 
 function inform($action,$header,$name,$placeholder){
