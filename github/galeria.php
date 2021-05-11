@@ -8,9 +8,9 @@
     <h2 class="galleryheading">Galeria:</h2>
 
     <div class="gallery row">
-      <div class="image photo01">1</div>
-      <div class="image photo02">2</div>
-      <div class="image photo03">3</div>
+      <div class="image photo01"></div>
+      <div class="image photo02"></div>
+      <div class="image photo03"></div>
     </div>
 
     <div class="gallery row">
@@ -28,9 +28,9 @@
       </a>
     </div>
     <div class="gallery row">
-      <div class="image photo01">1</div>
-      <div class="image photo02">2</div>
-      <div class="image photo03">3</div>
+      <div class="image photo01"></div>
+      <div class="image photo02"></div>
+      <div class="image photo03"></div>
     </div>
   </body>
 </html>
