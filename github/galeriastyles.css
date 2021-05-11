@@ -46,6 +46,7 @@
   height: 25px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
+  margin:0px;
 }
 .photo01_price {
   background-color: white;
@@ -54,4 +55,5 @@
   display: block;
   height: 25px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin:0px;
 }
