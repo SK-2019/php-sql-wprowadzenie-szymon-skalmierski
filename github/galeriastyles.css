@@ -47,6 +47,9 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
 }
+.photo01_title:hover {
+  font-size: larger;
+}
 .photo01_price {
   background-color: white;
   color: black;
