@@ -22,8 +22,8 @@
         <span class="photo01_price">cena: 299 zł</span>
       </a>
       <a href="" class="image photo03">
-        <span class="photo01_title">kurs nurkowania</span>
-        <span class="photo01_price">cena: 1299 zł</span>
+        <span class="photo01_title">kurs fotografii</span>
+        <span class="photo01_price">cena: 899 zł</span>
       </a>
     </div>
     <div class="gallery row">
