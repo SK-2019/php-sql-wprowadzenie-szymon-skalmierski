@@ -1,3 +1,4 @@
+<?php include "/app/assets/body.html" ?>
 <!DOCTYPE html>
 <html>
   <head>
