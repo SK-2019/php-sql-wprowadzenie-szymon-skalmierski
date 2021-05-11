@@ -22,7 +22,7 @@
   text-decoration: none;
   text-align: center;
   display: flex;
-  align-items: flex-end;
+  justify-content: flex-end;
   flex-direction: column;
 }
 .image:hover {
@@ -45,6 +45,7 @@
   width: 100%;
   height: 15%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
 }
 .photo01_price {
   background-color: white;
