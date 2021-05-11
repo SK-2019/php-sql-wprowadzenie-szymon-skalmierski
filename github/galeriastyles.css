@@ -21,6 +21,8 @@
   transition: 0.4s;
   text-decoration: none;
   text-align: center;
+  display: flex;
+  align-items: flex-end;
 }
 .image:hover {
   transform: scale(1.02);
