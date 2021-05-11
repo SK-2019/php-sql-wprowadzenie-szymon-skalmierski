@@ -39,8 +39,10 @@
     
     <div class="gallery row">
       <a href="" class="image photo01">
+        <div>
         <span class="photo01_title">kurs surfingu PRO</span>
         <span class="photo01_price">cena: 699 zł</span>
+        </div>
       </a>
       <a href="" class="image photo02">
         <span class="photo01_title">kurs wspinaczkowy PRO</span>

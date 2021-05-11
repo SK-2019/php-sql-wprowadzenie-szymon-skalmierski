@@ -43,7 +43,7 @@
   color: black;
   padding: 5px;
   display: block;
-  height: 8%;
+  height: 25px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
 }
@@ -52,6 +52,6 @@
   color: black;
   padding: 5px;
   display: block;
-  height: 8%;
+  height: 25px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
