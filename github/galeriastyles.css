@@ -23,6 +23,7 @@
   text-align: center;
   display: flex;
   align-items: flex-end;
+  flex-direction: column;
 }
 .image:hover {
   transform: scale(1.02);
