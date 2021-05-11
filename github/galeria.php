@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="galeriastyles.css" />
   </head>
   <body>
-    <h2 class="heading">Galeria:</h2>
+    <h2 class="galleryheading">Galeria:</h2>
 
     <div class="gallery row">
       <div class="image photo01">1</div>

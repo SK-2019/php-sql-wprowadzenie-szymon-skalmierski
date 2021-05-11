@@ -1,10 +1,7 @@
-h1 {
-  background-color: lightblue;
-}
 .gallery {
   display: flex;
 }
-.heading {
+.galleryheading {
   text-align: center;
   font-size: 35px;
   margin: 5px;
@@ -26,8 +23,8 @@ h1 {
   text-align: center;
 }
 .image:hover {
-  transform: scale(1.03);
-  filter: saturate(2.2) brightness(1.4);
+  transform: scale(1.02);
+  filter: saturate(2.1) brightness(1.3);
 }
 .photo01 {
   background-image: url("https://images.pexels.com/photos/2174656/pexels-photo-2174656.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
