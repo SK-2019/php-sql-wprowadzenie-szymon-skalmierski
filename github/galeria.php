@@ -20,6 +20,7 @@
         <span class="photo01_title">kurs fotografii STANDARD</span>
         <span class="photo01_price">cena: 399 zł</span>
       </a>
+    </div>
 
     <div class="gallery row">
       <a href="" class="image photo01">
@@ -35,6 +36,7 @@
         <span class="photo01_price">cena: 499 zł</span>
       </a>
     </div>
+    
     <div class="gallery row">
       <a href="" class="image photo01">
         <span class="photo01_title">kurs surfingu PRO</span>
