@@ -15,12 +15,12 @@
 
     <div class="gallery row">
       <a href="" class="image photo01">
-        <span class="photo01_title">kurs jazdy moplikiem</span>
-        <span class="photo01_price">cena: 299 zł</span>
+        <span class="photo01_title">kurs surfingu</span>
+        <span class="photo01_price">cena: 699 zł</span>
       </a>
       <a href="" class="image photo02">
         <span class="photo01_title">kurs wspinaczkowy</span>
-        <span class="photo01_price">cena: 299 zł</span>
+        <span class="photo01_price">cena: 499 zł</span>
       </a>
       <a href="" class="image photo03">
         <span class="photo01_title">kurs fotografii</span>
