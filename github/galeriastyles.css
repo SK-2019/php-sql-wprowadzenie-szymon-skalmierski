@@ -1,0 +1,55 @@
+h1 {
+  background-color: lightblue;
+}
+.gallery {
+  display: flex;
+}
+.heading {
+  text-align: center;
+  font-size: 35px;
+  margin: 5px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.row {
+  background-color: rgb(199, 255, 194);
+}
+.image {
+  background-color: lightblue;
+  margin: 5px;
+  padding: 0px;
+  width: 500px;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  transition: 0.4s;
+  text-decoration: none;
+  text-align: center;
+}
+.image:hover {
+  transform: scale(1.03);
+  filter: saturate(2.2) brightness(1.4);
+}
+.photo01 {
+  background-image: url("https://images.pexels.com/photos/2174656/pexels-photo-2174656.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+.photo01:hover {
+  background-image: url("https://images.pexels.com/photos/2967394/pexels-photo-2967394.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+.photo02 {
+  background-image: url("https://lh3.googleusercontent.com/proxy/FFMG3ths6q6eYQiyoJxNCsQ4VqYdU6Bv783OL-BtHGkD4TK80OVVTDSEHCLpLvSt9wNZ1fjxjx6ahjgtl6jT65GCHN5JW69SWGxvMUH2mWm4u5VL627L6yKSJac");
+}
+.photo03 {
+  background-image: url("https://images.pexels.com/photos/722629/pexels-photo-722629.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+.photo01_title {
+  background-color: white;
+  padding: 5px;
+  display: block;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.photo01_price {
+  background-color: white;
+  padding: 5px;
+  display: block;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
